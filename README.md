@@ -1,10 +1,10 @@
-pqoqubbw/icons is beautifully crafted animated icons.
+`pqoqubbw/icons` is beautifully crafted animated icons.
 
 **Demo** → [https://icons.pqoqubbw.dev](https://icons.pqoqubbw.dev)
 
 ## Contributing
 
-We welcome contributions to pqoqubbw/icons! Please read our [contributing guidelines](CONTRIBUTING.md) on how to submit improvements and new icons.
+We welcome contributions to `pqoqubbw/icons`! Please read our [contributing guidelines](CONTRIBUTING.md) on how to submit improvements and new icons.
 
 ## Terms of Use
 
