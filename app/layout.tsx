@@ -3,7 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import { ThemeProvider } from '@/providers/theme';
 import { Header } from '@/components/header';
-import { CommandMenu } from '@/components/comman-menu';
+import { CommandMenu } from '@/components/command-menu';
 import { Footer } from '@/components/footer';
 
 import ogImage from './og.png';

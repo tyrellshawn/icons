@@ -2,6 +2,8 @@
 
 **Demo** → [https://icons.pqoqubbw.dev](https://icons.pqoqubbw.dev)
 
+![preview](./app/og.png)
+
 ## Contributing
 
 We welcome contributions to `pqoqubbw/icons`! Please read our [contributing guidelines](CONTRIBUTING.md) on how to submit improvements and new icons.
