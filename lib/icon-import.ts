@@ -21,7 +21,7 @@ async function importIcons(): Promise<IconType[]> {
         path.join(iconsDirectory, file),
         'utf8'
       );
-      console.log('name =', name, ', file =', file);
+
       return {
         title: name,
         Icon,
