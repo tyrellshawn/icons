@@ -11,6 +11,8 @@ import {
   TooltipTrigger,
 } from '../ui/tooltip';
 import Link from 'next/link';
+import { useOpenPanel } from '@openpanel/nextjs';
+import { ANALYTIC_EVENT } from '../analytics';
 
 const ACTION_CLASS_NAMES =
   'cursor-pointer p-2 size-8 hover:bg-accent rounded-md transition-colors duration-200';
@@ -35,15 +37,19 @@ const Actions = ({
   content,
   fileName,
 }: Pick<IconType, 'content' | 'fileName'>) => {
+  const op = useOpenPanel();
+
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
+    op.track(ANALYTIC_EVENT.ICON_COPY, { icon: fileName });
     await navigator.clipboard.writeText(content);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
 
   const handleDownload = () => {
+    op.track(ANALYTIC_EVENT.ICON_DOWNLOAD, { icon: fileName });
     const blob = new Blob([content], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -99,6 +105,9 @@ const Actions = ({
             <Link
               href={`https://github.com/pqoqubbw/icons/blob/main/icons/${fileName}`}
               target="_blank"
+              onClick={() =>
+                op.track(ANALYTIC_EVENT.ICON_LINK, { icon: fileName })
+              }
             >
               <ExternalLink className={ACTION_CLASS_NAMES} />
             </Link>

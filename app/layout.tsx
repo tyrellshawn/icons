@@ -6,6 +6,7 @@ import { Header } from '@/components/header';
 import { CommandMenu } from '@/components/command-menu';
 
 import ogImage from './og.png';
+import { Analytics } from '@/components/analytics';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -88,6 +89,7 @@ export default function RootLayout({
           <Header />
           {children}
           <CommandMenu />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
