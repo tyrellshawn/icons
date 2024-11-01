@@ -1,4 +1,4 @@
-`pqoqubbw/icons` is beautifully crafted animated icons.
+## `pqoqubbw/icons` is beautifully crafted animated icons.
 
 **Demo** → [https://icons.pqoqubbw.dev](https://icons.pqoqubbw.dev)
 
