@@ -1,5 +1,9 @@
 import Link from 'next/link';
 import { ModeToggle } from '../ui/theme-toggle';
+import { Button } from '../ui/button';
+import { LINK } from '@/constants';
+import { GitHubLogoIcon } from '@radix-ui/react-icons';
+import { ArrowUpRight } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -8,7 +12,16 @@ const Header = () => {
         <Link href="/" className="flex items-center gap-2">
           <h1 className="text-base">pqoqubbw/icons</h1>
         </Link>
-        <ModeToggle />
+        <div className="flex items-center gap-2">
+          <ModeToggle />
+          <Button variant="outline" asChild>
+            <Link href={LINK.GITHUB} target="_blank">
+              <GitHubLogoIcon />
+              check repo
+              <ArrowUpRight className="w-4 h-4 ml-1 text-muted-foreground" />
+            </Link>
+          </Button>
+        </div>
       </div>
     </header>
   );
