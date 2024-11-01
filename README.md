@@ -12,7 +12,7 @@ We welcome contributions to `pqoqubbw/icons`! Please read our [contributing guid
 
 Feel free to use these components in personal and commercial projects. However, while the tutorials and demos are available for your use as-is, they cannot be redistributed or resold. Let’s keep things fair and respect each other’s work.
 
-If you have any questions or just want to say hi, feel free to reach out to us on X 👉 [@pqoqubbw](https://x.com/pqoqubbw).
+If you have any questions or just want to say hi, feel free to reach out to me on X 👉 [@pqoqubbw](https://x.com/pqoqubbw).
 
 ## Notes
 
