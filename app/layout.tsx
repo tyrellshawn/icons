@@ -60,6 +60,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'pqoqubbw/icons',
     description: 'beautifully crafted animated icons',
+    creator: '@pqoqubbw',
     images: [
       {
         url: ogImage.src,
