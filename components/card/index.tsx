@@ -10,6 +10,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '../ui/tooltip';
+import Link from 'next/link';
 
 const ACTION_CLASS_NAMES =
   'cursor-pointer p-2 size-8 hover:bg-accent rounded-md transition-colors duration-200';
@@ -27,7 +28,7 @@ const Title = ({ children }: { children: React.ReactNode }) => {
 };
 
 const SIDE_OFFSET = 10;
-const TOOLTIP_DELAY_DURATION = 300;
+const TOOLTIP_DELAY_DURATION = 500;
 const TOOLTIP_SIDE = 'bottom';
 
 const Actions = ({
@@ -65,8 +66,7 @@ const Actions = ({
                   key="check"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.15 }}
+                  transition={{ duration: 0.2 }}
                 >
                   <Check className={ACTION_CLASS_NAMES} />
                 </motion.div>
@@ -75,8 +75,7 @@ const Actions = ({
                   key="copy"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.15 }}
+                  transition={{ duration: 0.2 }}
                 >
                   <Copy className={ACTION_CLASS_NAMES} onClick={handleCopy} />
                 </motion.div>
@@ -97,7 +96,12 @@ const Actions = ({
         </Tooltip>
         <Tooltip>
           <TooltipTrigger asChild>
-            <ExternalLink className={ACTION_CLASS_NAMES} />
+            <Link
+              href={`https://github.com/pqoqubbw/icons/blob/main/icons/${fileName}`}
+              target="_blank"
+            >
+              <ExternalLink className={ACTION_CLASS_NAMES} />
+            </Link>
           </TooltipTrigger>
           <TooltipContent sideOffset={SIDE_OFFSET} side={TOOLTIP_SIDE}>
             <p>view on github</p>
