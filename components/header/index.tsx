@@ -18,7 +18,7 @@ const Header = () => {
             <Link href={LINK.GITHUB} target="_blank">
               <GitHubLogoIcon />
               check repo
-              <ArrowUpRight className="w-4 h-4 ml-1 text-muted-foreground" />
+              <ArrowUpRight className="w-4 h-4 sm:ml-1 ml-0 text-muted-foreground" />
             </Link>
           </Button>
         </div>

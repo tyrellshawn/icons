@@ -4,7 +4,6 @@ import './globals.css';
 import { ThemeProvider } from '@/providers/theme';
 import { Header } from '@/components/header';
 import { CommandMenu } from '@/components/command-menu';
-import { Footer } from '@/components/footer';
 
 import ogImage from './og.png';
 
@@ -89,7 +88,6 @@ export default function RootLayout({
           <Header />
           {children}
           <CommandMenu />
-          <Footer />
         </ThemeProvider>
       </body>
     </html>
