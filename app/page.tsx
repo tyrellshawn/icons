@@ -27,7 +27,7 @@ export default async function Home() {
           <div className="flex items-center justify-between sm:gap-4 gap-2 sm:flex-row flex-col">
             <Input
               className="w-full md:max-w-[60%]"
-              placeholder="Search 20 icons..."
+              placeholder={`Search ${icons.length} icons...`}
             />
             <Button variant="outline" asChild className="sm:w-fit w-full">
               <Link href={LINK.GITHUB} target="_blank">
