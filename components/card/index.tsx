@@ -4,6 +4,12 @@ import React, { useState } from 'react';
 import { IconType } from '@/lib/icon-import';
 import { Check, Copy, Download, ExternalLink } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '../ui/tooltip';
 
 const ACTION_CLASS_NAMES =
   'cursor-pointer p-2 size-8 hover:bg-accent rounded-md transition-colors duration-200';
@@ -19,6 +25,10 @@ const Card = ({ children }: { children: React.ReactNode }) => {
 const Title = ({ children }: { children: React.ReactNode }) => {
   return <p className="text-xs text-muted-foreground mt-4 mb-1">{children}</p>;
 };
+
+const SIDE_OFFSET = 10;
+const TOOLTIP_DELAY_DURATION = 300;
+const TOOLTIP_SIDE = 'bottom';
 
 const Actions = ({
   content,
@@ -46,31 +56,54 @@ const Actions = ({
 
   return (
     <div className="flex items-center justify-center gap-1">
-      <AnimatePresence mode="wait" initial={false}>
-        {copied ? (
-          <motion.div
-            key="check"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.15 }}
-          >
-            <Check className={ACTION_CLASS_NAMES} />
-          </motion.div>
-        ) : (
-          <motion.div
-            key="copy"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.15 }}
-          >
-            <Copy className={ACTION_CLASS_NAMES} onClick={handleCopy} />
-          </motion.div>
-        )}
-      </AnimatePresence>
-      <Download className={ACTION_CLASS_NAMES} onClick={handleDownload} />
-      <ExternalLink className={ACTION_CLASS_NAMES} />
+      <TooltipProvider delayDuration={TOOLTIP_DELAY_DURATION}>
+        <Tooltip>
+          <TooltipTrigger>
+            <AnimatePresence mode="wait" initial={false}>
+              {copied ? (
+                <motion.div
+                  key="check"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.15 }}
+                >
+                  <Check className={ACTION_CLASS_NAMES} />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="copy"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.15 }}
+                >
+                  <Copy className={ACTION_CLASS_NAMES} onClick={handleCopy} />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </TooltipTrigger>
+          <TooltipContent sideOffset={SIDE_OFFSET} side={TOOLTIP_SIDE}>
+            <p>{copied ? 'copied' : 'copy'}</p>
+          </TooltipContent>
+        </Tooltip>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Download className={ACTION_CLASS_NAMES} onClick={handleDownload} />
+          </TooltipTrigger>
+          <TooltipContent sideOffset={SIDE_OFFSET} side={TOOLTIP_SIDE}>
+            <p>download .tsx file</p>
+          </TooltipContent>
+        </Tooltip>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <ExternalLink className={ACTION_CLASS_NAMES} />
+          </TooltipTrigger>
+          <TooltipContent sideOffset={SIDE_OFFSET} side={TOOLTIP_SIDE}>
+            <p>view on github</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
     </div>
   );
 };
