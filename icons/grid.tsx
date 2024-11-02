@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 const containerVariants = {
-  hover: {
+  animate: {
     transition: {
       staggerChildren: 0.1,
     },
@@ -12,7 +12,7 @@ const containerVariants = {
 
 const circleVariants = {
   initial: { opacity: 1 },
-  hover: {
+  animate: {
     opacity: [1, 0.3, 1],
     transition: {
       duration: 0.4,
@@ -35,10 +35,9 @@ const circles = [
 const GridIcon = () => {
   return (
     <motion.div
-      className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      whileHover="hover"
-      whileTap="hover"
+      className="cursor-pointer select-none p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
       initial="initial"
+      whileHover="animate"
       variants={containerVariants}
     >
       <svg
