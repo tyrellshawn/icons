@@ -1,16 +1,20 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { motion, useAnimation, Variants } from 'framer-motion';
+
+const gVariants: Variants = {
+  normal: { rotate: 0 },
+  animate: { rotate: 180 },
+};
 
 const CalendarCogIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -29,15 +33,8 @@ const CalendarCogIcon = () => {
         <path d="M8 2v4" />
         <motion.g
           transition={{ type: 'spring', stiffness: 50, damping: 10 }}
-          animate={
-            isHovered
-              ? {
-                  rotate: '180deg',
-                }
-              : {
-                  rotate: '0deg',
-                }
-          }
+          variants={gVariants}
+          animate={controls}
         >
           <path d="m15.2 16.9-.9-.4" />
           <path d="m15.2 19.1-.9.4" />

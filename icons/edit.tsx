@@ -1,34 +1,28 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
-import { useState } from 'react';
+import { motion, useAnimation, Variants } from 'framer-motion';
 
 const penVariants: Variants = {
-  idle: {
+  normal: {
     rotate: 0,
     x: 0,
     y: 0,
   },
-  hover: {
+  animate: {
     rotate: [-0.5, 0.5, -0.5],
     x: [0, -1, 1.5, 0],
     y: [0, 1.5, -1, 0],
-    transition: {
-      duration: 0.5,
-      repeat: 1,
-      ease: 'easeInOut',
-    },
   },
 };
 
 const EditIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +39,12 @@ const EditIcon = () => {
         <motion.path
           d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
           variants={penVariants}
-          animate={isHovered ? 'hover' : 'idle'}
+          animate={controls}
+          transition={{
+            duration: 0.5,
+            repeat: 1,
+            ease: 'easeInOut',
+          }}
         />
       </svg>
     </div>

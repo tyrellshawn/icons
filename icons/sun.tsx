@@ -1,24 +1,23 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
-import { useState } from 'react';
+import { motion, useAnimation, Variants } from 'framer-motion';
 
 const pathVariants: Variants = {
-  hidden: { opacity: 1 },
-  visible: (i: number) => ({
+  normal: { opacity: 1 },
+  animate: (i: number) => ({
     opacity: [0, 1],
     transition: { delay: i * 0.1, duration: 0.3 },
   }),
 };
 
 const SunIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +44,7 @@ const SunIcon = () => {
           <motion.path
             key={d}
             d={d}
-            initial="hidden"
-            animate={isHovered ? 'visible' : 'hidden'}
+            animate={controls}
             variants={pathVariants}
             custom={index + 1}
           />

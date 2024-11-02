@@ -1,7 +1,6 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
-import { useState } from 'react';
+import { motion, useAnimation, Variants } from 'framer-motion';
 
 const rectVariants: Variants = {
   normal: {
@@ -24,14 +23,24 @@ const rectVariants: Variants = {
   },
 };
 
+const pathVariants: Variants = {
+  normal: { d: 'M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8' },
+  animate: { d: 'M4 11v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11' },
+};
+
+const secondaryPathVariants: Variants = {
+  normal: { d: 'M10 12h4' },
+  animate: { d: 'M10 15h4' },
+};
+
 const ArchiveIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -51,20 +60,18 @@ const ArchiveIcon = () => {
           y="3"
           rx="1"
           initial="normal"
-          animate={isHovered ? 'animate' : 'normal'}
+          animate={controls}
           variants={rectVariants}
         />
         <motion.path
           d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"
-          animate={
-            isHovered
-              ? { d: 'M4 11v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11' }
-              : { d: 'M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8' }
-          }
+          variants={pathVariants}
+          animate={controls}
         />
         <motion.path
           d="M10 12h4"
-          animate={isHovered ? { d: 'M10 15h4' } : { d: 'M10 12h4' }}
+          variants={secondaryPathVariants}
+          animate={controls}
         />
       </svg>
     </div>

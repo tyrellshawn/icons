@@ -1,11 +1,10 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
-import { useState } from 'react';
+import { motion, useAnimation, Variants } from 'framer-motion';
 
 const lidVariants: Variants = {
-  closed: { y: 0 },
-  open: { y: -1.1 },
+  normal: { y: 0 },
+  animate: { y: -1.1 },
 };
 
 const springTransition = {
@@ -15,13 +14,13 @@ const springTransition = {
 };
 
 const DeleteIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -36,8 +35,7 @@ const DeleteIcon = () => {
       >
         <motion.g
           variants={lidVariants}
-          initial="closed"
-          animate={isHovered ? 'open' : 'closed'}
+          animate={controls}
           transition={springTransition}
         >
           <path d="M3 6h18" />
@@ -46,11 +44,10 @@ const DeleteIcon = () => {
         <motion.path
           d="M19 8v12c0 1-1 2-2 2H7c-1 0-2-1-2-2V8"
           variants={{
-            closed: { d: 'M19 8v12c0 1-1 2-2 2H7c-1 0-2-1-2-2V8' },
-            open: { d: 'M19 9v12c0 1-1 2-2 2H7c-1 0-2-1-2-2V9' },
+            normal: { d: 'M19 8v12c0 1-1 2-2 2H7c-1 0-2-1-2-2V8' },
+            animate: { d: 'M19 9v12c0 1-1 2-2 2H7c-1 0-2-1-2-2V9' },
           }}
-          initial="closed"
-          animate={isHovered ? 'open' : 'closed'}
+          animate={controls}
           transition={springTransition}
         />
         <motion.line
@@ -59,11 +56,10 @@ const DeleteIcon = () => {
           y1="11"
           y2="17"
           variants={{
-            closed: { y1: 11, y2: 17 },
-            open: { y1: 11.5, y2: 17.5 },
+            normal: { y1: 11, y2: 17 },
+            animate: { y1: 11.5, y2: 17.5 },
           }}
-          initial="closed"
-          animate={isHovered ? 'open' : 'closed'}
+          animate={controls}
           transition={springTransition}
         />
         <motion.line
@@ -72,11 +68,10 @@ const DeleteIcon = () => {
           y1="11"
           y2="17"
           variants={{
-            closed: { y1: 11, y2: 17 },
-            open: { y1: 11.5, y2: 17.5 },
+            normal: { y1: 11, y2: 17 },
+            animate: { y1: 11.5, y2: 17.5 },
           }}
-          initial="closed"
-          animate={isHovered ? 'open' : 'closed'}
+          animate={controls}
           transition={springTransition}
         />
       </svg>

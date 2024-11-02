@@ -1,7 +1,6 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
-import { useState } from 'react';
+import { motion, useAnimation, Variants } from 'framer-motion';
 
 const circleVariants: Variants = {
   normal: {
@@ -56,13 +55,13 @@ const secondCircleVariants: Variants = {
 };
 
 const HandCoinsIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -82,16 +81,14 @@ const HandCoinsIcon = () => {
           cx="16"
           cy="9"
           r="2.9"
-          initial="normal"
-          animate={isHovered ? 'animate' : 'normal'}
+          animate={controls}
           variants={circleVariants}
         />
         <motion.circle
           cx="6"
           cy="5"
           r="3"
-          initial="normal"
-          animate={isHovered ? 'animate' : 'normal'}
+          animate={controls}
           variants={secondCircleVariants}
         />
       </svg>

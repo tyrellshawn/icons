@@ -1,7 +1,6 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
-import { useState } from 'react';
+import { motion, useAnimation, Variants } from 'framer-motion';
 
 const dollarMainVariants: Variants = {
   normal: {
@@ -46,13 +45,13 @@ const dollarSecondaryVariants: Variants = {
 };
 
 const CircleDollarSignIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -69,13 +68,13 @@ const CircleDollarSignIcon = () => {
         <motion.path
           d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"
           initial="normal"
-          animate={isHovered ? 'animate' : 'normal'}
+          animate={controls}
           variants={dollarMainVariants}
         />
         <motion.path
           d="M12 18V6"
           initial="normal"
-          animate={isHovered ? 'animate' : 'normal'}
+          animate={controls}
           variants={dollarSecondaryVariants}
         />
       </svg>

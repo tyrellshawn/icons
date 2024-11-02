@@ -1,11 +1,10 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
-import { useState } from 'react';
+import { motion, useAnimation, Variants } from 'framer-motion';
 
 const pathVariants: Variants = {
-  initial: { pathLength: 1, opacity: 1 },
-  hover: {
+  normal: { pathLength: 1, opacity: 1 },
+  animate: {
     opacity: [0, 0, 1, 1, 1],
     pathLength: [0.1, 0.3, 0.5, 0.7, 0.9, 1],
     transition: {
@@ -18,13 +17,13 @@ const pathVariants: Variants = {
 };
 
 const FingerprintIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +45,7 @@ const FingerprintIcon = () => {
         <motion.path
           d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"
           variants={pathVariants}
-          initial="initial"
-          animate={isHovered ? 'hover' : 'initial'}
+          animate={controls}
         />
 
         <path
@@ -59,8 +57,7 @@ const FingerprintIcon = () => {
         <motion.path
           d="M14 13.12c0 2.38 0 6.38-1 8.88"
           variants={pathVariants}
-          initial="initial"
-          animate={isHovered ? 'hover' : 'initial'}
+          animate={controls}
         />
 
         <path
@@ -72,8 +69,7 @@ const FingerprintIcon = () => {
         <motion.path
           d="M17.29 21.02c.12-.6.43-2.3.5-3.02"
           variants={pathVariants}
-          initial="initial"
-          animate={isHovered ? 'hover' : 'initial'}
+          animate={controls}
         />
 
         <path
@@ -85,17 +81,11 @@ const FingerprintIcon = () => {
         <motion.path
           d="M2 12a10 10 0 0 1 18-6"
           variants={pathVariants}
-          initial="initial"
-          animate={isHovered ? 'hover' : 'initial'}
+          animate={controls}
         />
 
         <path d="M2 16h.01" strokeOpacity={0.4} strokeWidth={2} fill="none" />
-        <motion.path
-          d="M2 16h.01"
-          variants={pathVariants}
-          initial="initial"
-          animate={isHovered ? 'hover' : 'initial'}
-        />
+        <motion.path d="M2 16h.01" variants={pathVariants} animate={controls} />
 
         <path
           d="M21.8 16c.2-2 .131-5.354 0-6"
@@ -106,8 +96,7 @@ const FingerprintIcon = () => {
         <motion.path
           d="M21.8 16c.2-2 .131-5.354 0-6"
           variants={pathVariants}
-          initial="initial"
-          animate={isHovered ? 'hover' : 'initial'}
+          animate={controls}
         />
 
         <path
@@ -119,8 +108,7 @@ const FingerprintIcon = () => {
         <motion.path
           d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2"
           variants={pathVariants}
-          initial="initial"
-          animate={isHovered ? 'hover' : 'initial'}
+          animate={controls}
         />
 
         <path
@@ -132,8 +120,7 @@ const FingerprintIcon = () => {
         <motion.path
           d="M8.65 22c.21-.66.45-1.32.57-2"
           variants={pathVariants}
-          initial="initial"
-          animate={isHovered ? 'hover' : 'initial'}
+          animate={controls}
         />
 
         <path
@@ -145,8 +132,7 @@ const FingerprintIcon = () => {
         <motion.path
           d="M9 6.8a6 6 0 0 1 9 5.2v2"
           variants={pathVariants}
-          initial="initial"
-          animate={isHovered ? 'hover' : 'initial'}
+          animate={controls}
         />
       </svg>
     </div>

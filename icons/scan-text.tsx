@@ -36,12 +36,8 @@ const ScanTextIcon = () => {
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => {
-        handleHoverStart();
-      }}
-      onMouseLeave={() => {
-        handleHoverEnd();
-      }}
+      onMouseEnter={handleHoverStart}
+      onMouseLeave={handleHoverEnd}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

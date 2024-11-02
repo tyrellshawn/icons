@@ -1,35 +1,31 @@
 'use client';
 
-import { motion, Variants } from 'framer-motion';
-import { useState } from 'react';
+import { motion, Transition, useAnimation, Variants } from 'framer-motion';
+
+const defaultTransition: Transition = {
+  duration: 0.6,
+  opacity: { duration: 0.2 },
+};
+
+const pathVariants: Variants = {
+  normal: {
+    pathLength: 1,
+    opacity: 1,
+  },
+  animate: {
+    opacity: [0, 1],
+    pathLength: [0, 1],
+  },
+};
 
 const HomeIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const pathVariants: Variants = {
-    normal: {
-      pathLength: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        opacity: { duration: 0.2 },
-      },
-    },
-    animate: {
-      opacity: [0, 1],
-      pathLength: [0, 1],
-      transition: {
-        duration: 0.6,
-        opacity: { duration: 0.2 },
-      },
-    },
-  };
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +42,8 @@ const HomeIcon = () => {
         <motion.path
           d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"
           variants={pathVariants}
-          initial="normal"
-          animate={isHovered ? 'animate' : 'normal'}
+          transition={defaultTransition}
+          animate={controls}
         />
       </svg>
     </div>

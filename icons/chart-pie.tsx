@@ -1,16 +1,20 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { motion, useAnimation, Variants } from 'framer-motion';
+
+const pathVariants: Variants = {
+  normal: { translateX: 0, translateY: 0 },
+  animate: { translateX: 1.1, translateY: -1.1 },
+};
 
 const ChartPieIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -25,20 +29,14 @@ const ChartPieIcon = () => {
       >
         <motion.path
           d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"
-          animate={
-            isHovered
-              ? {
-                  translateX: 1.1,
-                  translateY: -1.1,
-                  transition: {
-                    type: 'spring',
-                    stiffness: 250,
-                    damping: 15,
-                    bounce: 0.6,
-                  },
-                }
-              : { translateX: 0, translateY: 0 }
-          }
+          transition={{
+            type: 'spring',
+            stiffness: 250,
+            damping: 15,
+            bounce: 0.6,
+          }}
+          variants={pathVariants}
+          animate={controls}
         />
         <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
       </svg>

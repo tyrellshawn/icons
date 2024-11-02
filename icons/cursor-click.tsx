@@ -1,7 +1,6 @@
 'use client';
 
 import { motion, useAnimation, Variants } from 'framer-motion';
-import { useEffect, useState } from 'react';
 
 const cursorVariants: Variants = {
   initial: { x: 0, y: 0 },
@@ -32,22 +31,20 @@ const lineVariants: Variants = {
 };
 
 const CursorClickIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (isHovered) {
-      controls.start('spread', { delay: 1.3 });
-    } else {
-      controls.start('initial');
-    }
-  }, [isHovered, controls]);
+  const clickControls = useAnimation();
+  const cursorControls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => {
+        cursorControls.start('hover');
+        clickControls.start('spread', { delay: 1.3 });
+      }}
+      onMouseLeave={() => {
+        cursorControls.start('initial');
+        clickControls.start('initial');
+      }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -63,30 +60,30 @@ const CursorClickIcon = () => {
         <motion.path
           d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z"
           variants={cursorVariants}
-          animate={isHovered ? 'hover' : 'initial'}
+          animate={cursorControls}
         />
         <motion.path
           d="M14 4.1 12 6"
           variants={lineVariants}
-          animate={controls}
+          animate={clickControls}
           custom={{ x: 1, y: -1 }}
         />
         <motion.path
           d="m5.1 8-2.9-.8"
           variants={lineVariants}
-          animate={controls}
+          animate={clickControls}
           custom={{ x: -1, y: 0 }}
         />
         <motion.path
           d="m6 12-1.9 2"
           variants={lineVariants}
-          animate={controls}
+          animate={clickControls}
           custom={{ x: -1, y: 1 }}
         />
         <motion.path
           d="M7.2 2.2 8 5.1"
           variants={lineVariants}
-          animate={controls}
+          animate={clickControls}
           custom={{ x: 0, y: -1 }}
         />
       </svg>

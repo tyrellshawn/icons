@@ -1,16 +1,20 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { motion, useAnimation, Variants } from 'framer-motion';
+
+const svgVariants: Variants = {
+  normal: { rotate: 0 },
+  animate: { rotate: [0, -10, 10, -10, 0] },
+};
 
 const BellIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
@@ -22,24 +26,15 @@ const BellIcon = () => {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        animate={{
-          rotate: isHovered ? [0, -10, 10, -10, 0] : 0,
-        }}
+        variants={svgVariants}
+        animate={controls}
         transition={{
           duration: 0.5,
           ease: 'easeInOut',
         }}
       >
-        <motion.path
-          d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"
-          initial={false}
-          animate={{ opacity: 1 }}
-        />
-        <motion.path
-          d="M10.3 21a1.94 1.94 0 0 0 3.4 0"
-          initial={false}
-          animate={{ opacity: 1 }}
-        />
+        <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+        <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
       </motion.svg>
     </div>
   );

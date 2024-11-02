@@ -1,16 +1,15 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 
 const DownvoteIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
@@ -22,19 +21,19 @@ const DownvoteIcon = () => {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        animate={
-          isHovered
-            ? {
-                translateX: '-1px',
-                translateY: '2px',
-                rotate: '-12deg',
-              }
-            : {
-                translateX: '0px',
-                translateY: '0px',
-                rotate: '0deg',
-              }
-        }
+        variants={{
+          normal: {
+            translateX: '0px',
+            translateY: '0px',
+            rotate: '0deg',
+          },
+          animate: {
+            translateX: '-1px',
+            translateY: '2px',
+            rotate: '-12deg',
+          },
+        }}
+        animate={controls}
         transition={{ type: 'spring', stiffness: 250, damping: 25 }}
       >
         <path d="M17 14V2" />

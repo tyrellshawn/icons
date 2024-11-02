@@ -1,16 +1,21 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { motion, Transition, useAnimation } from 'framer-motion';
+
+const defaultTransition: Transition = {
+  type: 'spring',
+  stiffness: 250,
+  damping: 25,
+};
 
 const ExpandIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -25,39 +30,39 @@ const ExpandIcon = () => {
       >
         <motion.path
           d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8"
-          transition={{ type: 'spring', stiffness: 250, damping: 25 }}
-          animate={
-            isHovered
-              ? { translateX: '2px', translateY: '2px' }
-              : { translateX: '0%', translateY: '0%' }
-          }
+          transition={defaultTransition}
+          variants={{
+            normal: { translateX: '0%', translateY: '0%' },
+            animate: { translateX: '2px', translateY: '2px' },
+          }}
+          animate={controls}
         />
         <motion.path
           d="M3 16.2V21m0 0h4.8M3 21l6-6"
-          transition={{ type: 'spring', stiffness: 250, damping: 25 }}
-          animate={
-            isHovered
-              ? { translateX: '-2px', translateY: '2px' }
-              : { translateX: '0%', translateY: '0%' }
-          }
+          transition={defaultTransition}
+          variants={{
+            normal: { translateX: '0%', translateY: '0%' },
+            animate: { translateX: '-2px', translateY: '2px' },
+          }}
+          animate={controls}
         />
         <motion.path
           d="M21 7.8V3m0 0h-4.8M21 3l-6 6"
-          transition={{ type: 'spring', stiffness: 250, damping: 25 }}
-          animate={
-            isHovered
-              ? { translateX: '2px', translateY: '-2px' }
-              : { translateX: '0%', translateY: '0%' }
-          }
+          transition={defaultTransition}
+          variants={{
+            normal: { translateX: '0%', translateY: '0%' },
+            animate: { translateX: '2px', translateY: '-2px' },
+          }}
+          animate={controls}
         />
         <motion.path
           d="M3 7.8V3m0 0h4.8M3 3l6 6"
-          transition={{ type: 'spring', stiffness: 250, damping: 25 }}
-          animate={
-            isHovered
-              ? { translateX: '-2px', translateY: '-2px' }
-              : { translateX: '0%', translateY: '0%' }
-          }
+          transition={defaultTransition}
+          variants={{
+            normal: { translateX: '0%', translateY: '0%' },
+            animate: { translateX: '-2px', translateY: '-2px' },
+          }}
+          animate={controls}
         />
       </svg>
     </div>

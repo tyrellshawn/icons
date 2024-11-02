@@ -1,9 +1,8 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { motion, Transition, useAnimation } from 'framer-motion';
 
-const transition = {
+const defaultTransition: Transition = {
   type: 'spring',
   stiffness: 100,
   damping: 12,
@@ -11,13 +10,13 @@ const transition = {
 };
 
 const SettingsIcon = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
 
   return (
     <div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={() => controls.start('animate')}
+      onMouseLeave={() => controls.start('normal')}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -32,91 +31,161 @@ const SettingsIcon = () => {
       >
         <motion.line
           x1="21"
-          x2={isHovered ? 10 : 14}
+          x2="14"
           y1="4"
           y2="4"
           initial={false}
-          animate={{ x2: isHovered ? 10 : 14 }}
-          transition={transition}
+          variants={{
+            normal: {
+              x2: 14,
+            },
+            animate: {
+              x2: 10,
+            },
+          }}
+          animate={controls}
+          transition={defaultTransition}
         />
         <motion.line
-          x1={isHovered ? 5 : 10}
+          x1="10"
           x2="3"
           y1="4"
           y2="4"
-          initial={false}
-          animate={{ x1: isHovered ? 5 : 10 }}
-          transition={transition}
+          variants={{
+            normal: {
+              x1: 10,
+            },
+            animate: {
+              x1: 5,
+            },
+          }}
+          animate={controls}
+          transition={defaultTransition}
         />
 
         <motion.line
           x1="21"
-          x2={isHovered ? 18 : 12}
+          x2="12"
           y1="12"
           y2="12"
-          initial={false}
-          animate={{ x2: isHovered ? 18 : 12 }}
-          transition={transition}
+          variants={{
+            normal: {
+              x2: 12,
+            },
+            animate: {
+              x2: 18,
+            },
+          }}
+          animate={controls}
+          transition={defaultTransition}
         />
 
         <motion.line
-          x1={isHovered ? 13 : 8}
+          x1="8"
           x2="3"
           y1="12"
           y2="12"
-          initial={false}
-          animate={{ x1: isHovered ? 13 : 8 }}
-          transition={transition}
+          variants={{
+            normal: {
+              x1: 8,
+            },
+            animate: {
+              x1: 13,
+            },
+          }}
+          animate={controls}
+          transition={defaultTransition}
         />
 
         <motion.line
           x1="3"
-          x2={isHovered ? 4 : 12}
+          x2="12"
           y1="20"
           y2="20"
-          initial={false}
-          animate={{ x2: isHovered ? 4 : 12 }}
-          transition={transition}
+          variants={{
+            normal: {
+              x2: 12,
+            },
+            animate: {
+              x2: 4,
+            },
+          }}
+          animate={controls}
+          transition={defaultTransition}
         />
 
         <motion.line
-          x1="21"
+          x1="16"
           x2="21"
           y1="20"
           y2="20"
-          initial={false}
-          animate={{ x1: isHovered ? 8 : 16 }}
-          transition={transition}
+          variants={{
+            normal: {
+              x1: 16,
+            },
+            animate: {
+              x1: 8,
+            },
+          }}
+          animate={controls}
+          transition={defaultTransition}
         />
 
         <motion.line
-          x1={isHovered ? 9 : 14}
-          x2={isHovered ? 9 : 14}
+          x1="14"
+          x2="14"
           y1="2"
           y2="6"
-          initial={false}
-          animate={{ x1: isHovered ? 9 : 14, x2: isHovered ? 9 : 14 }}
-          transition={transition}
+          variants={{
+            normal: {
+              x1: 14,
+              x2: 14,
+            },
+            animate: {
+              x1: 9,
+              x2: 9,
+            },
+          }}
+          animate={controls}
+          transition={defaultTransition}
         />
 
         <motion.line
-          x1={isHovered ? 14 : 8}
-          x2={isHovered ? 14 : 8}
+          x1="8"
+          x2="8"
           y1="10"
           y2="14"
-          initial={false}
-          animate={{ x1: isHovered ? 14 : 8, x2: isHovered ? 14 : 8 }}
-          transition={transition}
+          variants={{
+            normal: {
+              x1: 8,
+              x2: 8,
+            },
+            animate: {
+              x1: 14,
+              x2: 14,
+            },
+          }}
+          animate={controls}
+          transition={defaultTransition}
         />
 
         <motion.line
-          x1={isHovered ? 8 : 16}
-          x2={isHovered ? 8 : 16}
+          x1="16"
+          x2="16"
           y1="18"
           y2="22"
-          initial={false}
-          animate={{ x1: isHovered ? 8 : 16, x2: isHovered ? 8 : 16 }}
-          transition={transition}
+          variants={{
+            normal: {
+              x1: 16,
+              x2: 16,
+            },
+            animate: {
+              x1: 8,
+              x2: 8,
+            },
+          }}
+          animate={controls}
+          transition={defaultTransition}
         />
       </svg>
     </div>
