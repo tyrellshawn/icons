@@ -37,6 +37,7 @@ const GridIcon = () => {
     <motion.div
       className="cursor-pointer p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
       whileHover="hover"
+      whileTap="hover"
       initial="initial"
       variants={containerVariants}
     >
