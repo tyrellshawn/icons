@@ -8,6 +8,8 @@ enum ANALYTIC_EVENT {
 }
 
 const Analytics = () => {
+  if (process.env.NODE_ENV !== 'production') return null;
+
   return (
     <OpenPanelComponent
       clientId={process.env.CLIENT_ID!}
