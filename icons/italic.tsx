@@ -32,7 +32,7 @@ const Bold = () => {
         strokeLinejoin="round"
       >
         <motion.line
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.2 }}
           variants={lineVariants}
           animate={controls}
           x1="19"
@@ -41,7 +41,7 @@ const Bold = () => {
           y2="4"
         />
         <motion.line
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.2 }}
           variants={lineVariants}
           animate={controls}
           x1="14"
@@ -52,7 +52,7 @@ const Bold = () => {
         <motion.line
           transition={{
             delay: 0.1,
-            duration: 0.6,
+            duration: 0.4,
           }}
           variants={{
             normal: { pathLength: 1, pathOffset: 0 },

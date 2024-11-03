@@ -32,7 +32,7 @@ const Underline = () => {
         strokeLinejoin="round"
       >
         <motion.path
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           variants={variants}
           animate={controls}
           d="M6 4v6a6 6 0 0 0 12 0V4"
@@ -45,7 +45,7 @@ const Underline = () => {
           variants={variants}
           transition={{
             delay: 0.2,
-            duration: 0.6,
+            duration: 0.4,
           }}
           animate={controls}
         />
