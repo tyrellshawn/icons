@@ -1,6 +1,6 @@
 "use client";
 
-import { animate, motion, useAnimation, Variants } from "framer-motion";
+import { motion, useAnimation, Variants } from "framer-motion";
 
 const pathVariants: Variants = {
   normal: {
