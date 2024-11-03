@@ -26,7 +26,11 @@ const Card = ({ children }: { children: React.ReactNode }) => {
 };
 
 const Title = ({ children }: { children: React.ReactNode }) => {
-  return <p className="text-xs text-muted-foreground mt-4 mb-1">{children}</p>;
+  return (
+    <p className="text-xs text-muted-foreground mt-4 mb-1 text-center">
+      {children}
+    </p>
+  );
 };
 
 const SIDE_OFFSET = 10;

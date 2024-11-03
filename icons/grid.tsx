@@ -1,24 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
-const containerVariants = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const circleVariants = {
-  initial: { opacity: 1 },
-  animate: {
-    opacity: [1, 0.3, 1],
-    transition: {
-      duration: 0.4,
-    },
-  },
-};
+import { AnimatePresence, motion, useAnimation } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const circles = [
   { cx: 19, cy: 5 }, // Top right
@@ -33,12 +16,37 @@ const circles = [
 ];
 
 const GridIcon = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const animateCircles = async () => {
+      if (isHovered) {
+        await controls.start((i) => ({
+          opacity: 0.3,
+          transition: {
+            delay: i * 0.1,
+            duration: 0.2,
+          },
+        }));
+        await controls.start((i) => ({
+          opacity: 1,
+          transition: {
+            delay: i * 0.1,
+            duration: 0.2,
+          },
+        }));
+      }
+    };
+
+    animateCircles();
+  }, [isHovered, controls]);
+
   return (
     <motion.div
       className="cursor-pointer select-none p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      initial="initial"
-      whileHover="animate"
-      variants={containerVariants}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -51,15 +59,20 @@ const GridIcon = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        {circles.map((circle) => (
-          <motion.circle
-            key={`${circle.cx}-${circle.cy}`}
-            cx={circle.cx}
-            cy={circle.cy}
-            r="1"
-            variants={circleVariants}
-          />
-        ))}
+        <AnimatePresence>
+          {circles.map((circle, index) => (
+            <motion.circle
+              key={`${circle.cx}-${circle.cy}`}
+              cx={circle.cx}
+              cy={circle.cy}
+              r="1"
+              initial="initial"
+              animate={controls}
+              exit="initial"
+              custom={index}
+            />
+          ))}
+        </AnimatePresence>
       </svg>
     </motion.div>
   );
