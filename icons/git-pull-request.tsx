@@ -40,7 +40,7 @@ const GitPullRequestIcon = () => {
             opacity: { delay: calculateDelay(0) },
           }}
           variants={{
-            normal: { pathLength: 1, opacity: 1 },
+            normal: { pathLength: 1, opacity: 1, transition: { delay: 0 } },
             animate: {
               pathLength: [0, 1],
               opacity: [0, 1],
@@ -58,7 +58,7 @@ const GitPullRequestIcon = () => {
             opacity: { delay: calculateDelay(2) },
           }}
           variants={{
-            normal: { pathLength: 1, opacity: 1 },
+            normal: { pathLength: 1, opacity: 1, transition: { delay: 0 } },
             animate: {
               pathLength: [0, 1],
               opacity: [0, 1],
@@ -74,7 +74,12 @@ const GitPullRequestIcon = () => {
             opacity: { delay: calculateDelay(1) },
           }}
           variants={{
-            normal: { pathLength: 1, pathOffset: 0, opacity: 1 },
+            normal: {
+              pathLength: 1,
+              pathOffset: 0,
+              opacity: 1,
+              transition: { delay: 0 },
+            },
             animate: {
               pathLength: [0, 1],
               opacity: [0, 1],
@@ -94,7 +99,7 @@ const GitPullRequestIcon = () => {
             opacity: { delay: calculateDelay(3) },
           }}
           variants={{
-            normal: { opacity: 1, pathLength: 1 },
+            normal: { opacity: 1, pathLength: 1, transition: { delay: 0 } },
             animate: {
               opacity: [0, 1],
               pathLength: [0, 1],
