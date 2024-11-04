@@ -3,10 +3,10 @@ import localFont from 'next/font/local';
 import './globals.css';
 import { ThemeProvider } from '@/providers/theme';
 import { Header } from '@/components/header';
-import { CommandMenu } from '@/components/command-menu';
 
 import ogImage from './og.png';
 import { Analytics } from '@/components/analytics';
+import { NuqsAdapter } from 'nuqs/adapters/next/app';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -88,8 +88,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          {children}
-          <CommandMenu />
+          <NuqsAdapter>{children}</NuqsAdapter>
           <Analytics />
         </ThemeProvider>
       </body>
