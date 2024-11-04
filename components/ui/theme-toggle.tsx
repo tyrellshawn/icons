@@ -12,8 +12,25 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
+declare global {
+  interface Document {
+    startViewTransition?: (callback: () => void) => {
+      finished: Promise<void>;
+      updateCallbackDone: Promise<void>;
+      ready: Promise<void>;
+    };
+  }
+}
+
 export function ModeToggle() {
-  const { setTheme } = useTheme();
+  const { setTheme, theme: currentTheme } = useTheme();
+
+  const handleChangeTheme = (theme: 'light' | 'dark' | 'system') => {
+    if (theme === currentTheme) return;
+
+    if (!document.startViewTransition) return setTheme(theme);
+    document.startViewTransition(() => setTheme(theme));
+  };
 
   return (
     <DropdownMenu>
@@ -25,13 +42,13 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme('light')}>
+        <DropdownMenuItem onClick={() => handleChangeTheme('light')}>
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme('dark')}>
+        <DropdownMenuItem onClick={() => handleChangeTheme('dark')}>
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme('system')}>
+        <DropdownMenuItem onClick={() => handleChangeTheme('system')}>
           System
         </DropdownMenuItem>
       </DropdownMenuContent>
