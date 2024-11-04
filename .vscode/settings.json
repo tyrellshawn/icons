@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["LUCIDE", "pqoqubbw"]
+  "cSpell.words": ["LUCIDE", "pqoqubbw"],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

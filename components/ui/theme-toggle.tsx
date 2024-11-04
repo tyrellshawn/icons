@@ -12,16 +12,6 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
-declare global {
-  interface Document {
-    startViewTransition?: (callback: () => void) => {
-      finished: Promise<void>;
-      updateCallbackDone: Promise<void>;
-      ready: Promise<void>;
-    };
-  }
-}
-
 export function ModeToggle() {
   const { setTheme, theme: currentTheme } = useTheme();
 
