@@ -3,10 +3,11 @@
 import { motion, useAnimation, Variants } from 'framer-motion';
 
 const pathVariants: Variants = {
-  initial: { opacity: 1, pathLength: 1 },
+  initial: { opacity: 1, pathLength: 1, pathOffset: 0 },
   animate: (custom: number) => ({
     opacity: [0, 1],
     pathLength: [0, 1],
+    pathOffset: [1, 0],
     transition: {
       opacity: { duration: 0.01, delay: custom * 0.1 },
       pathLength: {
@@ -66,37 +67,37 @@ const LanguagesIcon = () => {
         <motion.path
           d="m5 8 6 6"
           variants={pathVariants}
-          custom={0}
+          custom={3}
           animate={pathControls}
         />
         <motion.path
-          d="m4 14 6-6 2-3"
-          variants={pathVariants}
-          custom={1}
-          animate={pathControls}
-        />
-        <motion.path
-          d="M2 5h12"
+          d="m4 14 6-6 3-3"
           variants={pathVariants}
           custom={2}
           animate={pathControls}
         />
         <motion.path
+          d="M2 5h12"
+          variants={pathVariants}
+          custom={1}
+          animate={pathControls}
+        />
+        <motion.path
           d="M7 2h1"
           variants={pathVariants}
-          custom={3}
+          custom={0}
           animate={pathControls}
         />
         <motion.path
           d="m22 22-5-10-5 10"
           variants={pathVariants}
-          custom={4}
+          custom={3}
           animate={pathControls}
         />
         <motion.path
           d="M14 18h6"
           variants={pathVariants}
-          custom={5}
+          custom={3}
           animate={pathControls}
         />
       </motion.svg>
