@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Link from 'next/link';
 import { LINK } from '@/constants';
 import { getIcons } from '@/actions/get-icons';
@@ -42,7 +42,9 @@ export default async function Home() {
             <kbd>lucide</kbd>
           </Link>
         </p>
-        <IconsList icons={icons} />
+        <Suspense>
+          <IconsList icons={icons} />
+        </Suspense>
       </div>
     </div>
   );
