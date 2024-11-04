@@ -38,6 +38,11 @@ We welcome contributions to our project! Please follow these steps to contribute
 
 8. Test the application to ensure your changes work as expected.
 
+   ```
+   yarn lint
+   yarn build
+   ```
+
 9. Commit your changes:
 
    ```
