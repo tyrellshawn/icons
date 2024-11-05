@@ -44,7 +44,6 @@ import { AttachFileIcon } from '@/icons/attach-file';
 import { GaugeIcon } from '@/icons/gauge';
 import { MenuIcon } from '@/icons/menu';
 import { ClockIcon } from '@/icons/clock';
-import { ClockIcon } from '@/icons/clock';
 import { AlarmClockIcon } from '@/icons/alarm-clock';
 import { FrameIcon } from '@/icons/frame';
 import { BoneIcon } from '@/icons/bone';
