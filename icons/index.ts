@@ -50,7 +50,8 @@ import { BoneIcon } from '@/icons/bone';
 import { AlignCenterIcon } from '@/icons/align-center';
 import { AlignVerticalSpaceAroundIcon } from '@/icons/align-vertical-space-around';
 import { AlignHorizontalSpaceAroundIcon } from '@/icons/align-horizontal-space-around';
-import { CartIcon } from './cart';
+import { CartIcon } from '@/icons/cart';
+import { StethoscopeIcon } from '@/icons/stethoscope';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -109,6 +110,7 @@ const ICON_LIST = [
     icon: AlignHorizontalSpaceAroundIcon,
   },
   { name: 'cart', icon: CartIcon },
+  { name: 'stethoscope', icon: StethoscopeIcon },
 ];
 
 export { ICON_LIST };
