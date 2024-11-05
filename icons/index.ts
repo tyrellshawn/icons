@@ -44,7 +44,7 @@ import { AttachFileIcon } from '@/icons/attach-file';
 import { GaugeIcon } from '@/icons/gauge';
 import { MenuIcon } from '@/icons/menu';
 import { ClockIcon } from '@/icons/clock';
-import { AlarmClock } from '@/icons/alarm-clock';
+import { AlarmClockIcon } from '@/icons/alarm-clock';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -68,7 +68,7 @@ const ICON_LIST = [
   { name: 'archive', icon: ArchiveIcon },
   { name: 'copy', icon: CopyIcon },
   { name: 'attach-file', icon: AttachFileIcon },
-  { name: 'alarm-clock', icon: AlarmClock },
+  { name: 'alarm-clock', icon: AlarmClockIcon },
   { name: 'bold', icon: BoldIcon },
   { name: 'italic', icon: ItalicIcon },
   { name: 'underline', icon: UnderlineIcon },

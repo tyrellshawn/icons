@@ -62,7 +62,7 @@ const secondaryPathVariants: Variants = {
   },
 };
 
-const AlarmClock = () => {
+const AlarmClockIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -123,4 +123,4 @@ const AlarmClock = () => {
   );
 };
 
-export { AlarmClock };
+export { AlarmClockIcon };
