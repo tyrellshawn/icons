@@ -44,7 +44,14 @@ import { AttachFileIcon } from '@/icons/attach-file';
 import { GaugeIcon } from '@/icons/gauge';
 import { MenuIcon } from '@/icons/menu';
 import { ClockIcon } from '@/icons/clock';
+import { ClockIcon } from '@/icons/clock';
 import { AlarmClockIcon } from '@/icons/alarm-clock';
+import { FrameIcon } from '@/icons/frame';
+import { BoneIcon } from '@/icons/bone';
+import { AlignCenterIcon } from '@/icons/align-center';
+import { AlignVerticalSpaceAroundIcon } from '@/icons/align-vertical-space-around';
+import { AlignHorizontalSpaceAroundIcon } from '@/icons/align-horizontal-space-around';
+
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -94,6 +101,14 @@ const ICON_LIST = [
   { name: 'volume', icon: VolumeIcon },
   { name: 'sun', icon: SunIcon },
   { name: 'party-popper', icon: PartyPopperIcon },
+  { name: 'frame', icon: FrameIcon },
+  { name: 'bone', icon: BoneIcon },
+  { name: 'align-center', icon: AlignCenterIcon },
+  { name: 'align-vertical-space-around', icon: AlignVerticalSpaceAroundIcon },
+  {
+    name: 'align-horizontal-space-around',
+    icon: AlignHorizontalSpaceAroundIcon,
+  },
 ];
 
 export { ICON_LIST };

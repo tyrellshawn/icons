@@ -43,19 +43,19 @@ const Actions = ({ content, name }: Icon) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
-    op.track(ANALYTIC_EVENT.ICON_COPY, { icon: name });
+    op.track(ANALYTIC_EVENT.ICON_COPY, { icon: `${name}.tsx` });
     await navigator.clipboard.writeText(content);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
 
   const handleDownload = () => {
-    op.track(ANALYTIC_EVENT.ICON_DOWNLOAD, { icon: name });
+    op.track(ANALYTIC_EVENT.ICON_DOWNLOAD, { icon: `${name}.tsx` });
     const blob = new Blob([content], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = name;
+    a.download = `${name}.tsx`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -104,9 +104,11 @@ const Actions = ({ content, name }: Icon) => {
         <Tooltip>
           <TooltipTrigger asChild>
             <Link
-              href={`https://github.com/pqoqubbw/icons/blob/main/icons/${name}`}
+              href={`https://github.com/pqoqubbw/icons/blob/main/icons/${name}.tsx`}
               target="_blank"
-              onClick={() => op.track(ANALYTIC_EVENT.ICON_LINK, { icon: name })}
+              onClick={() =>
+                op.track(ANALYTIC_EVENT.ICON_LINK, { icon: `${name}.tsx` })
+              }
             >
               <ExternalLink className={ACTION_CLASS_NAMES} />
             </Link>
