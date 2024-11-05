@@ -50,7 +50,7 @@ import { BoneIcon } from '@/icons/bone';
 import { AlignCenterIcon } from '@/icons/align-center';
 import { AlignVerticalSpaceAroundIcon } from '@/icons/align-vertical-space-around';
 import { AlignHorizontalSpaceAroundIcon } from '@/icons/align-horizontal-space-around';
-
+import { CartIcon } from './cart';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -108,6 +108,7 @@ const ICON_LIST = [
     name: 'align-horizontal-space-around',
     icon: AlignHorizontalSpaceAroundIcon,
   },
+  { name: 'cart', icon: CartIcon },
 ];
 
 export { ICON_LIST };
