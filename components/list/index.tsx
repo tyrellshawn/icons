@@ -1,6 +1,6 @@
 'use client';
 
-import { Icon } from '@/actions/get-icons';
+import type { Icon } from '@/actions/get-icons';
 import { Card, CardActions, CardTitle } from '@/components/card';
 import { useQueryState } from 'nuqs';
 import { ICON_LIST } from '@/icons';

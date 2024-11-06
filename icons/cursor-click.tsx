@@ -1,6 +1,7 @@
 'use client';
 
-import { motion, useAnimation, Variants } from 'framer-motion';
+import type { Variants } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 
 const cursorVariants: Variants = {
   initial: { x: 0, y: 0 },

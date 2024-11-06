@@ -1,6 +1,7 @@
 'use client';
 
-import { motion, Transition, useAnimation, Variants } from 'framer-motion';
+import type { Transition, Variants } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 
 const handTransition: Transition = {
   duration: 0.6,

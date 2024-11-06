@@ -1,6 +1,7 @@
 'use client';
 
-import { motion, useAnimation, Variants } from 'framer-motion';
+import type { Variants } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 
 const lidVariants: Variants = {
   normal: { y: 0 },
@@ -9,8 +10,15 @@ const lidVariants: Variants = {
 
 const cartVariants: Variants = {
   normal: { scale: 1 },
-  hover: { scale: 1.1 },
-  bounce: { y: [0, -5, 0], transition: { duration: 0.3, ease: 'easeInOut' } },
+  hover: {
+    scale: 1.1,
+    y: [0, -5, 0],
+    transition: {
+      duration: 0.3,
+      ease: 'easeInOut',
+      y: { repeat: 1, delay: 0.1, duration: 0.4 },
+    },
+  },
 };
 
 const springTransition = {
@@ -31,7 +39,6 @@ const CartIcon = () => {
       onMouseLeave={() => {
         controls.start('normal');
       }}
-      onClick={() => controls.start('bounce')}
     >
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"

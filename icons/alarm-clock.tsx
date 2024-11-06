@@ -1,6 +1,7 @@
 'use client';
 
-import { motion, useAnimation, Variants } from 'framer-motion';
+import type { Variants } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 
 const pathVariants: Variants = {
   normal: {
@@ -26,8 +27,8 @@ const pathVariants: Variants = {
       x: {
         duration: 0.3,
         repeat: Infinity,
-        ease: "linear"
-      }
+        ease: 'linear',
+      },
     },
   },
 };
@@ -56,8 +57,8 @@ const secondaryPathVariants: Variants = {
       x: {
         duration: 0.3,
         repeat: Infinity,
-        ease: "linear"
-      }
+        ease: 'linear',
+      },
     },
   },
 };

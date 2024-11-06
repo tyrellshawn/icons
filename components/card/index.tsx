@@ -12,7 +12,7 @@ import {
 import Link from 'next/link';
 import { useOpenPanel } from '@openpanel/nextjs';
 import { ANALYTIC_EVENT } from '../analytics';
-import { Icon } from '@/actions/get-icons';
+import type { Icon } from '@/actions/get-icons';
 
 const ACTION_CLASS_NAMES =
   'cursor-pointer p-2 size-8 hover:bg-accent rounded-md transition-colors duration-200';

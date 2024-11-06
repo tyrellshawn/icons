@@ -1,6 +1,7 @@
 'use client';
 
-import { motion, Transition, useAnimation } from 'framer-motion';
+import type { Transition } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 
 const defaultTransition: Transition = {
