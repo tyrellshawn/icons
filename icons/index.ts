@@ -57,10 +57,11 @@ import { EarthIcon } from '@/icons/earth';
 import { WorkflowIcon } from '@/icons/workflow';
 import { LogoutIcon } from '@/icons/logout';
 import { CircleHelpIcon } from '@/icons/circle-help';
-import { UserIcon } from './user';
-import { AudioLinesIcon } from './audio-lines';
-import { EyeOffIcon } from './eye-off';
-import { SquareStackIcon } from './square-stack';
+import { UserIcon } from '@/icons/user';
+import { AudioLinesIcon } from '@/icons/audio-lines';
+import { EyeOffIcon } from '@/icons/eye-off';
+import { SquareStackIcon } from '@/icons/square-stack';
+import { BadgeAlertIcon } from '@/icons/badge-alert';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -129,6 +130,7 @@ const ICON_LIST = [
   { name: 'audio-lines', icon: AudioLinesIcon },
   { name: 'eye-off', icon: EyeOffIcon },
   { name: 'square-stack', icon: SquareStackIcon },
+  { name: 'badge-alert', icon: BadgeAlertIcon },
 ];
 
 export { ICON_LIST };
