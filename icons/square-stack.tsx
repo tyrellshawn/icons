@@ -1,26 +1,24 @@
 'use client';
 
-import type { Transition, Variants } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
-const Transition: Transition = {
-  duration: 0.3,
-  delay: 0.1,
-  opacity: { delay: 0.15 },
-};
-
-const Variants: Variants = {
-  normal: {
-    pathLength: 1,
-    opacity: 1,
-  },
+const rectVariants: Variants = {
+  normal: { scale: 1 },
   animate: {
-    pathLength: [0, 1],
-    opacity: [0, 1],
+    scale: [1, 0.8, 1],
+    transition: { duration: 0.4 },
   },
 };
 
-const WorkflowIcon = () => {
+const pathVariants: Variants = {
+  normal: { scale: 1 },
+  animate: {
+    scale: [1, 0.9, 1],
+  },
+};
+
+const SquareStackIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -40,30 +38,31 @@ const WorkflowIcon = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <motion.rect
-          width="8"
-          height="8"
-          x="3"
-          y="3"
-          rx="2"
-          transition={Transition}
-          variants={Variants}
+        <motion.path
+          variants={pathVariants}
           animate={controls}
+          transition={{
+            delay: 0.3,
+            duration: 0.4,
+          }}
+          d="M4 10c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2"
         />
         <motion.path
-          d="M7 11v4a2 2 0 0 0 2 2h4"
-          transition={Transition}
-          variants={Variants}
+          d="M10 16c-1.1 0-2-.9-2-2v-4c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2"
+          variants={pathVariants}
           animate={controls}
+          transition={{
+            delay: 0.2,
+            duration: 0.2,
+          }}
         />
         <motion.rect
+          variants={rectVariants}
           width="8"
           height="8"
-          x="13"
-          y="13"
+          x="14"
+          y="14"
           rx="2"
-          transition={Transition}
-          variants={Variants}
           animate={controls}
         />
       </svg>
@@ -71,4 +70,4 @@ const WorkflowIcon = () => {
   );
 };
 
-export { WorkflowIcon };
+export { SquareStackIcon };

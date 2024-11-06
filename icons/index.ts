@@ -58,6 +58,9 @@ import { WorkflowIcon } from '@/icons/workflow';
 import { LogoutIcon } from '@/icons/logout';
 import { CircleHelpIcon } from '@/icons/circle-help';
 import { UserIcon } from './user';
+import { AudioLinesIcon } from './audio-lines';
+import { EyeOffIcon } from './eye-off';
+import { SquareStackIcon } from './square-stack';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -123,6 +126,9 @@ const ICON_LIST = [
   { name: 'logout', icon: LogoutIcon },
   { name: 'circle-help', icon: CircleHelpIcon },
   { name: 'user', icon: UserIcon },
+  { name: 'audio-lines', icon: AudioLinesIcon },
+  { name: 'eye-off', icon: EyeOffIcon },
+  { name: 'square-stack', icon: SquareStackIcon },
 ];
 
 export { ICON_LIST };
