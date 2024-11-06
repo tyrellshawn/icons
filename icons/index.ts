@@ -55,6 +55,7 @@ import { CartIcon } from '@/icons/cart';
 import { StethoscopeIcon } from '@/icons/stethoscope';
 import { EarthIcon } from '@/icons/earth';
 import { WorkflowIcon } from '@/icons/workflow';
+import { LogoutIcon } from '@/icons/logout';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -117,6 +118,7 @@ const ICON_LIST = [
   { name: 'circle-check', icon: CircleCheckIcon },
   { name: 'earth', icon: EarthIcon },
   { name: 'workflow', icon: WorkflowIcon },
+  { name: 'logout', icon: LogoutIcon },
 ];
 
 export { ICON_LIST };
