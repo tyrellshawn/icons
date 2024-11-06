@@ -15,9 +15,8 @@ const pathVariant: Variants = {
 const circleVariant: Variants = {
   normal: {
     pathLength: 1,
-    opacity: 1,
     pathOffset: 0,
-    scale: [1],
+    scale: 1,
   },
   animate: {
     pathLength: [0, 1],
