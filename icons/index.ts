@@ -51,6 +51,8 @@ import { UnplugIcon } from '@/icons/unplug';
 import { UpvoteIcon } from '@/icons/upvote';
 import { UsersIcon } from '@/icons/users';
 import { VolumeIcon } from '@/icons/volume';
+import { CartIcon } from '@/icons/cart';
+import { StethoscopeIcon } from '@/icons/stethoscope';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -108,6 +110,8 @@ const ICON_LIST = [
     name: 'align-horizontal-space-around',
     icon: AlignHorizontalSpaceAroundIcon,
   },
+  { name: 'cart', icon: CartIcon },
+  { name: 'stethoscope', icon: StethoscopeIcon },
   { name: 'circle-check', icon: CircleCheckIcon },
 ];
 
