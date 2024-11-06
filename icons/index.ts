@@ -62,6 +62,7 @@ import { AudioLinesIcon } from '@/icons/audio-lines';
 import { EyeOffIcon } from '@/icons/eye-off';
 import { SquareStackIcon } from '@/icons/square-stack';
 import { BadgeAlertIcon } from '@/icons/badge-alert';
+import { MessageCircleIcon } from '@/icons/message-circle';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -131,6 +132,7 @@ const ICON_LIST = [
   { name: 'eye-off', icon: EyeOffIcon },
   { name: 'square-stack', icon: SquareStackIcon },
   { name: 'badge-alert', icon: BadgeAlertIcon },
+  { name: 'message-circle', icon: MessageCircleIcon },
 ];
 
 export { ICON_LIST };
