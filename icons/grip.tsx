@@ -15,7 +15,7 @@ const circles = [
   { cx: 5, cy: 19 }, // Bottom left
 ];
 
-const GridIcon = () => {
+const GripIcon = () => {
   const [isHovered, setIsHovered] = useState(false);
   const controls = useAnimation();
 
@@ -83,4 +83,4 @@ const GridIcon = () => {
   );
 };
 
-export { GridIcon };
+export { GripIcon };

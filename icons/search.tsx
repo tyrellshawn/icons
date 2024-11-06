@@ -1,31 +1,8 @@
 'use client';
 
-import type { Variants } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
-const iconVariants: Variants = {
-  normal: {
-    scale: 1,
-    rotate: 0,
-  },
-  animate: {
-    scale: 1.05,
-    rotate: [0, -7, 7, 0],
-    transition: {
-      rotate: {
-        duration: 0.5,
-        ease: 'easeInOut',
-      },
-      scale: {
-        type: 'spring',
-        stiffness: 400,
-        damping: 10,
-      },
-    },
-  },
-};
-
-const MessageCircleIcon = () => {
+const SearchIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -44,13 +21,24 @@ const MessageCircleIcon = () => {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        variants={iconVariants}
+        variants={{
+          normal: { x: 0, y: 0 },
+          animate: {
+            x: [0, 0, -3, 0],
+            y: [0, -4, 0, 0],
+          },
+        }}
+        transition={{
+          duration: 1,
+          bounce: 0.3,
+        }}
         animate={controls}
       >
-        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+        <circle cx="11" cy="11" r="8" />
+        <path d="m21 21-4.3-4.3" />
       </motion.svg>
     </div>
   );
 };
 
-export { MessageCircleIcon };
+export { SearchIcon };
