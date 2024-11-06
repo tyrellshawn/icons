@@ -61,6 +61,8 @@ import { UserIcon } from './user';
 import { AudioLinesIcon } from './audio-lines';
 import { EyeOffIcon } from './eye-off';
 import { SquareStackIcon } from './square-stack';
+import { SyringeIcon } from '@/icons/syringe';
+import { FlaskIcon } from '@/icons/flask';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -129,6 +131,8 @@ const ICON_LIST = [
   { name: 'audio-lines', icon: AudioLinesIcon },
   { name: 'eye-off', icon: EyeOffIcon },
   { name: 'square-stack', icon: SquareStackIcon },
+  { name: 'syringe', icon: SyringeIcon },
+  { name: 'flask', icon: FlaskIcon },
 ];
 
 export { ICON_LIST };
