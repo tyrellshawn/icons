@@ -53,6 +53,7 @@ import { UsersIcon } from '@/icons/users';
 import { VolumeIcon } from '@/icons/volume';
 import { CartIcon } from '@/icons/cart';
 import { StethoscopeIcon } from '@/icons/stethoscope';
+import { LogoutIcon } from '@/icons/logout';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -113,6 +114,7 @@ const ICON_LIST = [
   { name: 'cart', icon: CartIcon },
   { name: 'stethoscope', icon: StethoscopeIcon },
   { name: 'circle-check', icon: CircleCheckIcon },
+  { name: 'logout', icon: LogoutIcon },
 ];
 
 export { ICON_LIST };
