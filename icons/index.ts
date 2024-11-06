@@ -54,6 +54,7 @@ import { VolumeIcon } from '@/icons/volume';
 import { CartIcon } from '@/icons/cart';
 import { StethoscopeIcon } from '@/icons/stethoscope';
 import { LogoutIcon } from '@/icons/logout';
+import { CircleHelpIcon } from '@/icons/circle-help';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -115,6 +116,7 @@ const ICON_LIST = [
   { name: 'stethoscope', icon: StethoscopeIcon },
   { name: 'circle-check', icon: CircleCheckIcon },
   { name: 'logout', icon: LogoutIcon },
+  { name: 'circle-help', icon: CircleHelpIcon },
 ];
 
 export { ICON_LIST };
