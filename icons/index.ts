@@ -1,13 +1,21 @@
+import { AlarmClockIcon } from '@/icons/alarm-clock';
+import { AlignCenterIcon } from '@/icons/align-center';
+import { AlignHorizontalSpaceAroundIcon } from '@/icons/align-horizontal-space-around';
+import { AlignVerticalSpaceAroundIcon } from '@/icons/align-vertical-space-around';
 import { ArchiveIcon } from '@/icons/archive';
 import { ArrowLeftIcon } from '@/icons/arrow-left';
 import { ArrowRightIcon } from '@/icons/arrow-right';
 import { AtSignIcon } from '@/icons/at-sign';
+import { AttachFileIcon } from '@/icons/attach-file';
 import { BadgePercentIcon } from '@/icons/badge-percent';
 import { BellIcon } from '@/icons/bell';
 import { BoldIcon } from '@/icons/bold';
+import { BoneIcon } from '@/icons/bone';
 import { CalendarCogIcon } from '@/icons/calendar-cog';
 import { ChartPieIcon } from '@/icons/chart-pie';
+import { CircleCheckIcon } from '@/icons/circle-check';
 import { CircleDollarSignIcon } from '@/icons/circle-dollar-sign';
+import { ClockIcon } from '@/icons/clock';
 import { CopyIcon } from '@/icons/copy';
 import { CursorClickIcon } from '@/icons/cursor-click';
 import { DeleteIcon } from '@/icons/delete';
@@ -18,6 +26,8 @@ import { ExpandIcon } from '@/icons/expand';
 import { FilePenLineIcon } from '@/icons/file-pen-line';
 import { FileStackIcon } from '@/icons/file-stack';
 import { FingerprintIcon } from '@/icons/fingerprint';
+import { FrameIcon } from '@/icons/frame';
+import { GaugeIcon } from '@/icons/gauge';
 import { GitPullRequestIcon } from '@/icons/git-pull-request';
 import { GridIcon } from '@/icons/grid';
 import { HandCoinsIcon } from '@/icons/hand-coins';
@@ -26,6 +36,7 @@ import { ItalicIcon } from '@/icons/italic';
 import { LanguagesIcon } from '@/icons/languages';
 import { LayersIcon } from '@/icons/layers';
 import { LinkIcon } from '@/icons/link';
+import { MenuIcon } from '@/icons/menu';
 import { PartyPopperIcon } from '@/icons/party-popper';
 import { PenToolIcon } from '@/icons/pen-tool';
 import { RefreshIcon } from '@/icons/refresh';
@@ -40,16 +51,6 @@ import { UnplugIcon } from '@/icons/unplug';
 import { UpvoteIcon } from '@/icons/upvote';
 import { UsersIcon } from '@/icons/users';
 import { VolumeIcon } from '@/icons/volume';
-import { AttachFileIcon } from '@/icons/attach-file';
-import { GaugeIcon } from '@/icons/gauge';
-import { MenuIcon } from '@/icons/menu';
-import { ClockIcon } from '@/icons/clock';
-import { AlarmClockIcon } from '@/icons/alarm-clock';
-import { FrameIcon } from '@/icons/frame';
-import { BoneIcon } from '@/icons/bone';
-import { AlignCenterIcon } from '@/icons/align-center';
-import { AlignVerticalSpaceAroundIcon } from '@/icons/align-vertical-space-around';
-import { AlignHorizontalSpaceAroundIcon } from '@/icons/align-horizontal-space-around';
 import { CartIcon } from '@/icons/cart';
 import { StethoscopeIcon } from '@/icons/stethoscope';
 
@@ -111,6 +112,7 @@ const ICON_LIST = [
   },
   { name: 'cart', icon: CartIcon },
   { name: 'stethoscope', icon: StethoscopeIcon },
+  { name: 'circle-check', icon: CircleCheckIcon },
 ];
 
 export { ICON_LIST };
