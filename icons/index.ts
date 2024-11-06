@@ -13,7 +13,7 @@ import { BoldIcon } from '@/icons/bold';
 import { BoneIcon } from '@/icons/bone';
 import { CalendarCogIcon } from '@/icons/calendar-cog';
 import { ChartPieIcon } from '@/icons/chart-pie';
-import { CircleCheck } from '@/icons/circle-check';
+import { CircleCheckIcon } from '@/icons/circle-check';
 import { CircleDollarSignIcon } from '@/icons/circle-dollar-sign';
 import { ClockIcon } from '@/icons/clock';
 import { CopyIcon } from '@/icons/copy';
@@ -108,7 +108,7 @@ const ICON_LIST = [
     name: 'align-horizontal-space-around',
     icon: AlignHorizontalSpaceAroundIcon,
   },
-  { name: 'circle-check', icon: CircleCheck },
+  { name: 'circle-check', icon: CircleCheckIcon },
 ];
 
 export { ICON_LIST };

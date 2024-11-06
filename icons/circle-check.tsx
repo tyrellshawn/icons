@@ -21,7 +21,7 @@ const pathVariants: Variants = {
   },
 };
 
-const CircleCheck = () => {
+const CircleCheckIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -53,4 +53,4 @@ const CircleCheck = () => {
   );
 };
 
-export { CircleCheck };
+export { CircleCheckIcon };
