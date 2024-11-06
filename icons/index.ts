@@ -53,6 +53,9 @@ import { UsersIcon } from '@/icons/users';
 import { VolumeIcon } from '@/icons/volume';
 import { CartIcon } from '@/icons/cart';
 import { StethoscopeIcon } from '@/icons/stethoscope';
+import { AudioLinesIcon } from './audio-lines';
+import { EyeOffIcon } from './eye-off';
+import { SquareStackIcon } from './square-stack';
 
 const ICON_LIST = [
   { name: 'home', icon: HomeIcon },
@@ -113,6 +116,9 @@ const ICON_LIST = [
   { name: 'cart', icon: CartIcon },
   { name: 'stethoscope', icon: StethoscopeIcon },
   { name: 'circle-check', icon: CircleCheckIcon },
+  { name: 'audio-lines', icon: AudioLinesIcon },
+  { name: 'eye-off', icon: EyeOffIcon },
+  { name: 'square-stack', icon: SquareStackIcon },
 ];
 
 export { ICON_LIST };
