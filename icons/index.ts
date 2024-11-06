@@ -53,6 +53,8 @@ import { UsersIcon } from '@/icons/users';
 import { VolumeIcon } from '@/icons/volume';
 import { CartIcon } from '@/icons/cart';
 import { StethoscopeIcon } from '@/icons/stethoscope';
+import { EarthIcon } from '@/icons/earth';
+import { WorkflowIcon } from '@/icons/workflow';
 import { LogoutIcon } from '@/icons/logout';
 import { CircleHelpIcon } from '@/icons/circle-help';
 import { UserIcon } from './user';
@@ -116,6 +118,8 @@ const ICON_LIST = [
   { name: 'cart', icon: CartIcon },
   { name: 'stethoscope', icon: StethoscopeIcon },
   { name: 'circle-check', icon: CircleCheckIcon },
+  { name: 'earth', icon: EarthIcon },
+  { name: 'workflow', icon: WorkflowIcon },
   { name: 'logout', icon: LogoutIcon },
   { name: 'circle-help', icon: CircleHelpIcon },
   { name: 'user', icon: UserIcon },
