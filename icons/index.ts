@@ -65,10 +65,12 @@ import { BadgeAlertIcon } from '@/icons/badge-alert';
 import { MessageCircleIcon } from '@/icons/message-circle';
 import { MessageCircleMoreIcon } from '@/icons/message-circle-more';
 import { SearchIcon } from '@/icons/search';
-import { ShieldCheckIcon } from './shield-check';
+import { ShieldCheckIcon } from '@/icons/shield-check';
 import { BluetoothSearchingIcon } from '@/icons/bluetooth-searching';
-import { BluetoothConnectedIcon } from './bluetooth-connected';
-import { BluetoothOffIcon } from './bluetooth-off';
+import { BluetoothConnectedIcon } from '@/icons/bluetooth-connected';
+import { BluetoothOffIcon } from '@/icons/bluetooth-off';
+import { FlaskIcon } from '@/icons/flask';
+import { SyringeIcon } from '@/icons/syringe';
 
 type IconListItem = {
   name: string;
@@ -608,6 +610,31 @@ const ICON_LIST: IconListItem[] = [
     name: 'bluetooth-off',
     icon: BluetoothOffIcon,
     keywords: ['tool', 'connection', 'network'],
+  },
+  {
+    name: 'flask',
+    icon: FlaskIcon,
+    keywords: [
+      'beaker',
+      'erlenmeyer',
+      'lab',
+      'chemistry',
+      'experiment',
+      'test',
+    ],
+  },
+  {
+    name: 'syringe',
+    icon: SyringeIcon,
+    keywords: [
+      'medicine',
+      'medical',
+      'needle',
+      'pump',
+      'plunger',
+      'nozzle',
+      'blood',
+    ],
   },
 ];
 
