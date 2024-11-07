@@ -72,6 +72,7 @@ import { BluetoothConnectedIcon } from '@/icons/bluetooth-connected';
 import { BluetoothOffIcon } from '@/icons/bluetooth-off';
 import { FlaskIcon } from '@/icons/flask';
 import { SyringeIcon } from '@/icons/syringe';
+import { CompassIcon } from '@/icons/compass';
 
 type IconListItem = {
   name: string;
@@ -591,6 +592,19 @@ const ICON_LIST: IconListItem[] = [
     name: 'align-horizontal-space-around',
     icon: AlignHorizontalSpaceAroundIcon,
     keywords: ['center', 'items', 'flex', 'justify', 'distribute', 'between'],
+  },
+  {
+    name: 'compass',
+    icon: CompassIcon,
+    keywords: [
+      'direction',
+      'navigation',
+      'north',
+      'south',
+      'east',
+      'west',
+      'compass',
+    ],
   },
   {
     name: 'shield-check',
