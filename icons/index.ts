@@ -66,6 +66,8 @@ import { MessageCircleIcon } from '@/icons/message-circle';
 import { MessageCircleMoreIcon } from '@/icons/message-circle-more';
 import { SearchIcon } from '@/icons/search';
 import { ShieldCheckIcon } from './shield-check';
+import { FlaskIcon } from '@/icons/flask';
+import { SyringeIcon } from '@/icons/syringe';
 
 type IconListItem = {
   name: string;
@@ -590,6 +592,31 @@ const ICON_LIST: IconListItem[] = [
     name: 'shield-check',
     icon: ShieldCheckIcon,
     keywords: ['security', 'verified', 'safe', 'protection', 'secure'],
+  },
+  {
+    name: 'flask',
+    icon: FlaskIcon,
+    keywords: [
+      'beaker',
+      'erlenmeyer',
+      'lab',
+      'chemistry',
+      'experiment',
+      'test',
+    ],
+  },
+  {
+    name: 'syringe',
+    icon: SyringeIcon,
+    keywords: [
+      'medicine',
+      'medical',
+      'needle',
+      'pump',
+      'plunger',
+      'nozzle',
+      'blood',
+    ],
   },
 ];
 
