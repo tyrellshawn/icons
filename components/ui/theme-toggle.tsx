@@ -11,16 +11,25 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { useHotkeys } from 'react-hotkeys-hook';
+
+type Theme = 'light' | 'dark' | 'system';
+
+const KEYS = ['ctrl+u', 'meta+u'];
 
 export function ModeToggle() {
   const { setTheme, theme: currentTheme } = useTheme();
 
-  const handleChangeTheme = (theme: 'light' | 'dark' | 'system') => {
+  const handleChangeTheme = (theme: Theme) => {
     if (theme === currentTheme) return;
 
     if (!document.startViewTransition) return setTheme(theme);
     document.startViewTransition(() => setTheme(theme));
   };
+
+  useHotkeys(KEYS, () => {
+    handleChangeTheme(currentTheme === 'light' ? 'dark' : 'light');
+  });
 
   return (
     <DropdownMenu>

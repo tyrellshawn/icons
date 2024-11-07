@@ -34,7 +34,7 @@ const pathVariants = {
   }),
 };
 
-const UnplugIcon = () => {
+const ConnectIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -111,4 +111,4 @@ const UnplugIcon = () => {
   );
 };
 
-export { UnplugIcon };
+export { ConnectIcon };

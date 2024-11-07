@@ -47,7 +47,7 @@ import { SettingsGearIcon } from '@/icons/settings-gear';
 import { SunIcon } from '@/icons/sun';
 import { UnderlineIcon } from '@/icons/underline';
 import { UndoIcon } from '@/icons/undo';
-import { UnplugIcon } from '@/icons/unplug';
+import { ConnectIcon } from '@/icons/connect';
 import { UpvoteIcon } from '@/icons/upvote';
 import { UsersIcon } from '@/icons/users';
 import { VolumeIcon } from '@/icons/volume';
@@ -530,8 +530,8 @@ const ICON_LIST: IconListItem[] = [
     keywords: ['code', 'version control', 'open'],
   },
   {
-    name: 'unplug',
-    icon: UnplugIcon,
+    name: 'connect',
+    icon: ConnectIcon,
     keywords: [
       'electricity',
       'energy',
