@@ -6,19 +6,18 @@ import { motion, useAnimation } from 'framer-motion';
 const handVariants: Variants = {
   normal: {
     rotate: 0,
-    originX: '50%',
-    originY: '58%',
+    originX: '12px',
+    originY: '14px',
     transition: {
-      delay: 0.1,
       duration: 0.6,
       ease: [0.4, 0, 0.2, 1],
     },
   },
   animate: {
-    rotate: 360,
+    rotate: 300,
     transition: {
       delay: 0.1,
-      duration: 0.8,
+      duration: 0.6,
       ease: [0.4, 0, 0.2, 1],
     },
   },
@@ -72,6 +71,7 @@ const TimerIcon = () => {
           x2="15"
           y1="14"
           y2="11"
+          initial="normal"
           animate={controls}
           variants={handVariants}
         />
