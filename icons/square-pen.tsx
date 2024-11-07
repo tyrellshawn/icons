@@ -16,7 +16,7 @@ const penVariants: Variants = {
   },
 };
 
-const EditIcon = () => {
+const SquarePenIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -52,4 +52,4 @@ const EditIcon = () => {
   );
 };
 
-export { EditIcon };
+export { SquarePenIcon };
