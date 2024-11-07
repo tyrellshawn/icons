@@ -65,6 +65,7 @@ import { BadgeAlertIcon } from '@/icons/badge-alert';
 import { MessageCircleIcon } from '@/icons/message-circle';
 import { MessageCircleMoreIcon } from '@/icons/message-circle-more';
 import { SearchIcon } from '@/icons/search';
+import { ShieldCheckIcon } from './shield-check';
 
 type IconListItem = {
   name: string;
@@ -584,6 +585,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'align-horizontal-space-around',
     icon: AlignHorizontalSpaceAroundIcon,
     keywords: ['center', 'items', 'flex', 'justify', 'distribute', 'between'],
+  },
+  {
+    name: 'shield-check',
+    icon: ShieldCheckIcon,
+    keywords: ['security', 'verified', 'safe', 'protection', 'secure'],
   },
 ];
 
