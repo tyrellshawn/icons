@@ -10,8 +10,7 @@ const svgVariants: Variants = {
     translateX: [0, 2, 0],
     translateY: [0, -2, 0],
     transition: {
-      duration: 0.3,
-      delay: 0.4,
+      duration: 0.5,
     },
   },
 };
