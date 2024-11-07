@@ -65,7 +65,10 @@ import { BadgeAlertIcon } from '@/icons/badge-alert';
 import { MessageCircleIcon } from '@/icons/message-circle';
 import { MessageCircleMoreIcon } from '@/icons/message-circle-more';
 import { SearchIcon } from '@/icons/search';
-import { ShieldCheckIcon } from './shield-check';
+import { ShieldCheckIcon } from '@/icons/shield-check';
+import { BluetoothSearchingIcon } from '@/icons/bluetooth-searching';
+import { BluetoothConnectedIcon } from '@/icons/bluetooth-connected';
+import { BluetoothOffIcon } from '@/icons/bluetooth-off';
 import { FlaskIcon } from '@/icons/flask';
 import { SyringeIcon } from '@/icons/syringe';
 
@@ -592,6 +595,21 @@ const ICON_LIST: IconListItem[] = [
     name: 'shield-check',
     icon: ShieldCheckIcon,
     keywords: ['security', 'verified', 'safe', 'protection', 'secure'],
+  },
+  {
+    name: 'bluetooth-searching',
+    icon: BluetoothSearchingIcon,
+    keywords: ['tool', 'connection', 'network'],
+  },
+  {
+    name: 'bluetooth-connected',
+    icon: BluetoothConnectedIcon,
+    keywords: ['tool', 'connection', 'network'],
+  },
+  {
+    name: 'bluetooth-off',
+    icon: BluetoothOffIcon,
+    keywords: ['tool', 'connection', 'network'],
   },
   {
     name: 'flask',
