@@ -66,6 +66,7 @@ import { MessageCircleIcon } from '@/icons/message-circle';
 import { MessageCircleMoreIcon } from '@/icons/message-circle-more';
 import { SearchIcon } from '@/icons/search';
 import { ShieldCheckIcon } from '@/icons/shield-check';
+import { TimerIcon } from '@/icons/timer';
 import { BluetoothSearchingIcon } from '@/icons/bluetooth-searching';
 import { BluetoothConnectedIcon } from '@/icons/bluetooth-connected';
 import { BluetoothOffIcon } from '@/icons/bluetooth-off';
@@ -595,6 +596,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'shield-check',
     icon: ShieldCheckIcon,
     keywords: ['security', 'verified', 'safe', 'protection', 'secure'],
+  },
+  {
+    name: 'timer',
+    icon: TimerIcon,
+    keywords: ['time', 'watch', 'alarm', 'stopwatch', 'stopwatch'],
   },
   {
     name: 'bluetooth-searching',
