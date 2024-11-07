@@ -66,7 +66,8 @@ import { MessageCircleIcon } from '@/icons/message-circle';
 import { MessageCircleMoreIcon } from '@/icons/message-circle-more';
 import { SearchIcon } from '@/icons/search';
 import { ShieldCheckIcon } from './shield-check';
-
+import { TrendingDownIcon } from './trending-down';
+import { TrendingUpIcon } from './trending-up';
 type IconListItem = {
   name: string;
   icon: React.ElementType;
@@ -590,6 +591,16 @@ const ICON_LIST: IconListItem[] = [
     name: 'shield-check',
     icon: ShieldCheckIcon,
     keywords: ['security', 'verified', 'safe', 'protection', 'secure'],
+  },
+  {
+    name: 'trending-down',
+    icon: TrendingDownIcon,
+    keywords: ['down', 'trend', 'graph', 'downward', 'decrease', 'statistics'],
+  },
+  {
+    name: 'trending-up',
+    icon: TrendingUpIcon,
+    keywords: ['up', 'trend', 'graph', 'upward', 'increase', 'statistics'],
   },
 ];
 
