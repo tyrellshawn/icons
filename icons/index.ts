@@ -65,6 +65,7 @@ import { BadgeAlertIcon } from '@/icons/badge-alert';
 import { MessageCircleIcon } from '@/icons/message-circle';
 import { MessageCircleMoreIcon } from '@/icons/message-circle-more';
 import { SearchIcon } from '@/icons/search';
+import { ShieldCheckIcon } from './shield-check';
 import { BluetoothSearchingIcon } from '@/icons/bluetooth-searching';
 import { BluetoothConnectedIcon } from './bluetooth-connected';
 import { BluetoothOffIcon } from './bluetooth-off';
@@ -587,6 +588,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'align-horizontal-space-around',
     icon: AlignHorizontalSpaceAroundIcon,
     keywords: ['center', 'items', 'flex', 'justify', 'distribute', 'between'],
+  },
+  {
+    name: 'shield-check',
+    icon: ShieldCheckIcon,
+    keywords: ['security', 'verified', 'safe', 'protection', 'secure'],
   },
   {
     name: 'bluetooth-searching',
