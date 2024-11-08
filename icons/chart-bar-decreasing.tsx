@@ -1,7 +1,6 @@
 'use client';
 
 import { type Variants, motion, useAnimation } from 'framer-motion';
-import React from 'react';
 
 const frameVariants: Variants = {
   visible: { opacity: 1 },
@@ -16,7 +15,7 @@ const lineVariants: Variants = {
 const ChartBarDecreasingIcon = () => {
   const controls = useAnimation();
 
-  const handleHoverStart = React.useCallback(async () => {
+  const handleHoverStart = async () => {
     await controls.start((i) => ({
       pathLength: 0,
       opacity: 0,
@@ -27,11 +26,11 @@ const ChartBarDecreasingIcon = () => {
       opacity: 1,
       transition: { delay: i * 0.1, duration: 0.3 },
     }));
-  }, [controls]);
+  };
 
-  const handleHoverEnd = React.useCallback(() => {
+  const handleHoverEnd = () => {
     controls.start('visible');
-  }, [controls]);
+  };
 
   return (
     <div
@@ -55,21 +54,21 @@ const ChartBarDecreasingIcon = () => {
           variants={lineVariants}
           initial="visible"
           animate={controls}
-          custom={0}
+          custom={1}
           d="M7 11h8"
         />
         <motion.path
           variants={lineVariants}
           initial="visible"
           animate={controls}
-          custom={1}
+          custom={2}
           d="M7 16h3"
         />
         <motion.path
           variants={lineVariants}
           initial="visible"
           animate={controls}
-          custom={2}
+          custom={1}
           d="M7 6h12"
         />
       </svg>
