@@ -54,21 +54,21 @@ const ChartBarIncreasingIcon = () => {
           variants={lineVariants}
           initial="visible"
           animate={controls}
-          custom={0}
+          custom={1}
           d="M7 11h8"
         />
         <motion.path
           variants={lineVariants}
           initial="visible"
           animate={controls}
-          custom={1}
+          custom={2}
           d="M7 16h12"
         />
         <motion.path
           variants={lineVariants}
           initial="visible"
           animate={controls}
-          custom={2}
+          custom={1}
           d="M7 6h3"
         />
       </svg>
