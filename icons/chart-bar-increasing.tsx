@@ -1,7 +1,6 @@
 'use client';
 
 import { type Variants, motion, useAnimation } from 'framer-motion';
-import React from 'react';
 
 const frameVariants: Variants = {
   visible: { opacity: 1 },
@@ -16,7 +15,7 @@ const lineVariants: Variants = {
 const ChartBarIncreasingIcon = () => {
   const controls = useAnimation();
 
-  const handleHoverStart = React.useCallback(async () => {
+  const handleHoverStart = async () => {
     await controls.start((i) => ({
       pathLength: 0,
       opacity: 0,
@@ -27,11 +26,11 @@ const ChartBarIncreasingIcon = () => {
       opacity: 1,
       transition: { delay: i * 0.1, duration: 0.3 },
     }));
-  }, [controls]);
+  };
 
-  const handleHoverEnd = React.useCallback(() => {
+  const handleHoverEnd = () => {
     controls.start('visible');
-  }, [controls]);
+  };
 
   return (
     <div
