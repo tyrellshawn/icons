@@ -10,7 +10,7 @@ const defaultTransition: Transition = {
   mass: 1,
 };
 
-const AlignVerticalSpaceAroundIcon = () => {
+const AlignHorizontalIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -32,44 +32,44 @@ const AlignVerticalSpaceAroundIcon = () => {
       >
         <motion.rect
           variants={{
-            normal: { scaleY: 1 },
-            animate: { scaleY: 0.8 },
+            normal: { scaleX: 1 },
+            animate: { scaleX: 0.85 },
           }}
           animate={controls}
-          width={10}
-          height={6}
-          x={7}
-          y={9}
+          transition={defaultTransition}
+          width={6}
+          height={10}
+          x={9}
+          y={7}
           rx={2}
-          transition={defaultTransition}
         />
         <motion.path
+          d="M4 22V2"
           variants={{
-            normal: { translateY: 0, scaleX: 1 },
+            normal: { translateX: 0, scaleY: 1 },
             animate: {
-              translateY: -2,
-              scaleX: 0.9,
+              translateX: 2,
+              scaleY: 0.9,
             },
           }}
           animate={controls}
           transition={defaultTransition}
-          d="M22 20H2"
         />
         <motion.path
+          d="M20 22V2"
           variants={{
-            normal: { translateY: 0, scaleX: 1 },
+            normal: { translateX: 0, scaleY: 1 },
             animate: {
-              translateY: 2,
-              scaleX: 0.9,
+              translateX: -2,
+              scaleY: 0.9,
             },
           }}
           animate={controls}
           transition={defaultTransition}
-          d="M22 4H2"
         />
       </svg>
     </div>
   );
 };
 
-export { AlignVerticalSpaceAroundIcon };
+export { AlignHorizontalIcon };

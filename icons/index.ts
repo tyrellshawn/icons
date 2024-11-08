@@ -1,7 +1,7 @@
 import { AlarmClockIcon } from '@/icons/alarm-clock';
 import { AlignCenterIcon } from '@/icons/align-center';
-import { AlignHorizontalSpaceAroundIcon } from '@/icons/align-horizontal-space-around';
-import { AlignVerticalSpaceAroundIcon } from '@/icons/align-vertical-space-around';
+import { AlignHorizontalIcon } from '@/icons/align-horizontal';
+import { AlignVerticalIcon } from '@/icons/align-vertical';
 import { ArchiveIcon } from '@/icons/archive';
 import { ArrowLeftIcon } from '@/icons/arrow-left';
 import { ArrowRightIcon } from '@/icons/arrow-right';
@@ -586,13 +586,13 @@ const ICON_LIST: IconListItem[] = [
     keywords: ['text', 'alignment', 'center'],
   },
   {
-    name: 'align-vertical-space-around',
-    icon: AlignVerticalSpaceAroundIcon,
+    name: 'align-vertical',
+    icon: AlignVerticalIcon,
     keywords: ['center', 'items', 'flex', 'justify', 'distribute', 'between'],
   },
   {
-    name: 'align-horizontal-space-around',
-    icon: AlignHorizontalSpaceAroundIcon,
+    name: 'align-horizontal',
+    icon: AlignHorizontalIcon,
     keywords: ['center', 'items', 'flex', 'justify', 'distribute', 'between'],
   },
   {
