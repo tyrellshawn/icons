@@ -47,7 +47,7 @@ import { SettingsGearIcon } from '@/icons/settings-gear';
 import { SunIcon } from '@/icons/sun';
 import { UnderlineIcon } from '@/icons/underline';
 import { UndoIcon } from '@/icons/undo';
-import { UnplugIcon } from '@/icons/unplug';
+import { ConnectIcon } from '@/icons/connect';
 import { UpvoteIcon } from '@/icons/upvote';
 import { UsersIcon } from '@/icons/users';
 import { VolumeIcon } from '@/icons/volume';
@@ -65,9 +65,17 @@ import { BadgeAlertIcon } from '@/icons/badge-alert';
 import { MessageCircleIcon } from '@/icons/message-circle';
 import { MessageCircleMoreIcon } from '@/icons/message-circle-more';
 import { SearchIcon } from '@/icons/search';
-import { ShieldCheckIcon } from './shield-check';
-import { TrendingDownIcon } from './trending-down';
-import { TrendingUpIcon } from './trending-up';
+import { ShieldCheckIcon } from '@/icons/shield-check';
+import { TimerIcon } from '@/icons/timer';
+import { BluetoothSearchingIcon } from '@/icons/bluetooth-searching';
+import { BluetoothConnectedIcon } from '@/icons/bluetooth-connected';
+import { BluetoothOffIcon } from '@/icons/bluetooth-off';
+import { FlaskIcon } from '@/icons/flask';
+import { SyringeIcon } from '@/icons/syringe';
+import { CompassIcon } from '@/icons/compass';
+import { TrendingDownIcon } from '@/icons/trending-down';
+import { TrendingUpIcon } from '@/icons/trending-up';
+
 type IconListItem = {
   name: string;
   icon: React.ElementType;
@@ -524,8 +532,8 @@ const ICON_LIST: IconListItem[] = [
     keywords: ['code', 'version control', 'open'],
   },
   {
-    name: 'unplug',
-    icon: UnplugIcon,
+    name: 'connect',
+    icon: ConnectIcon,
     keywords: [
       'electricity',
       'energy',
@@ -588,6 +596,19 @@ const ICON_LIST: IconListItem[] = [
     keywords: ['center', 'items', 'flex', 'justify', 'distribute', 'between'],
   },
   {
+    name: 'compass',
+    icon: CompassIcon,
+    keywords: [
+      'direction',
+      'navigation',
+      'north',
+      'south',
+      'east',
+      'west',
+      'compass',
+    ],
+  },
+  {
     name: 'shield-check',
     icon: ShieldCheckIcon,
     keywords: ['security', 'verified', 'safe', 'protection', 'secure'],
@@ -601,6 +622,51 @@ const ICON_LIST: IconListItem[] = [
     name: 'trending-up',
     icon: TrendingUpIcon,
     keywords: ['up', 'trend', 'graph', 'upward', 'increase', 'statistics'],
+  },
+  {
+    name: 'timer',
+    icon: TimerIcon,
+    keywords: ['time', 'watch', 'alarm', 'stopwatch', 'stopwatch'],
+  },
+  {
+    name: 'bluetooth-searching',
+    icon: BluetoothSearchingIcon,
+    keywords: ['tool', 'connection', 'network'],
+  },
+  {
+    name: 'bluetooth-connected',
+    icon: BluetoothConnectedIcon,
+    keywords: ['tool', 'connection', 'network'],
+  },
+  {
+    name: 'bluetooth-off',
+    icon: BluetoothOffIcon,
+    keywords: ['tool', 'connection', 'network'],
+  },
+  {
+    name: 'flask',
+    icon: FlaskIcon,
+    keywords: [
+      'beaker',
+      'erlenmeyer',
+      'lab',
+      'chemistry',
+      'experiment',
+      'test',
+    ],
+  },
+  {
+    name: 'syringe',
+    icon: SyringeIcon,
+    keywords: [
+      'medicine',
+      'medical',
+      'needle',
+      'pump',
+      'plunger',
+      'nozzle',
+      'blood',
+    ],
   },
 ];
 
