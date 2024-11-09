@@ -4,11 +4,9 @@ import type { Transition } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
 const defaultTransition: Transition = {
-  type: 'spring',
-  stiffness: 250,
-  damping: 25,
+  times: [0, 0.4, 1],
+  duration: 0.5,
 };
-
 
 const CircleChevronLeft = () => {
   const controls = useAnimation();
@@ -32,9 +30,9 @@ const CircleChevronLeft = () => {
       >
         <circle cx="12" cy="12" r="10" />
         <motion.path
-           variants={{
-            normal: { translateX: '0%' },
-            animate: { translateX: '-2px' },
+          variants={{
+            normal: { x: 0 },
+            animate: { x: [0, -2, 0] },
           }}
           transition={defaultTransition}
           animate={controls}
