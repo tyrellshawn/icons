@@ -75,6 +75,7 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import { IdCardIcon } from '@/icons/id-card';
 import { LoaderPinwheelIcon } from '@/icons/loader-pinwheel';
 import { RockingChairIcon } from '@/icons/rocking-chair';
 import { ChartColumnDecreasingIcon } from '@/icons/chart-column-decreasing';
@@ -672,6 +673,21 @@ const ICON_LIST: IconListItem[] = [
       'plunger',
       'nozzle',
       'blood',
+    ],
+  },
+  {
+    name: 'id-card',
+    icon: IdCardIcon,
+    keywords: [
+      'identification',
+      'personal',
+      'details',
+      'profile',
+      'card',
+      'badge',
+      'identity',
+      'authentication',
+      'secure',
     ],
   },
   {
