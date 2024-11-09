@@ -75,6 +75,7 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import { LoaderPinwheelIcon } from '@/icons/loader-pinwheel';
 import { RockingChairIcon } from '@/icons/rocking-chair';
 import { ChartColumnDecreasingIcon } from '@/icons/chart-column-decreasing';
 import { ChartColumnIncreasingIcon } from '@/icons/chart-column-increasing';
@@ -671,6 +672,22 @@ const ICON_LIST: IconListItem[] = [
       'plunger',
       'nozzle',
       'blood',
+    ],
+  },
+  {
+    name: 'loader-pinwheel',
+    icon: LoaderPinwheelIcon,
+    keywords: [
+      'loading',
+      'wait',
+      'busy',
+      'progress',
+      'throbber',
+      'spinner',
+      'spinning',
+      'beach ball',
+      'frozen',
+      'freeze',
     ],
   },
   {
