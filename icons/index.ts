@@ -75,6 +75,10 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import { ChartColumnDecreasingIcon } from './chart-column-decreasing';
+import { ChartColumnIncreasingIcon } from './chart-column-increasing';
+import { ChartBarDecreasingIcon } from './chart-bar-decreasing';
+import { ChartBarIncreasingIcon } from './chart-bar-increasing';
 
 type IconListItem = {
   name: string;
@@ -667,6 +671,26 @@ const ICON_LIST: IconListItem[] = [
       'nozzle',
       'blood',
     ],
+  },
+  {
+    name: 'chart-column-decreasing',
+    icon: ChartColumnDecreasingIcon,
+    keywords: ['chart', 'column', 'decreasing'],
+  },
+  {
+    name: 'chart-column-increasing',
+    icon: ChartColumnIncreasingIcon,
+    keywords: ['chart', 'column', 'increasing'],
+  },
+  {
+    name: 'chart-bar-decreasing',
+    icon: ChartBarDecreasingIcon,
+    keywords: ['chart', 'bar', 'decreasing'],
+  },
+  {
+    name: 'chart-bar-increasing',
+    icon: ChartBarIncreasingIcon,
+    keywords: ['chart', 'bar', 'increasing'],
   },
 ];
 
