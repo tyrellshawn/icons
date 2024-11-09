@@ -2,6 +2,8 @@
 
 **Demo** → [https://icons.pqoqubbw.dev](https://icons.pqoqubbw.dev)
 
+### Svelte icons: [https://github.com/jis3r/icons](https://github.com/jis3r/icons)
+
 ![preview](./app/og.png)
 
 ## Contributing
