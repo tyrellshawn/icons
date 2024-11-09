@@ -61,7 +61,6 @@ const PauseIcon = () => {
           width="5"
           height="19"
           rx="0.5"
-          stroke="black"
           variants={leftRectVariants}
           animate={controls}
         />
@@ -71,7 +70,6 @@ const PauseIcon = () => {
           width="5"
           height="19"
           rx="0.5"
-          stroke="black"
           variants={rightRectVariants}
           animate={controls}
         />
