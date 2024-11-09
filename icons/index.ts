@@ -76,6 +76,10 @@ import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
 import { RockingChairIcon } from '@/icons/rocking-chair';
+import { ChartColumnDecreasingIcon } from '@/icons/chart-column-decreasing';
+import { ChartColumnIncreasingIcon } from '@/icons/chart-column-increasing';
+import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
+import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 
 type IconListItem = {
   name: string;
@@ -673,6 +677,26 @@ const ICON_LIST: IconListItem[] = [
     name: 'rocking-chair',
     icon: RockingChairIcon,
     keywords: ['furniture', 'seat', 'rock', 'relax', 'sit', 'chair'],
+  },
+  {
+    name: 'chart-column-decreasing',
+    icon: ChartColumnDecreasingIcon,
+    keywords: ['chart', 'column', 'decreasing'],
+  },
+  {
+    name: 'chart-column-increasing',
+    icon: ChartColumnIncreasingIcon,
+    keywords: ['chart', 'column', 'increasing'],
+  },
+  {
+    name: 'chart-bar-decreasing',
+    icon: ChartBarDecreasingIcon,
+    keywords: ['chart', 'bar', 'decreasing'],
+  },
+  {
+    name: 'chart-bar-increasing',
+    icon: ChartBarIncreasingIcon,
+    keywords: ['chart', 'bar', 'increasing'],
   },
 ];
 
