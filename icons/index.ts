@@ -817,26 +817,6 @@ const ICON_LIST: IconListItem[] = [
     keywords: ['furniture', 'seat', 'rock', 'relax', 'sit', 'chair'],
   },
   {
-    name: 'chart-column-decreasing',
-    icon: ChartColumnDecreasingIcon,
-    keywords: ['chart', 'column', 'decreasing'],
-  },
-  {
-    name: 'chart-column-increasing',
-    icon: ChartColumnIncreasingIcon,
-    keywords: ['chart', 'column', 'increasing'],
-  },
-  {
-    name: 'chart-bar-decreasing',
-    icon: ChartBarDecreasingIcon,
-    keywords: ['chart', 'bar', 'decreasing'],
-  },
-  {
-    name: 'chart-bar-increasing',
-    icon: ChartBarIncreasingIcon,
-    keywords: ['chart', 'bar', 'increasing'],
-  },
-  {
     name: 'banana',
     icon: BananaIcon,
     keywords: ['fruit', 'food', 'yellow', 'tropical'],
