@@ -3,21 +3,24 @@
 import type { Transition, Variants } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
-const Transition: Transition = {
+const transition: Transition = {
   duration: 0.3,
-  delay: 0.1,
   opacity: { delay: 0.15 },
 };
 
-const Variants: Variants = {
+const variants: Variants = {
   normal: {
     pathLength: 1,
     opacity: 1,
   },
-  animate: {
+  animate: (custom: number) => ({
     pathLength: [0, 1],
     opacity: [0, 1],
-  },
+    transition: {
+      ...transition,
+      delay: 0.1 * custom,
+    },
+  }),
 };
 
 const WorkflowIcon = () => {
@@ -46,15 +49,15 @@ const WorkflowIcon = () => {
           x="3"
           y="3"
           rx="2"
-          transition={Transition}
-          variants={Variants}
+          variants={variants}
           animate={controls}
+          custom={0}
         />
         <motion.path
           d="M7 11v4a2 2 0 0 0 2 2h4"
-          transition={Transition}
-          variants={Variants}
+          variants={variants}
           animate={controls}
+          custom={3}
         />
         <motion.rect
           width="8"
@@ -62,9 +65,9 @@ const WorkflowIcon = () => {
           x="13"
           y="13"
           rx="2"
-          transition={Transition}
-          variants={Variants}
+          variants={variants}
           animate={controls}
+          custom={0}
         />
       </svg>
     </div>
