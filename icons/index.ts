@@ -75,6 +75,7 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import {BananaIcon} from '@/icons/banana';
 
 type IconListItem = {
   name: string;
@@ -668,6 +669,11 @@ const ICON_LIST: IconListItem[] = [
       'blood',
     ],
   },
+  {
+    name: 'banana',
+    icon: BananaIcon,
+    keywords: ['fruit', 'food', 'yellow', 'tropical'],
+  }
 ];
 
 export { ICON_LIST };
