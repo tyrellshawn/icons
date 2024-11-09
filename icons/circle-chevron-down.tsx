@@ -1,27 +1,12 @@
 'use client';
 
-import type { Variants } from 'framer-motion';
+import type { Transition } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
-const pathVariants: Variants = {
-  normal: {
-    opacity: 1,
-    pathLength: 1,
-    scale: 1,
-    transition: {
-      duration: 0.3,
-      opacity: { duration: 0.1 },
-    },
-  },
-  animate: {
-    opacity: [0, 1],
-    pathLength: [0, 1],
-    scale: [0.5, 1],
-    transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
-    },
-  },
+const defaultTransition: Transition = {
+  type: 'spring',
+  stiffness: 250,
+  damping: 25,
 };
 
 const CircleChevronDown = () => {
@@ -46,8 +31,11 @@ const CircleChevronDown = () => {
       >
         <circle cx="12" cy="12" r="10" />
         <motion.path
-          variants={pathVariants}
-          initial="normal"
+          variants={{
+            normal: { translateY: '0%' },
+            animate: { translateY: '2px' },
+          }}
+          transition={defaultTransition}
           animate={controls}
           d="m16 10-4 4-4-4"
         />
