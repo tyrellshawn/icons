@@ -14,12 +14,12 @@ const Variants: Variants = {
     pathLength: 1,
     opacity: 1,
   },
-  animate: (custom: number)=>({
+  animate: (custom: number) => ({
     pathLength: [0, 1],
     opacity: [0, 1],
-    transition:{
+    transition: {
       delay: custom * 0.1,
-    }
+    },
   }),
 };
 
