@@ -83,6 +83,15 @@ import { CircleChevronDown } from '@/icons/circle-chevron-down';
 import { CircleChevronLeft } from '@/icons/circle-chevron-left';
 import { CircleChevronRight } from '@/icons/circle-chevron-right';
 import { CircleChevronUp } from '@/icons/circle-chevron-up';
+import { CheckIcon } from '@/icons/check';
+import { CheckCheckIcon } from '@/icons/check-check';
+import { IdCardIcon } from '@/icons/id-card';
+import { LoaderPinwheelIcon } from '@/icons/loader-pinwheel';
+import { RockingChairIcon } from '@/icons/rocking-chair';
+import { ChartColumnDecreasingIcon } from '@/icons/chart-column-decreasing';
+import { ChartColumnIncreasingIcon } from '@/icons/chart-column-increasing';
+import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
+import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 
 type IconListItem = {
   name: string;
@@ -677,6 +686,26 @@ const ICON_LIST: IconListItem[] = [
     ],
   },
   {
+    name: 'chart-column-decreasing',
+    icon: ChartColumnDecreasingIcon,
+    keywords: ['chart', 'column', 'decreasing'],
+  },
+  {
+    name: 'chart-column-increasing',
+    icon: ChartColumnIncreasingIcon,
+    keywords: ['chart', 'column', 'increasing'],
+  },
+  {
+    name: 'chart-bar-decreasing',
+    icon: ChartBarDecreasingIcon,
+    keywords: ['chart', 'bar', 'decreasing'],
+  },
+  {
+    name: 'chart-bar-increasing',
+    icon: ChartBarIncreasingIcon,
+    keywords: ['chart', 'bar', 'increasing'],
+  },
+  {
     name: 'chevrons-up-down',
     icon: ChevronsUpDownIcon,
     keywords: ['expand', 'unfold', 'vertical', 'chevron'],
@@ -731,6 +760,60 @@ const ICON_LIST: IconListItem[] = [
     name: 'circle-chevron-up',
     icon: CircleChevronUp,
     keywords: ['caret', 'ahead', 'forward', 'menu', 'chevron'],
+  },
+  {
+    name: 'check',
+    icon: CheckIcon,
+    keywords: ['done', 'todo', 'tick', 'complete', 'task'],
+  },
+  {
+    name: 'check-check',
+    icon: CheckCheckIcon,
+    keywords: [
+      'done',
+      'received',
+      'double',
+      'todo',
+      'tick',
+      'complete',
+      'task',
+    ],
+  },
+  {
+    name: 'id-card',
+    icon: IdCardIcon,
+    keywords: [
+      'identification',
+      'personal',
+      'details',
+      'profile',
+      'card',
+      'badge',
+      'identity',
+      'authentication',
+      'secure',
+    ],
+  },
+  {
+    name: 'loader-pinwheel',
+    icon: LoaderPinwheelIcon,
+    keywords: [
+      'loading',
+      'wait',
+      'busy',
+      'progress',
+      'throbber',
+      'spinner',
+      'spinning',
+      'beach ball',
+      'frozen',
+      'freeze',
+    ],
+  },
+  {
+    name: 'rocking-chair',
+    icon: RockingChairIcon,
+    keywords: ['furniture', 'seat', 'rock', 'relax', 'sit', 'chair'],
   },
 ];
 
