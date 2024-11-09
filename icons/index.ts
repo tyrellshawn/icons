@@ -75,6 +75,7 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import { RockingChairIcon } from '@/icons/rocking-chair';
 
 type IconListItem = {
   name: string;
@@ -667,6 +668,11 @@ const ICON_LIST: IconListItem[] = [
       'nozzle',
       'blood',
     ],
+  },
+  {
+    name: 'rocking-chair',
+    icon: RockingChairIcon,
+    keywords: ['furniture', 'seat', 'rock', 'relax', 'sit', 'chair'],
   },
 ];
 
