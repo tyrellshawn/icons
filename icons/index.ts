@@ -77,6 +77,7 @@ import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
 import { ChevronsUpDownIcon } from '@/icons/chevrons-up-down';
 import { ChevronsDownUpIcon } from '@/icons/chevrons-down-up';
+import { ChevronsLeftRightIcon } from '@/icons/chevrons-left-right';
 
 type IconListItem = {
   name: string;
@@ -679,6 +680,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'chevrons-down-up',
     icon: ChevronsDownUpIcon,
     keywords: ['collapse', 'fold', 'vertical'],
+  },
+  {
+    name: 'chevrons-left-right',
+    icon: ChevronsLeftRightIcon,
+    keywords: ['expand', 'unfold', 'horizontal'],
   }
 ];
 
