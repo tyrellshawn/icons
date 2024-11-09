@@ -75,6 +75,8 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import { CheckIcon } from '@/icons/check';
+import { CheckCheckIcon } from '@/icons/check-check';
 import { IdCardIcon } from '@/icons/id-card';
 import { LoaderPinwheelIcon } from '@/icons/loader-pinwheel';
 import { RockingChairIcon } from '@/icons/rocking-chair';
@@ -673,6 +675,24 @@ const ICON_LIST: IconListItem[] = [
       'plunger',
       'nozzle',
       'blood',
+    ],
+  },
+  {
+    name: 'check',
+    icon: CheckIcon,
+    keywords: ['done', 'todo', 'tick', 'complete', 'task'],
+  },
+  {
+    name: 'check-check',
+    icon: CheckCheckIcon,
+    keywords: [
+      'done',
+      'received',
+      'double',
+      'todo',
+      'tick',
+      'complete',
+      'task',
     ],
   },
   {
