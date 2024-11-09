@@ -3,7 +3,6 @@
 import { motion, useAnimation } from 'framer-motion';
 import type { Transition, Variants } from 'framer-motion';
 
-
 const defaultTransition: Transition = {
   type: 'spring',
   stiffness: 100,
