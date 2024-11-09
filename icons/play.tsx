@@ -10,7 +10,7 @@ const pathVariants: Variants = {
     rotate: 0,
   },
   animate: {
-    x: [0, -1, 3, 0],
+    x: [0, -1, 2, 0],
     rotate: [0, -10, 0, 0],
     opacity: 0.5,
     transition: {
