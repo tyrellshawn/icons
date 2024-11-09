@@ -80,6 +80,7 @@ import { ChevronsDownUpIcon } from '@/icons/chevrons-down-up';
 import { ChevronsLeftRightIcon } from '@/icons/chevrons-left-right';
 import { ChevronsRightLeftIcon } from '@/icons/chevrons-right-left';
 import { CircleChevronDown } from '@/icons/circle-chevron-down';
+import { CircleChevronLeft } from '@/icons/circle-chevron-left';
 
 type IconListItem = {
   name: string;
@@ -697,6 +698,19 @@ const ICON_LIST: IconListItem[] = [
     name: 'circle-chevron-down',
     icon: CircleChevronDown,
     keywords: ['back', 'menu', 'chevron'],
+  },
+  {
+    name: 'circle-chevron-left',
+    icon: CircleChevronLeft,
+    keywords: [
+      'back',
+      'previous',
+      'less than',
+      'fewer',
+      'menu',
+      '<',
+      'chevron',
+    ],
   },
 ];
 
