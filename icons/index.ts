@@ -75,10 +75,11 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
-import { ChartColumnDecreasingIcon } from './chart-column-decreasing';
-import { ChartColumnIncreasingIcon } from './chart-column-increasing';
-import { ChartBarDecreasingIcon } from './chart-bar-decreasing';
-import { ChartBarIncreasingIcon } from './chart-bar-increasing';
+import { RockingChairIcon } from '@/icons/rocking-chair';
+import { ChartColumnDecreasingIcon } from '@/icons/chart-column-decreasing';
+import { ChartColumnIncreasingIcon } from '@/icons/chart-column-increasing';
+import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
+import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 
 type IconListItem = {
   name: string;
@@ -671,6 +672,11 @@ const ICON_LIST: IconListItem[] = [
       'nozzle',
       'blood',
     ],
+  },
+  {
+    name: 'rocking-chair',
+    icon: RockingChairIcon,
+    keywords: ['furniture', 'seat', 'rock', 'relax', 'sit', 'chair'],
   },
   {
     name: 'chart-column-decreasing',
