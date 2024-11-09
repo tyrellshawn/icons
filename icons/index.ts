@@ -76,6 +76,7 @@ import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
 import { PlayIcon } from '@/icons/play';
+import { PauseIcon } from '@/icons/pause';
 
 type IconListItem = {
   name: string;
@@ -673,6 +674,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'play',
     icon: PlayIcon,
     keywords: ['video', 'play', 'start'],
+  },
+  {
+    name: 'pause',
+    icon: PauseIcon,
+    keywords: ['video', 'pause', 'stop'],
   },
 ];
 
