@@ -75,6 +75,15 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import { CheckIcon } from '@/icons/check';
+import { CheckCheckIcon } from '@/icons/check-check';
+import { IdCardIcon } from '@/icons/id-card';
+import { LoaderPinwheelIcon } from '@/icons/loader-pinwheel';
+import { RockingChairIcon } from '@/icons/rocking-chair';
+import { ChartColumnDecreasingIcon } from '@/icons/chart-column-decreasing';
+import { ChartColumnIncreasingIcon } from '@/icons/chart-column-increasing';
+import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
+import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 import { BananaIcon } from '@/icons/banana';
 
 type IconListItem = {
@@ -668,6 +677,80 @@ const ICON_LIST: IconListItem[] = [
       'nozzle',
       'blood',
     ],
+  },
+  {
+    name: 'check',
+    icon: CheckIcon,
+    keywords: ['done', 'todo', 'tick', 'complete', 'task'],
+  },
+  {
+    name: 'check-check',
+    icon: CheckCheckIcon,
+    keywords: [
+      'done',
+      'received',
+      'double',
+      'todo',
+      'tick',
+      'complete',
+      'task',
+    ],
+  },
+  {
+    name: 'id-card',
+    icon: IdCardIcon,
+    keywords: [
+      'identification',
+      'personal',
+      'details',
+      'profile',
+      'card',
+      'badge',
+      'identity',
+      'authentication',
+      'secure',
+    ],
+  },
+  {
+    name: 'loader-pinwheel',
+    icon: LoaderPinwheelIcon,
+    keywords: [
+      'loading',
+      'wait',
+      'busy',
+      'progress',
+      'throbber',
+      'spinner',
+      'spinning',
+      'beach ball',
+      'frozen',
+      'freeze',
+    ],
+  },
+  {
+    name: 'rocking-chair',
+    icon: RockingChairIcon,
+    keywords: ['furniture', 'seat', 'rock', 'relax', 'sit', 'chair'],
+  },
+  {
+    name: 'chart-column-decreasing',
+    icon: ChartColumnDecreasingIcon,
+    keywords: ['chart', 'column', 'decreasing'],
+  },
+  {
+    name: 'chart-column-increasing',
+    icon: ChartColumnIncreasingIcon,
+    keywords: ['chart', 'column', 'increasing'],
+  },
+  {
+    name: 'chart-bar-decreasing',
+    icon: ChartBarDecreasingIcon,
+    keywords: ['chart', 'bar', 'decreasing'],
+  },
+  {
+    name: 'chart-bar-increasing',
+    icon: ChartBarIncreasingIcon,
+    keywords: ['chart', 'bar', 'increasing'],
   },
   {
     name: 'banana',

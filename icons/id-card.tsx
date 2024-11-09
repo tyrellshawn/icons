@@ -1,14 +1,9 @@
 'use client';
 
-import type { Transition, Variants } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
-const transition: Transition = {
-  duration: 0.3,
-  opacity: { delay: 0.15 },
-};
-
-const variants: Variants = {
+const Variants: Variants = {
   normal: {
     pathLength: 1,
     opacity: 1,
@@ -17,13 +12,13 @@ const variants: Variants = {
     pathLength: [0, 1],
     opacity: [0, 1],
     transition: {
-      ...transition,
-      delay: 0.1 * custom,
+      duration: 0.3,
+      delay: custom * 0.1,
     },
   }),
 };
 
-const WorkflowIcon = () => {
+const IdCardIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -43,35 +38,36 @@ const WorkflowIcon = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <motion.rect
-          width="8"
-          height="8"
-          x="3"
-          y="3"
-          rx="2"
-          variants={variants}
+        <motion.path
+          d="M16 10h2"
+          variants={Variants}
           animate={controls}
-          custom={0}
+          custom={2}
         />
         <motion.path
-          d="M7 11v4a2 2 0 0 0 2 2h4"
-          variants={variants}
+          d="M16 14h2"
+          variants={Variants}
           animate={controls}
-          custom={3}
+          custom={2}
         />
-        <motion.rect
-          width="8"
-          height="8"
-          x="13"
-          y="13"
-          rx="2"
-          variants={variants}
+        <motion.path
+          d="M6.17 15a3 3 0 0 1 5.66 0"
+          variants={Variants}
           animate={controls}
           custom={0}
         />
+        <motion.circle
+          cx="9"
+          cy="11"
+          r="2"
+          variants={Variants}
+          animate={controls}
+          custom={1}
+        />
+        <rect x="2" y="5" width="20" height="14" rx="2" />
       </svg>
     </div>
   );
 };
 
-export { WorkflowIcon };
+export { IdCardIcon };
