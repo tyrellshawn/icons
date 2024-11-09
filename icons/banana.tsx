@@ -3,12 +3,13 @@
 import type { Transition, Variants } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
-const transition: Transition = {
+const Transition: Transition = {
   duration: 0.3,
+  delay: 0.1,
   opacity: { delay: 0.15 },
 };
 
-const variants: Variants = {
+const Variants: Variants = {
   normal: {
     pathLength: 1,
     opacity: 1,
@@ -17,13 +18,12 @@ const variants: Variants = {
     pathLength: [0, 1],
     opacity: [0, 1],
     transition: {
-      ...transition,
-      delay: 0.1 * custom,
+      delay: custom * 0.1,
     },
   }),
 };
 
-const WorkflowIcon = () => {
+const BananaIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -43,35 +43,23 @@ const WorkflowIcon = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <motion.rect
-          width="8"
-          height="8"
-          x="3"
-          y="3"
-          rx="2"
-          variants={variants}
+        <motion.path
+          transition={Transition}
+          variants={Variants}
           animate={controls}
-          custom={0}
+          custom={2}
+          d="M4 13c3.5-2 8-2 10 2a5.5 5.5 0 0 1 8 5"
         />
         <motion.path
-          d="M7 11v4a2 2 0 0 0 2 2h4"
-          variants={variants}
-          animate={controls}
-          custom={3}
-        />
-        <motion.rect
-          width="8"
-          height="8"
-          x="13"
-          y="13"
-          rx="2"
-          variants={variants}
+          transition={Transition}
+          variants={Variants}
           animate={controls}
           custom={0}
+          d="M5.15 17.89c5.52-1.52 8.65-6.89 7-12C11.55 4 11.5 2 13 2c3.22 0 5 5.5 5 8 0 6.5-4.2 12-10.49 12C5.11 22 2 22 2 20c0-1.5 1.14-1.55 3.15-2.11Z"
         />
       </svg>
     </div>
   );
 };
 
-export { WorkflowIcon };
+export { BananaIcon };

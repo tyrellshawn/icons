@@ -77,6 +77,24 @@ import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
 import { PlayIcon } from '@/icons/play';
 import { PauseIcon } from '@/icons/pause';
+import { ChevronsUpDownIcon } from '@/icons/chevrons-up-down';
+import { ChevronsDownUpIcon } from '@/icons/chevrons-down-up';
+import { ChevronsLeftRightIcon } from '@/icons/chevrons-left-right';
+import { ChevronsRightLeftIcon } from '@/icons/chevrons-right-left';
+import { CircleChevronDown } from '@/icons/circle-chevron-down';
+import { CircleChevronLeft } from '@/icons/circle-chevron-left';
+import { CircleChevronRight } from '@/icons/circle-chevron-right';
+import { CircleChevronUp } from '@/icons/circle-chevron-up';
+import { CheckIcon } from '@/icons/check';
+import { CheckCheckIcon } from '@/icons/check-check';
+import { IdCardIcon } from '@/icons/id-card';
+import { LoaderPinwheelIcon } from '@/icons/loader-pinwheel';
+import { RockingChairIcon } from '@/icons/rocking-chair';
+import { ChartColumnDecreasingIcon } from '@/icons/chart-column-decreasing';
+import { ChartColumnIncreasingIcon } from '@/icons/chart-column-increasing';
+import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
+import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
+import { BananaIcon } from '@/icons/banana';
 
 type IconListItem = {
   name: string;
@@ -679,6 +697,141 @@ const ICON_LIST: IconListItem[] = [
     name: 'pause',
     icon: PauseIcon,
     keywords: ['video', 'pause', 'stop'],
+  },
+  {
+    name: 'chart-column-decreasing',
+    icon: ChartColumnDecreasingIcon,
+    keywords: ['chart', 'column', 'decreasing'],
+  },
+  {
+    name: 'chart-column-increasing',
+    icon: ChartColumnIncreasingIcon,
+    keywords: ['chart', 'column', 'increasing'],
+  },
+  {
+    name: 'chart-bar-decreasing',
+    icon: ChartBarDecreasingIcon,
+    keywords: ['chart', 'bar', 'decreasing'],
+  },
+  {
+    name: 'chart-bar-increasing',
+    icon: ChartBarIncreasingIcon,
+    keywords: ['chart', 'bar', 'increasing'],
+  },
+  {
+    name: 'chevrons-up-down',
+    icon: ChevronsUpDownIcon,
+    keywords: ['expand', 'unfold', 'vertical', 'chevron'],
+  },
+  {
+    name: 'chevrons-down-up',
+    icon: ChevronsDownUpIcon,
+    keywords: ['collapse', 'fold', 'vertical', 'chevron'],
+  },
+  {
+    name: 'chevrons-left-right',
+    icon: ChevronsLeftRightIcon,
+    keywords: ['expand', 'unfold', 'horizontal', 'chevron'],
+  },
+  {
+    name: 'chevrons-right-left',
+    icon: ChevronsRightLeftIcon,
+    keywords: ['collapse', 'fold', 'horizontal', 'chevron'],
+  },
+  {
+    name: 'circle-chevron-down',
+    icon: CircleChevronDown,
+    keywords: ['back', 'menu', 'chevron'],
+  },
+  {
+    name: 'circle-chevron-left',
+    icon: CircleChevronLeft,
+    keywords: [
+      'back',
+      'previous',
+      'less than',
+      'fewer',
+      'menu',
+      '<',
+      'chevron',
+    ],
+  },
+  {
+    name: 'circle-chevron-right',
+    icon: CircleChevronRight,
+    keywords: [
+      'next',
+      'forward',
+      'more than',
+      'greater',
+      'menu',
+      '>',
+      'chevron',
+    ],
+  },
+  {
+    name: 'circle-chevron-up',
+    icon: CircleChevronUp,
+    keywords: ['caret', 'ahead', 'forward', 'menu', 'chevron'],
+  },
+  {
+    name: 'check',
+    icon: CheckIcon,
+    keywords: ['done', 'todo', 'tick', 'complete', 'task'],
+  },
+  {
+    name: 'check-check',
+    icon: CheckCheckIcon,
+    keywords: [
+      'done',
+      'received',
+      'double',
+      'todo',
+      'tick',
+      'complete',
+      'task',
+    ],
+  },
+  {
+    name: 'id-card',
+    icon: IdCardIcon,
+    keywords: [
+      'identification',
+      'personal',
+      'details',
+      'profile',
+      'card',
+      'badge',
+      'identity',
+      'authentication',
+      'secure',
+    ],
+  },
+  {
+    name: 'loader-pinwheel',
+    icon: LoaderPinwheelIcon,
+    keywords: [
+      'loading',
+      'wait',
+      'busy',
+      'progress',
+      'throbber',
+      'spinner',
+      'spinning',
+      'beach ball',
+      'frozen',
+      'freeze',
+    ],
+  },
+  {
+    name: 'rocking-chair',
+    icon: RockingChairIcon,
+    keywords: ['furniture', 'seat', 'rock', 'relax', 'sit', 'chair'],
+  },
+  {
+    name: 'banana',
+    icon: BananaIcon,
+    keywords: ['fruit', 'food', 'yellow', 'tropical'],
   },
 ];
 
