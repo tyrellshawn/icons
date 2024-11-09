@@ -79,6 +79,7 @@ import { ChevronsUpDownIcon } from '@/icons/chevrons-up-down';
 import { ChevronsDownUpIcon } from '@/icons/chevrons-down-up';
 import { ChevronsLeftRightIcon } from '@/icons/chevrons-left-right';
 import { ChevronsRightLeftIcon } from '@/icons/chevrons-right-left';
+import { CircleChevronDown } from '@/icons/circle-chevron-down';
 
 type IconListItem = {
   name: string;
@@ -675,22 +676,27 @@ const ICON_LIST: IconListItem[] = [
   {
     name: 'chevrons-up-down',
     icon: ChevronsUpDownIcon,
-    keywords: ['expand', 'unfold', 'vertical'],
+    keywords: ['expand', 'unfold', 'vertical', 'chevron'],
   },
   {
     name: 'chevrons-down-up',
     icon: ChevronsDownUpIcon,
-    keywords: ['collapse', 'fold', 'vertical'],
+    keywords: ['collapse', 'fold', 'vertical', 'chevron'],
   },
   {
     name: 'chevrons-left-right',
     icon: ChevronsLeftRightIcon,
-    keywords: ['expand', 'unfold', 'horizontal'],
+    keywords: ['expand', 'unfold', 'horizontal', 'chevron'],
   },
   {
     name: 'chevrons-right-left',
     icon: ChevronsRightLeftIcon,
-    keywords: ['collapse', 'fold', 'horizontal'],
+    keywords: ['collapse', 'fold', 'horizontal', 'chevron'],
+  },
+  {
+    name: 'circle-chevron-down',
+    icon: CircleChevronDown,
+    keywords: ['back', 'menu', 'chevron'],
   },
 ];
 
