@@ -75,6 +75,8 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import { CheckIcon } from './check';
+import { CheckCheckIcon } from './check-check';
 
 type IconListItem = {
   name: string;
@@ -666,6 +668,24 @@ const ICON_LIST: IconListItem[] = [
       'plunger',
       'nozzle',
       'blood',
+    ],
+  },
+  {
+    name: 'check',
+    icon: CheckIcon,
+    keywords: ['done', 'todo', 'tick', 'complete', 'task'],
+  },
+  {
+    name: 'check-check',
+    icon: CheckCheckIcon,
+    keywords: [
+      'done',
+      'received',
+      'double',
+      'todo',
+      'tick',
+      'complete',
+      'task',
     ],
   },
 ];
