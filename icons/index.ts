@@ -95,6 +95,7 @@ import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 import { BananaIcon } from '@/icons/banana';
 import { ChromeIcon } from '@/icons/chrome';
 import { FigmaIcon } from '@/icons/figma';
+import { FishSymbolIcon } from '@/icons/fish-symbol';
 
 type IconListItem = {
   name: string;
@@ -832,6 +833,24 @@ const ICON_LIST: IconListItem[] = [
     name: 'figma',
     icon: FigmaIcon,
     keywords: ['design', 'tool', 'logo'],
+  },
+  {
+    name: 'fish-symbol',
+    icon: FishSymbolIcon,
+    keywords: [
+      'fish',
+      'seafood',
+      'ocean',
+      'marine',
+      'dish',
+      'restaurant',
+      'course',
+      'meal',
+      'seafood',
+      'pet',
+      'sea',
+      'marine',
+    ],
   },
 ];
 
