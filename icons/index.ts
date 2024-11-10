@@ -94,6 +94,7 @@ import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
 import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 import { BananaIcon } from '@/icons/banana';
 import { ChromeIcon } from '@/icons/chrome';
+import { FigmaIcon } from '@/icons/figma';
 
 type IconListItem = {
   name: string;
@@ -826,7 +827,12 @@ const ICON_LIST: IconListItem[] = [
     name: 'chrome',
     icon: ChromeIcon,
     keywords: ['browser', 'google', 'internet', 'web', 'logo'],
-  }
+  },
+  {
+    name: 'figma',
+    icon: FigmaIcon,
+    keywords: ['design', 'tool', 'logo'],
+  },
 ];
 
 export { ICON_LIST };
