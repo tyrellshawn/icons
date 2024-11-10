@@ -48,7 +48,7 @@ const CheckIcon = () => {
           variants={pathVariants}
           initial="normal"
           animate={controls}
-          d="M20 6 9 17l-5-5"
+          d="M4 12 9 17L20 6"
         />
       </svg>
     </div>
