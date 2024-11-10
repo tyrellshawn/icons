@@ -75,6 +75,8 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import { PlayIcon } from '@/icons/play';
+import { PauseIcon } from '@/icons/pause';
 import { ChevronsUpDownIcon } from '@/icons/chevrons-up-down';
 import { ChevronsDownUpIcon } from '@/icons/chevrons-down-up';
 import { ChevronsLeftRightIcon } from '@/icons/chevrons-left-right';
@@ -693,6 +695,16 @@ const ICON_LIST: IconListItem[] = [
       'nozzle',
       'blood',
     ],
+  },
+  {
+    name: 'play',
+    icon: PlayIcon,
+    keywords: ['video', 'play', 'start'],
+  },
+  {
+    name: 'pause',
+    icon: PauseIcon,
+    keywords: ['video', 'pause', 'stop'],
   },
   {
     name: 'chart-column-decreasing',
