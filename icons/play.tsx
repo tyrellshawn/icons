@@ -5,14 +5,12 @@ import { motion, useAnimation } from 'framer-motion';
 
 const pathVariants: Variants = {
   normal: {
-    opacity: 1,
     x: 0,
     rotate: 0,
   },
   animate: {
     x: [0, -1, 2, 0],
     rotate: [0, -10, 0, 0],
-    opacity: 0.5,
     transition: {
       duration: 0.5,
       times: [0, 0.2, 0.5, 1],
