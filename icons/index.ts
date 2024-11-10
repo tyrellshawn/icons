@@ -830,10 +830,10 @@ const ICON_LIST: IconListItem[] = [
     icon: BananaIcon,
     keywords: ['fruit', 'food', 'yellow', 'tropical'],
   },
-  { 
-    name: 'wifi', 
-    icon: WifiIcon, 
-    keywords: ['internet', 'electronic', 'connection', 'data'] 
+  {
+    name: 'wifi',
+    icon: WifiIcon,
+    keywords: ['internet', 'electronic', 'connection', 'data'],
   },
   {
     name: 'chrome',
