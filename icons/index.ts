@@ -99,6 +99,7 @@ import { FishSymbolIcon } from '@/icons/fish-symbol';
 import { GitCommitVerticalIcon } from '@/icons/git-commit-vertical';
 import { GitCommitHorizontalIcon } from '@/icons/git-commit-horizontal';
 import { WaypointsIcon } from '@/icons/waypoints';
+import { ShipIcon } from '@/icons/ship';
 
 type IconListItem = {
   name: string;
@@ -898,6 +899,29 @@ const ICON_LIST: IconListItem[] = [
       'shared',
       'spread',
       'vira',
+    ],
+  },
+  {
+    name: 'ship',
+    icon: ShipIcon,
+    keywords: [
+      'boat',
+      'vessel',
+      'sea',
+      'ocean',
+      'water',
+      'transport',
+      'knots',
+      'nautical mile',
+      'maritime',
+      'sailing',
+      'yacht',
+      'cruise',
+      'ocean liner',
+      'tanker',
+      'vessel',
+      'navy',
+      'trip',
     ],
   },
 ];
