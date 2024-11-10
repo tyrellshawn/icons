@@ -98,6 +98,7 @@ import { FigmaIcon } from '@/icons/figma';
 import { FishSymbolIcon } from '@/icons/fish-symbol';
 import { GitCommitVerticalIcon } from '@/icons/git-commit-vertical';
 import { GitCommitHorizontalIcon } from '@/icons/git-commit-horizontal';
+import { WaypointsIcon } from '@/icons/waypoints';
 
 type IconListItem = {
   name: string;
@@ -877,7 +878,28 @@ const ICON_LIST: IconListItem[] = [
       'stop',
       'station',
     ],
-  }
+  },
+  {
+    name: 'waypoints',
+    icon: WaypointsIcon,
+    keywords: [
+      'indirection',
+      'vpn',
+      'virtual private network',
+      'proxy',
+      'connections',
+      'bounce',
+      'reroute',
+      'path',
+      'journey',
+      'planner',
+      'stops',
+      'stations',
+      'shared',
+      'spread',
+      'vira',
+    ],
+  },
 ];
 
 export { ICON_LIST };
