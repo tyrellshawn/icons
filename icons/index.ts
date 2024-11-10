@@ -100,6 +100,7 @@ import { GitCommitVerticalIcon } from '@/icons/git-commit-vertical';
 import { GitCommitHorizontalIcon } from '@/icons/git-commit-horizontal';
 import { WaypointsIcon } from '@/icons/waypoints';
 import { ShipIcon } from '@/icons/ship';
+import { RollerCoasterIcon } from '@/icons/roller-coaster';
 
 type IconListItem = {
   name: string;
@@ -922,6 +923,23 @@ const ICON_LIST: IconListItem[] = [
       'vessel',
       'navy',
       'trip',
+    ],
+  },
+  {
+    name: 'roller-coaster',
+    icon: RollerCoasterIcon,
+    keywords: [
+      'ride',
+      'fun',
+      'amusement',
+      'park',
+      'thrill',
+      'excitement',
+      'attraction',
+      'entertainment',
+      'amusement park',
+      'theme park',
+      'funfair',
     ],
   },
 ];
