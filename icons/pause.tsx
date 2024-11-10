@@ -56,20 +56,20 @@ const PauseIcon = () => {
         strokeLinejoin="round"
       >
         <motion.rect
-          x="4.5"
-          y="2.5"
-          width="5"
-          height="19"
-          rx="0.5"
+          x="6"
+          y="4"
+          width="4"
+          height="16"
+          rx="1"
           variants={leftRectVariants}
           animate={controls}
         />
         <motion.rect
-          x="14.5"
-          y="2.5"
-          width="5"
-          height="19"
-          rx="0.5"
+          x="14"
+          y="4"
+          width="4"
+          height="16"
+          rx="1"
           variants={rightRectVariants}
           animate={controls}
         />
