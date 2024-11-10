@@ -5,7 +5,6 @@ import { motion, useAnimation } from 'framer-motion';
 
 const baseRectVariants: Variants = {
   normal: {
-    x: 0,
     y: 0,
   },
 };
