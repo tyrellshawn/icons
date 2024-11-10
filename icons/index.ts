@@ -93,6 +93,7 @@ import { ChartColumnIncreasingIcon } from '@/icons/chart-column-increasing';
 import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
 import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 import { BananaIcon } from '@/icons/banana';
+import { ChromeIcon } from '@/icons/chrome';
 
 type IconListItem = {
   name: string;
@@ -821,6 +822,11 @@ const ICON_LIST: IconListItem[] = [
     icon: BananaIcon,
     keywords: ['fruit', 'food', 'yellow', 'tropical'],
   },
+  {
+    name: 'chrome',
+    icon: ChromeIcon,
+    keywords: ['browser', 'google', 'internet', 'web', 'logo'],
+  }
 ];
 
 export { ICON_LIST };
