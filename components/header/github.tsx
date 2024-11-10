@@ -4,27 +4,36 @@ import { LINK } from '@/constants';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import { ArrowUpRight, Star } from 'lucide-react';
 import { CountUpNumber } from './count-up-number';
+import { unstable_cache } from 'next/cache';
 
 const THREE_HOURS = 10800;
 
-async function getGithubStars() {
-  try {
-    const res = await fetch('https://api.github.com/repos/pqoqubbw/icons', {
-      next: { revalidate: THREE_HOURS },
-    });
+const getGithubStars = unstable_cache(
+  async () => {
+    try {
+      const res = await fetch('https://api.github.com/repos/pqoqubbw/icons', {
+        headers: {
+          Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+        },
+      });
 
-    if (!res.ok) {
+      if (!res.ok) {
+        return 0;
+      }
+
+      const data = await res.json();
+
+      return data.stargazers_count || 0;
+    } catch (error) {
+      console.error('Failed to fetch GitHub stars:', error);
       return 0;
     }
-
-    const data = await res.json();
-
-    return data.stargazers_count || 0;
-  } catch (error) {
-    console.error('Failed to fetch GitHub stars:', error);
-    return 0;
+  },
+  ['github-stars'],
+  {
+    revalidate: THREE_HOURS,
   }
-}
+);
 
 async function HeaderGithub() {
   const stars = await getGithubStars();
