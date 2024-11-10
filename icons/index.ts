@@ -93,6 +93,7 @@ import { ChartColumnIncreasingIcon } from '@/icons/chart-column-increasing';
 import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
 import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 import { BananaIcon } from '@/icons/banana';
+import { HourglassIcon } from '@/icons/hourglass';
 
 type IconListItem = {
   name: string;
@@ -372,6 +373,11 @@ const ICON_LIST: IconListItem[] = [
   {
     name: 'clock',
     icon: ClockIcon,
+    keywords: ['time', 'watch', 'alarm'],
+  },
+  {
+    name: 'hourglass',
+    icon: HourglassIcon,
     keywords: ['time', 'watch', 'alarm'],
   },
   {
