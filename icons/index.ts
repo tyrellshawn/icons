@@ -96,6 +96,7 @@ import { BananaIcon } from '@/icons/banana';
 import { ChromeIcon } from '@/icons/chrome';
 import { FigmaIcon } from '@/icons/figma';
 import { FishSymbolIcon } from '@/icons/fish-symbol';
+import { GitCommitVerticalIcon } from '@/icons/git-commit-vertical';
 
 type IconListItem = {
   name: string;
@@ -850,6 +851,18 @@ const ICON_LIST: IconListItem[] = [
       'pet',
       'sea',
       'marine',
+    ],
+  },
+  {
+    name: 'git-commit-vertical',
+    icon: GitCommitVerticalIcon,
+    keywords: [
+      'code',
+      'open',
+      'version control ',
+      'waypoint',
+      'stop',
+      'station',
     ],
   },
 ];
