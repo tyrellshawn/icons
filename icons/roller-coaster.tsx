@@ -3,28 +3,22 @@
 import type { Variants } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
-const pathVariants: Variants = {
+const variants: Variants = {
   normal: {
-    opacity: 1,
     pathLength: 1,
-    scale: 1,
-    transition: {
-      duration: 0.3,
-      opacity: { duration: 0.1 },
-    },
+    opacity: 1,
   },
-  animate: {
-    opacity: [0, 1],
+  animate: (custom: number) => ({
     pathLength: [0, 1],
-    scale: [0.5, 1],
+    opacity: [0, 1],
     transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
+      delay: 0.1 * custom,
+      opacity: { delay: 0.1 * custom },
     },
-  },
+  }),
 };
 
-const CheckIcon = () => {
+const RollerCoasterIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -44,15 +38,21 @@ const CheckIcon = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
       >
+        <motion.path d="M6 19V5" variants={variants} animate={controls} />
+        <motion.path d="M10 19V6.8" variants={variants} animate={controls} />
+        <motion.path d="M14 19v-7.8" variants={variants} animate={controls} />
+        <motion.path d="M18 5v4" variants={variants} animate={controls} />
+        <motion.path d="M18 19v-6" variants={variants} animate={controls} />
+        <motion.path d="M22 19V9" variants={variants} animate={controls} />
         <motion.path
-          variants={pathVariants}
-          initial="normal"
+          d="M2 19V9a4 4 0 0 1 4-4c2 0 4 1.33 6 4s4 4 6 4a4 4 0 1 0-3-6.65"
+          variants={variants}
           animate={controls}
-          d="M4 12 9 17L20 6"
+          custom={2}
         />
       </svg>
     </div>
   );
 };
 
-export { CheckIcon };
+export { RollerCoasterIcon };

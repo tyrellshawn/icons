@@ -49,14 +49,14 @@ const CheckCheckIcon = () => {
           variants={pathVariants}
           initial="normal"
           animate={controls}
-          d="M18 6 7 17l-5-5"
+          d="M2 12 7 17L18 6"
           custom={0}
         />
         <motion.path
           variants={pathVariants}
           initial="normal"
           animate={controls}
-          d="m22 10-7.5 7.5L13 16"
+          d="M13 16L14.5 17.5L22 10"
           custom={1}
         />
       </svg>

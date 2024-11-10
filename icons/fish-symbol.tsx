@@ -3,28 +3,22 @@
 import type { Variants } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
-const pathVariants: Variants = {
+const variants: Variants = {
   normal: {
-    opacity: 1,
     pathLength: 1,
-    scale: 1,
-    transition: {
-      duration: 0.3,
-      opacity: { duration: 0.1 },
-    },
+    opacity: 1,
   },
   animate: {
-    opacity: [0, 1],
     pathLength: [0, 1],
-    scale: [0.5, 1],
+    opacity: [0, 1],
     transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
+      delay: 0.15,
+      opacity: { delay: 0.1 },
     },
   },
 };
 
-const CheckIcon = () => {
+const FishSymbolIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -45,14 +39,13 @@ const CheckIcon = () => {
         strokeLinejoin="round"
       >
         <motion.path
-          variants={pathVariants}
-          initial="normal"
+          d="M2 16s9-15 20-4C11 23 2 8 2 8"
+          variants={variants}
           animate={controls}
-          d="M4 12 9 17L20 6"
         />
       </svg>
     </div>
   );
 };
 
-export { CheckIcon };
+export { FishSymbolIcon };

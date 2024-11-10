@@ -94,6 +94,14 @@ import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
 import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 import { BananaIcon } from '@/icons/banana';
 import { WifiIcon } from '@/icons/wifi';
+import { ChromeIcon } from '@/icons/chrome';
+import { FigmaIcon } from '@/icons/figma';
+import { FishSymbolIcon } from '@/icons/fish-symbol';
+import { GitCommitVerticalIcon } from '@/icons/git-commit-vertical';
+import { GitCommitHorizontalIcon } from '@/icons/git-commit-horizontal';
+import { WaypointsIcon } from '@/icons/waypoints';
+import { ShipIcon } from '@/icons/ship';
+import { RollerCoasterIcon } from '@/icons/roller-coaster';
 
 type IconListItem = {
   name: string;
@@ -822,8 +830,124 @@ const ICON_LIST: IconListItem[] = [
     icon: BananaIcon,
     keywords: ['fruit', 'food', 'yellow', 'tropical'],
   },
-  //add the wifi icon
-  { name: 'wifi', icon: WifiIcon, keywords: ['internet', 'electronic', 'connection', 'data'] }
+  { 
+    name: 'wifi', 
+    icon: WifiIcon, 
+    keywords: ['internet', 'electronic', 'connection', 'data'] 
+  },
+  {
+    name: 'chrome',
+    icon: ChromeIcon,
+    keywords: ['browser', 'google', 'internet', 'web', 'logo'],
+  },
+  {
+    name: 'figma',
+    icon: FigmaIcon,
+    keywords: ['design', 'tool', 'logo'],
+  },
+  {
+    name: 'fish-symbol',
+    icon: FishSymbolIcon,
+    keywords: [
+      'fish',
+      'seafood',
+      'ocean',
+      'marine',
+      'dish',
+      'restaurant',
+      'course',
+      'meal',
+      'seafood',
+      'pet',
+      'sea',
+      'marine',
+    ],
+  },
+  {
+    name: 'git-commit-vertical',
+    icon: GitCommitVerticalIcon,
+    keywords: [
+      'code',
+      'open',
+      'version control ',
+      'waypoint',
+      'stop',
+      'station',
+    ],
+  },
+  {
+    name: 'git-commit-horizontal',
+    icon: GitCommitHorizontalIcon,
+    keywords: [
+      'code',
+      'open',
+      'version control ',
+      'waypoint',
+      'stop',
+      'station',
+    ],
+  },
+  {
+    name: 'waypoints',
+    icon: WaypointsIcon,
+    keywords: [
+      'indirection',
+      'vpn',
+      'virtual private network',
+      'proxy',
+      'connections',
+      'bounce',
+      'reroute',
+      'path',
+      'journey',
+      'planner',
+      'stops',
+      'stations',
+      'shared',
+      'spread',
+      'vira',
+    ],
+  },
+  {
+    name: 'ship',
+    icon: ShipIcon,
+    keywords: [
+      'boat',
+      'vessel',
+      'sea',
+      'ocean',
+      'water',
+      'transport',
+      'knots',
+      'nautical mile',
+      'maritime',
+      'sailing',
+      'yacht',
+      'cruise',
+      'ocean liner',
+      'tanker',
+      'vessel',
+      'navy',
+      'trip',
+    ],
+  },
+  {
+    name: 'roller-coaster',
+    icon: RollerCoasterIcon,
+    keywords: [
+      'ride',
+      'fun',
+      'amusement',
+      'park',
+      'thrill',
+      'excitement',
+      'attraction',
+      'entertainment',
+      'amusement park',
+      'theme park',
+      'funfair',
+    ],
+  },
 ];
 
 export { ICON_LIST };

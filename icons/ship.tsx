@@ -5,26 +5,33 @@ import { motion, useAnimation } from 'framer-motion';
 
 const pathVariants: Variants = {
   normal: {
-    opacity: 1,
     pathLength: 1,
-    scale: 1,
-    transition: {
-      duration: 0.3,
-      opacity: { duration: 0.1 },
-    },
+    opacity: 1,
   },
   animate: {
-    opacity: [0, 1],
     pathLength: [0, 1],
-    scale: [0.5, 1],
+    opacity: [0, 1],
     transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
+      delay: 0.15,
+      opacity: { delay: 0.1 },
     },
   },
 };
 
-const CheckIcon = () => {
+const gVariants: Variants = {
+  normal: { rotate: 0 },
+  animate: {
+    rotate: [-3, 3, -3],
+    transition: {
+      repeat: Infinity,
+      repeatType: 'mirror' as const,
+      duration: 1.2,
+      ease: 'easeInOut',
+    },
+  },
+};
+
+const ShipIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -45,14 +52,20 @@ const CheckIcon = () => {
         strokeLinejoin="round"
       >
         <motion.path
+          d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"
           variants={pathVariants}
-          initial="normal"
           animate={controls}
-          d="M4 12 9 17L20 6"
+          custom={2}
         />
+        <motion.g variants={gVariants} animate={controls}>
+          <path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76" />
+          <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6" />
+          <path d="M12 10v4" />
+          <path d="M12 2v3" />
+        </motion.g>
       </svg>
     </div>
   );
 };
 
-export { CheckIcon };
+export { ShipIcon };

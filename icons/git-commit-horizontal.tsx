@@ -3,28 +3,22 @@
 import type { Variants } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
-const pathVariants: Variants = {
+const variants: Variants = {
   normal: {
-    opacity: 1,
     pathLength: 1,
-    scale: 1,
-    transition: {
-      duration: 0.3,
-      opacity: { duration: 0.1 },
-    },
+    opacity: 1,
   },
-  animate: {
-    opacity: [0, 1],
+  animate: (custom: number) => ({
     pathLength: [0, 1],
-    scale: [0.5, 1],
+    opacity: [0, 1],
     transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
+      delay: 0.15 * custom,
+      opacity: { delay: 0.1 * custom },
     },
-  },
+  }),
 };
 
-const CheckIcon = () => {
+const GitCommitHorizontalIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -44,15 +38,35 @@ const CheckIcon = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <motion.path
-          variants={pathVariants}
-          initial="normal"
+        <motion.circle
+          cx="12"
+          cy="12"
+          r="3"
+          variants={variants}
           animate={controls}
-          d="M4 12 9 17L20 6"
+          custom={1}
+        />
+        <motion.line
+          x1="3"
+          x2="9"
+          y1="12"
+          y2="12"
+          variants={variants}
+          animate={controls}
+          custom={0}
+        />
+        <motion.line
+          x1="15"
+          x2="21"
+          y1="12"
+          y2="12"
+          variants={variants}
+          animate={controls}
+          custom={2}
         />
       </svg>
     </div>
   );
 };
 
-export { CheckIcon };
+export { GitCommitHorizontalIcon };
