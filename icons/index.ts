@@ -95,6 +95,7 @@ import { ChartColumnIncreasingIcon } from '@/icons/chart-column-increasing';
 import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
 import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 import { BananaIcon } from '@/icons/banana';
+import { WifiIcon } from '@/icons/wifi';
 import { ChromeIcon } from '@/icons/chrome';
 import { FigmaIcon } from '@/icons/figma';
 import { FishSymbolIcon } from '@/icons/fish-symbol';
@@ -840,6 +841,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'banana',
     icon: BananaIcon,
     keywords: ['fruit', 'food', 'yellow', 'tropical'],
+  },
+  {
+    name: 'wifi',
+    icon: WifiIcon,
+    keywords: ['internet', 'electronic', 'connection', 'data'],
   },
   {
     name: 'chrome',
