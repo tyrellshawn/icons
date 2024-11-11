@@ -8,7 +8,7 @@ const defaultTransition: Transition = {
   duration: 0.5,
 };
 
-const CircleChevronRight = () => {
+const CircleChevronRightIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -43,4 +43,4 @@ const CircleChevronRight = () => {
   );
 };
 
-export { CircleChevronRight };
+export { CircleChevronRightIcon };

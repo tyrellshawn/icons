@@ -81,10 +81,10 @@ import { ChevronsUpDownIcon } from '@/icons/chevrons-up-down';
 import { ChevronsDownUpIcon } from '@/icons/chevrons-down-up';
 import { ChevronsLeftRightIcon } from '@/icons/chevrons-left-right';
 import { ChevronsRightLeftIcon } from '@/icons/chevrons-right-left';
-import { CircleChevronDown } from '@/icons/circle-chevron-down';
-import { CircleChevronLeft } from '@/icons/circle-chevron-left';
-import { CircleChevronRight } from '@/icons/circle-chevron-right';
-import { CircleChevronUp } from '@/icons/circle-chevron-up';
+import { CircleChevronDownIcon } from '@/icons/circle-chevron-down';
+import { CircleChevronLeftIcon } from '@/icons/circle-chevron-left';
+import { CircleChevronRightIcon } from '@/icons/circle-chevron-right';
+import { CircleChevronUpIcon } from '@/icons/circle-chevron-up';
 import { CheckIcon } from '@/icons/check';
 import { CheckCheckIcon } from '@/icons/check-check';
 import { IdCardIcon } from '@/icons/id-card';
@@ -749,12 +749,12 @@ const ICON_LIST: IconListItem[] = [
   },
   {
     name: 'circle-chevron-down',
-    icon: CircleChevronDown,
+    icon: CircleChevronDownIcon,
     keywords: ['back', 'menu', 'chevron'],
   },
   {
     name: 'circle-chevron-left',
-    icon: CircleChevronLeft,
+    icon: CircleChevronLeftIcon,
     keywords: [
       'back',
       'previous',
@@ -767,7 +767,7 @@ const ICON_LIST: IconListItem[] = [
   },
   {
     name: 'circle-chevron-right',
-    icon: CircleChevronRight,
+    icon: CircleChevronRightIcon,
     keywords: [
       'next',
       'forward',
@@ -780,7 +780,7 @@ const ICON_LIST: IconListItem[] = [
   },
   {
     name: 'circle-chevron-up',
-    icon: CircleChevronUp,
+    icon: CircleChevronUpIcon,
     keywords: ['caret', 'ahead', 'forward', 'menu', 'chevron'],
   },
   {
