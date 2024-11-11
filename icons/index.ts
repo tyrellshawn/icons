@@ -102,6 +102,7 @@ import { GitCommitHorizontalIcon } from '@/icons/git-commit-horizontal';
 import { WaypointsIcon } from '@/icons/waypoints';
 import { ShipIcon } from '@/icons/ship';
 import { RollerCoasterIcon } from '@/icons/roller-coaster';
+import { AirplaneIcon } from '@/icons/airplane';
 
 type IconListItem = {
   name: string;
@@ -298,6 +299,19 @@ const ICON_LIST: IconListItem[] = [
     name: 'route',
     icon: RouteIcon,
     keywords: ['path', 'journey', 'planner', 'points', 'stops', 'stations'],
+  },
+  {
+    name: 'airplane',
+    icon: AirplaneIcon,
+    keywords: [
+      'flight',
+      'path',
+      'journey',
+      'planner',
+      'points',
+      'stops',
+      'stations',
+    ],
   },
   {
     name: 'refresh',
