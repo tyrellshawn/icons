@@ -8,7 +8,7 @@ const defaultTransition: Transition = {
   duration: 0.5,
 };
 
-const CircleChevronDown = () => {
+const CircleChevronDownIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -45,4 +45,4 @@ const CircleChevronDown = () => {
   );
 };
 
-export { CircleChevronDown };
+export { CircleChevronDownIcon };
