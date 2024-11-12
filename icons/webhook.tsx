@@ -10,21 +10,20 @@ const transition: Transition = {
 
 const variants: Variants = {
   normal: {
-    rotate: 0,
+    pathLength: 1,
+    opacity: 1,
   },
-  animate: (custom: number) => ({
-    rotate: custom === 1 ? [-10, 10, 0] : [10, -10, 0],
+  animate: {
+    pathLength: [0, 1],
+    opacity: [0, 1],
     transition: {
       ...transition,
-      delay: 0.1 * custom,
-      repeat: Infinity,
-      repeatType: 'reverse',
-      duration: 0.5,
+      delay: 0.1,
     },
-  }),
+  },
 };
 
-const DrumIcon = () => {
+const WebhookIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -45,25 +44,23 @@ const DrumIcon = () => {
         strokeLinejoin="round"
       >
         <motion.path
-          d="m2 2 8 8"
+          d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2"
           variants={variants}
           animate={controls}
-          custom={1}
         />
         <motion.path
-          d="m22 2-8 8"
+          d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06"
           variants={variants}
           animate={controls}
-          custom={2}
         />
-        <ellipse cx="12" cy="9" rx="10" ry="5" />
-        <path d="M7 13.4v7.9" />
-        <path d="M12 14v8" />
-        <path d="M17 13.4v7.9" />
-        <path d="M2 9v8a10 5 0 0 0 20 0V9" />
+        <motion.path
+          d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"
+          variants={variants}
+          animate={controls}
+        />
       </svg>
     </div>
   );
 };
 
-export { DrumIcon };
+export { WebhookIcon };

@@ -105,6 +105,8 @@ import { WaypointsIcon } from '@/icons/waypoints';
 import { ShipIcon } from '@/icons/ship';
 import { RollerCoasterIcon } from '@/icons/roller-coaster';
 import { DrumIcon } from '@/icons/drum';
+import { TrainTrackIcon } from '@/icons/train-track';
+import { WebhookIcon } from '@/icons/webhook';
 
 type IconListItem = {
   name: string;
@@ -965,6 +967,25 @@ const ICON_LIST: IconListItem[] = [
     name: 'drum',
     icon: DrumIcon,
     keywords: ['music', 'instrument', 'percussion', 'beat', 'rhythm', 'sound'],
+  },
+  {
+    name: 'train-track',
+    icon: TrainTrackIcon,
+    keywords: ['railway', 'track', 'train', 'transport', 'travel', 'line'],
+  },
+  {
+    name: 'webhook',
+    icon: WebhookIcon,
+    keywords: [
+      'api',
+      'integration',
+      'web',
+      'hook',
+      'connect',
+      'link',
+      'push api',
+      'callback',
+    ],
   },
 ];
 
