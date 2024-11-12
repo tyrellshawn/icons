@@ -107,6 +107,7 @@ import { RollerCoasterIcon } from '@/icons/roller-coaster';
 import { DrumIcon } from '@/icons/drum';
 import { TrainTrackIcon } from '@/icons/train-track';
 import { WebhookIcon } from '@/icons/webhook';
+import { RocketIcon } from '@/icons/rocket';
 
 type IconListItem = {
   name: string;
@@ -986,6 +987,11 @@ const ICON_LIST: IconListItem[] = [
       'push api',
       'callback',
     ],
+  },
+  {
+    name: 'rocket',
+    icon: RocketIcon,
+    keywords: ['launch', 'space', 'boost', 'release', 'version'],
   },
 ];
 
