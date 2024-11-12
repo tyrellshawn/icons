@@ -19,7 +19,7 @@ const ACTION_CLASS_NAMES =
 
 const Card = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="p-3 border w-full h-full border-input rounded-md flex items-center justify-center flex-col">
+    <div className="p-3 border border-input rounded-md flex items-center justify-center flex-col">
       {children}
     </div>
   );
