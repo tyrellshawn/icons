@@ -104,6 +104,7 @@ import { GitCommitHorizontalIcon } from '@/icons/git-commit-horizontal';
 import { WaypointsIcon } from '@/icons/waypoints';
 import { ShipIcon } from '@/icons/ship';
 import { RollerCoasterIcon } from '@/icons/roller-coaster';
+import { DrumIcon } from '@/icons/drum';
 
 type IconListItem = {
   name: string;
@@ -959,6 +960,11 @@ const ICON_LIST: IconListItem[] = [
       'theme park',
       'funfair',
     ],
+  },
+  {
+    name: 'drum',
+    icon: DrumIcon,
+    keywords: ['music', 'instrument', 'percussion', 'beat', 'rhythm', 'sound'],
   },
 ];
 
