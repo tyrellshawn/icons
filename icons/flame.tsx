@@ -8,12 +8,10 @@ const pathVariants: Variants = {
     pathLength: 1,
     opacity: 1,
     pathOffset: 0,
-    strokeWidth: 2,
   },
   animate: {
     opacity: [0, 1],
     pathLength: [0, 1],
-    strokeWidth: 3.5,
     transition: {
       delay: 0.1,
       duration: 0.4,
