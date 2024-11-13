@@ -103,6 +103,8 @@ import { WaypointsIcon } from '@/icons/waypoints';
 import { ShipIcon } from '@/icons/ship';
 import { RollerCoasterIcon } from '@/icons/roller-coaster';
 import { AirplaneIcon } from '@/icons/airplane';
+import { FlameIcon } from './flame';
+import { FireExtinguisherIcon } from './fire-extinguisher';
 
 type IconListItem = {
   name: string;
@@ -145,6 +147,14 @@ const ICON_LIST: IconListItem[] = [
     name: 'earth',
     icon: EarthIcon,
     keywords: ['world', 'browser', 'language', 'translate', 'globe'],
+  }, {
+    name: 'flame',
+    icon: FlameIcon,
+    keywords: ['flame', 'fire', 'light', 'heat', 'warm'],
+  }, {
+    name: 'fire-extinguisher',
+    icon: FireExtinguisherIcon,
+    keywords: ['flame', 'fire', 'light', 'heat', 'warm'],
   },
   {
     name: 'workflow',
