@@ -107,6 +107,7 @@ import { RollerCoasterIcon } from '@/icons/roller-coaster';
 import { AirplaneIcon } from '@/icons/airplane';
 import { DrumIcon } from '@/icons/drum';
 import { TrainTrackIcon } from '@/icons/train-track';
+import { SparklesIcon } from '@/icons/sparkles';
 import { WebhookIcon } from '@/icons/webhook';
 import { RocketIcon } from '@/icons/rocket';
 
@@ -1001,6 +1002,11 @@ const ICON_LIST: IconListItem[] = [
       'push api',
       'callback',
     ],
+  },
+  {
+    name: 'sparkles',
+    icon: SparklesIcon,
+    keywords: ['sparkles', 'sparkle', 'star', 'stars', 'shine', 'shining'],
   },
   {
     name: 'rocket',
