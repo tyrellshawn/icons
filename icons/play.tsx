@@ -1,14 +1,26 @@
 'use client';
 
-import type { Transition } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
-const defaultTransition: Transition = {
-  times: [0, 0.4, 1],
-  duration: 0.5,
+const pathVariants: Variants = {
+  normal: {
+    x: 0,
+    rotate: 0,
+  },
+  animate: {
+    x: [0, -1, 2, 0],
+    rotate: [0, -10, 0, 0],
+    transition: {
+      duration: 0.5,
+      times: [0, 0.2, 0.5, 1],
+      stiffness: 260,
+      damping: 20,
+    },
+  },
 };
 
-const CircleChevronLeftIcon = () => {
+const PlayIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -17,7 +29,7 @@ const CircleChevronLeftIcon = () => {
       onMouseEnter={() => controls.start('animate')}
       onMouseLeave={() => controls.start('normal')}
     >
-      <svg
+      <motion.svg
         xmlns="http://www.w3.org/2000/svg"
         width="28"
         height="28"
@@ -28,19 +40,14 @@ const CircleChevronLeftIcon = () => {
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <circle cx="12" cy="12" r="10" />
-        <motion.path
-          variants={{
-            normal: { x: 0 },
-            animate: { x: [0, -2, 0] },
-          }}
-          transition={defaultTransition}
+        <motion.polygon
+          points="6 3 20 12 6 21 6 3"
+          variants={pathVariants}
           animate={controls}
-          d="m14 16-4-4 4-4"
         />
-      </svg>
+      </motion.svg>
     </div>
   );
 };
 
-export { CircleChevronLeftIcon };
+export { PlayIcon };

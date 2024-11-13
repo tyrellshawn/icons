@@ -75,14 +75,16 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import { PlayIcon } from '@/icons/play';
+import { PauseIcon } from '@/icons/pause';
 import { ChevronsUpDownIcon } from '@/icons/chevrons-up-down';
 import { ChevronsDownUpIcon } from '@/icons/chevrons-down-up';
 import { ChevronsLeftRightIcon } from '@/icons/chevrons-left-right';
 import { ChevronsRightLeftIcon } from '@/icons/chevrons-right-left';
-import { CircleChevronDown } from '@/icons/circle-chevron-down';
-import { CircleChevronLeft } from '@/icons/circle-chevron-left';
-import { CircleChevronRight } from '@/icons/circle-chevron-right';
-import { CircleChevronUp } from '@/icons/circle-chevron-up';
+import { CircleChevronDownIcon } from '@/icons/circle-chevron-down';
+import { CircleChevronLeftIcon } from '@/icons/circle-chevron-left';
+import { CircleChevronRightIcon } from '@/icons/circle-chevron-right';
+import { CircleChevronUpIcon } from '@/icons/circle-chevron-up';
 import { CheckIcon } from '@/icons/check';
 import { CheckCheckIcon } from '@/icons/check-check';
 import { IdCardIcon } from '@/icons/id-card';
@@ -103,6 +105,9 @@ import { WaypointsIcon } from '@/icons/waypoints';
 import { ShipIcon } from '@/icons/ship';
 import { RollerCoasterIcon } from '@/icons/roller-coaster';
 import { AirplaneIcon } from '@/icons/airplane';
+import { DrumIcon } from '@/icons/drum';
+import { TrainTrackIcon } from '@/icons/train-track';
+import { WebhookIcon } from '@/icons/webhook';
 
 type IconListItem = {
   name: string;
@@ -710,6 +715,16 @@ const ICON_LIST: IconListItem[] = [
     ],
   },
   {
+    name: 'play',
+    icon: PlayIcon,
+    keywords: ['video', 'play', 'start'],
+  },
+  {
+    name: 'pause',
+    icon: PauseIcon,
+    keywords: ['video', 'pause', 'stop'],
+  },
+  {
     name: 'chart-column-decreasing',
     icon: ChartColumnDecreasingIcon,
     keywords: ['chart', 'column', 'decreasing'],
@@ -751,12 +766,12 @@ const ICON_LIST: IconListItem[] = [
   },
   {
     name: 'circle-chevron-down',
-    icon: CircleChevronDown,
+    icon: CircleChevronDownIcon,
     keywords: ['back', 'menu', 'chevron'],
   },
   {
     name: 'circle-chevron-left',
-    icon: CircleChevronLeft,
+    icon: CircleChevronLeftIcon,
     keywords: [
       'back',
       'previous',
@@ -769,7 +784,7 @@ const ICON_LIST: IconListItem[] = [
   },
   {
     name: 'circle-chevron-right',
-    icon: CircleChevronRight,
+    icon: CircleChevronRightIcon,
     keywords: [
       'next',
       'forward',
@@ -782,7 +797,7 @@ const ICON_LIST: IconListItem[] = [
   },
   {
     name: 'circle-chevron-up',
-    icon: CircleChevronUp,
+    icon: CircleChevronUpIcon,
     keywords: ['caret', 'ahead', 'forward', 'menu', 'chevron'],
   },
   {
@@ -960,6 +975,30 @@ const ICON_LIST: IconListItem[] = [
       'amusement park',
       'theme park',
       'funfair',
+    ],
+  },
+  {
+    name: 'drum',
+    icon: DrumIcon,
+    keywords: ['music', 'instrument', 'percussion', 'beat', 'rhythm', 'sound'],
+  },
+  {
+    name: 'train-track',
+    icon: TrainTrackIcon,
+    keywords: ['railway', 'track', 'train', 'transport', 'travel', 'line'],
+  },
+  {
+    name: 'webhook',
+    icon: WebhookIcon,
+    keywords: [
+      'api',
+      'integration',
+      'web',
+      'hook',
+      'connect',
+      'link',
+      'push api',
+      'callback',
     ],
   },
 ];
