@@ -110,6 +110,7 @@ import { TrainTrackIcon } from '@/icons/train-track';
 import { SparklesIcon } from '@/icons/sparkles';
 import { WebhookIcon } from '@/icons/webhook';
 import { RocketIcon } from '@/icons/rocket';
+import { ActivityIcon } from '@/icons/activity';
 
 type IconListItem = {
   name: string;
@@ -1012,6 +1013,39 @@ const ICON_LIST: IconListItem[] = [
     name: 'rocket',
     icon: RocketIcon,
     keywords: ['launch', 'space', 'boost', 'release', 'version'],
+  },
+  {
+    name: 'activity',
+    icon: ActivityIcon,
+    keywords: [
+      'pulse',
+      'action',
+      'motion',
+      'movement',
+      'exercise',
+      'fitness',
+      'healthcare',
+      'heart rate monitor',
+      'vital signs',
+      'vitals',
+      'emergency room',
+      'er',
+      'intensive care',
+      'hospital',
+      'defibrillator',
+      'earthquake',
+      'siesmic',
+      'magnitude',
+      'richter scale',
+      'aftershock',
+      'tremor',
+      'shockwave',
+      'audio',
+      'waveform',
+      'synthesizer',
+      'synthesiser',
+      'music',
+    ],
   },
 ];
 
