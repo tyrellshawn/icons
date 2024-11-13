@@ -3,6 +3,7 @@
 **Demo** → [icons.pqoqubbw.dev](https://icons.pqoqubbw.dev)
 
 ### Svelte icons: [movingicons.dev](https://www.movingicons.dev/) by [@jis3r](https://github.com/jis3r)
+
 ### Vue icons: [imfenghuang.github.io/icons](https://imfenghuang.github.io/icons/) by [@imfenghuang](https://github.com/imfenghuang)
 
 ![preview](./app/og.png)
