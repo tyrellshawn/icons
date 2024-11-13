@@ -1,36 +1,34 @@
 'use client';
 
 import { motion, useAnimation } from 'framer-motion';
-import { useState } from 'react';
+
+const iconSize = 28;
+const viewBox = '-6 0 34 30';
+const strokeWidth = 2;
+
+const speedLines = [
+  { x1: -6, y1: 26, x2: 0, y2: 20, delay: 0.1 },
+  { x1: -4, y1: 28, x2: 2, y2: 22, delay: 0.2 },
+  { x1: -2, y1: 30, x2: 4, y2: 24, delay: 0.3 },
+];
 
 export function AirplaneIcon() {
   const controls = useAnimation();
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleHover = () => {
-    setIsHovered(true);
-    controls.start('hover');
-  };
-
-  const handleHoverEnd = () => {
-    setIsHovered(false);
-    controls.start('initial');
-  };
 
   return (
     <div
       className="cursor-pointer select-none p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
-      onMouseEnter={handleHover}
-      onMouseLeave={handleHoverEnd}
+      onMouseEnter={() => controls.start('hover')}
+      onMouseLeave={() => controls.start('initial')}
     >
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
-        width="28"
-        height="28"
-        viewBox="-6 0 34 30"
+        width={iconSize}
+        height={iconSize}
+        viewBox={viewBox}
         fill="none"
         stroke="currentColor"
-        strokeWidth="2"
+        strokeWidth={strokeWidth}
         strokeLinecap="round"
         strokeLinejoin="round"
         animate={controls}
@@ -55,49 +53,23 @@ export function AirplaneIcon() {
           animate={{ pathLength: 1 }}
           transition={{ duration: 1.5, ease: 'easeInOut' }}
         />
-        {/* Speed lines */}
-        <motion.line
-          x1="-6"
-          y1="26"
-          x2="0"
-          y2="20"
-          stroke="currentColor"
-          strokeWidth="1"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{
-            pathLength: isHovered ? 1 : 0,
-            opacity: isHovered ? 1 : 0,
-          }}
-          transition={{ duration: 0.3, delay: 0.1 }}
-        />
-        <motion.line
-          x1="-4"
-          y1="28"
-          x2="2"
-          y2="22"
-          stroke="currentColor"
-          strokeWidth="1"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{
-            pathLength: isHovered ? 1 : 0,
-            opacity: isHovered ? 1 : 0,
-          }}
-          transition={{ duration: 0.3, delay: 0.2 }}
-        />
-        <motion.line
-          x1="-2"
-          y1="30"
-          x2="4"
-          y2="24"
-          stroke="currentColor"
-          strokeWidth="1"
-          initial={{ pathLength: 0, opacity: 0 }}
-          animate={{
-            pathLength: isHovered ? 1 : 0,
-            opacity: isHovered ? 1 : 0,
-          }}
-          transition={{ duration: 0.3, delay: 0.3 }}
-        />
+        {speedLines.map((line, index) => (
+          <motion.line
+            key={index}
+            x1={line.x1}
+            y1={line.y1}
+            x2={line.x2}
+            y2={line.y2}
+            stroke="currentColor"
+            strokeWidth={1}
+            initial={{ pathLength: 0, opacity: 0 }}
+            variants={{
+              initial: { pathLength: 0, opacity: 0 },
+              hover: { pathLength: 1, opacity: 1 },
+            }}
+            transition={{ duration: 0.3, delay: line.delay }}
+          />
+        ))}
       </motion.svg>
     </div>
   );
