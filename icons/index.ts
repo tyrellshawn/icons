@@ -59,6 +59,7 @@ import { LogoutIcon } from '@/icons/logout';
 import { CircleHelpIcon } from '@/icons/circle-help';
 import { UserIcon } from '@/icons/user';
 import { AudioLinesIcon } from '@/icons/audio-lines';
+import { FlameIcon } from '@/icons/flame';
 import { EyeOffIcon } from '@/icons/eye-off';
 import { SquareStackIcon } from '@/icons/square-stack';
 import { BadgeAlertIcon } from '@/icons/badge-alert';
@@ -182,6 +183,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'user',
     icon: UserIcon,
     keywords: ['person', 'account', 'contact'],
+  },
+  {
+    name: 'flame',
+    icon: FlameIcon,
+    keywords: ['fire', 'flame', 'hot'],
   },
   {
     name: 'audio-lines',
