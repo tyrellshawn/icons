@@ -17,11 +17,6 @@ const yVariants: Variants = {
   animate: {
     scaleY: [1, 1.5, 1],
     opacity: [1, 0.8, 1],
-    transition: {
-      ...transition,
-      repeat: 5,
-      repeatType: 'reverse',
-    }
   },
 };
 const xVariants: Variants = {
@@ -33,11 +28,6 @@ const xVariants: Variants = {
   animate: {
     scaleX: [1, 1.5, 1],
     opacity: [1, 0.8, 1],
-    transition: {
-      ...transition,
-      repeat: 5,
-      repeatType: 'reverse',
-    }
   },
 };
 const CpuIcon = () => {
