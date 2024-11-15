@@ -4,10 +4,8 @@ import type { Transition, Variants } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
 const transition: Transition = {
-  duration: 0.35,
-  repeat: Infinity,
-  repeatType: 'reverse',
-  ease: 'easeInOut',
+  duration: 0.6,
+  ease: [0.42, 0, 0.58, 1],
 };
 
 const speedVariants: Variants = {
@@ -17,9 +15,9 @@ const speedVariants: Variants = {
     y: 0,
   },
   animate: {
-    rotate: [0, 10, -10, 0],
-    x: [0, 4, -4, 0],
-    y: [0, 2, -2, 0],
+    rotate: [0, 5, -5, 3, -3, 0],
+    x: [0, 3, -3, 2, -2, 0],
+    y: [0, 1.5, -1.5, 1, -1, 0],
     transition,
   },
 };
