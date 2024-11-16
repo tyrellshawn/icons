@@ -59,6 +59,7 @@ import { LogoutIcon } from '@/icons/logout';
 import { CircleHelpIcon } from '@/icons/circle-help';
 import { UserIcon } from '@/icons/user';
 import { AudioLinesIcon } from '@/icons/audio-lines';
+import { FlameIcon } from '@/icons/flame';
 import { EyeOffIcon } from '@/icons/eye-off';
 import { SquareStackIcon } from '@/icons/square-stack';
 import { BadgeAlertIcon } from '@/icons/badge-alert';
@@ -95,6 +96,7 @@ import { ChartColumnIncreasingIcon } from '@/icons/chart-column-increasing';
 import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
 import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 import { BananaIcon } from '@/icons/banana';
+import { BanIcon } from '@/icons/ban';
 import { WifiIcon } from '@/icons/wifi';
 import { ChromeIcon } from '@/icons/chrome';
 import { FigmaIcon } from '@/icons/figma';
@@ -104,12 +106,16 @@ import { GitCommitHorizontalIcon } from '@/icons/git-commit-horizontal';
 import { WaypointsIcon } from '@/icons/waypoints';
 import { ShipIcon } from '@/icons/ship';
 import { RollerCoasterIcon } from '@/icons/roller-coaster';
+import { AirplaneIcon } from '@/icons/airplane';
 import { DrumIcon } from '@/icons/drum';
 import { TrainTrackIcon } from '@/icons/train-track';
+import { SparklesIcon } from '@/icons/sparkles';
 import { WebhookIcon } from '@/icons/webhook';
 import { RabbitIcon } from '@/icons/rabbit';
 import { CogIcon } from '@/icons/cog';
 import { CpuIcon } from '@/icons/cpu';
+import { RocketIcon } from '@/icons/rocket';
+import { ActivityIcon } from '@/icons/activity';
 
 type IconListItem = {
   name: string;
@@ -181,6 +187,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'user',
     icon: UserIcon,
     keywords: ['person', 'account', 'contact'],
+  },
+  {
+    name: 'flame',
+    icon: FlameIcon,
+    keywords: ['fire', 'flame', 'hot'],
   },
   {
     name: 'audio-lines',
@@ -306,6 +317,19 @@ const ICON_LIST: IconListItem[] = [
     name: 'route',
     icon: RouteIcon,
     keywords: ['path', 'journey', 'planner', 'points', 'stops', 'stations'],
+  },
+  {
+    name: 'airplane',
+    icon: AirplaneIcon,
+    keywords: [
+      'flight',
+      'path',
+      'journey',
+      'planner',
+      'points',
+      'stops',
+      'stations',
+    ],
   },
   {
     name: 'refresh',
@@ -1043,6 +1067,54 @@ const ICON_LIST: IconListItem[] = [
       'gigahertz',
       'ghz',
     ],
+  },
+  {
+    name: 'sparkles',
+    icon: SparklesIcon,
+    keywords: ['sparkles', 'sparkle', 'star', 'stars', 'shine', 'shining'],
+  },
+  {
+    name: 'rocket',
+    icon: RocketIcon,
+    keywords: ['launch', 'space', 'boost', 'release', 'version'],
+  },
+  {
+    name: 'activity',
+    icon: ActivityIcon,
+    keywords: [
+      'pulse',
+      'action',
+      'motion',
+      'movement',
+      'exercise',
+      'fitness',
+      'healthcare',
+      'heart rate monitor',
+      'vital signs',
+      'vitals',
+      'emergency room',
+      'er',
+      'intensive care',
+      'hospital',
+      'defibrillator',
+      'earthquake',
+      'siesmic',
+      'magnitude',
+      'richter scale',
+      'aftershock',
+      'tremor',
+      'shockwave',
+      'audio',
+      'waveform',
+      'synthesizer',
+      'synthesiser',
+      'music',
+    ],
+  },
+  {
+    name: 'ban',
+    icon: BanIcon,
+    keywords: ['ban', 'stop', 'prevent', 'no'],
   },
 ];
 
