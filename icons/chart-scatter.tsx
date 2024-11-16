@@ -1,6 +1,6 @@
 'use client';
 
-import { type Variants, motion, useAnimation } from 'framer-motion';
+import { type Variants, motion, useAnimation } from 'motion/react';
 
 const dotVariants: Variants = {
   visible: (i: number) => ({
@@ -11,8 +11,8 @@ const dotVariants: Variants = {
       duration: 0.3,
     },
   }),
-  hidden: { 
-    scale: 1, 
+  hidden: {
+    scale: 1,
     opacity: 0,
     transition: {
       duration: 0.2,
