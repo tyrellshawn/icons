@@ -1,6 +1,6 @@
 'use client';
 
-import { type Variants, motion, useAnimation } from 'framer-motion';
+import { type Variants, motion, useAnimation } from 'motion/react';
 
 const frameVariants: Variants = {
   visible: { opacity: 1 },

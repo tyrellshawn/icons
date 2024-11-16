@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation } from 'motion/react';
 
 const SPEED_LINES = [
   { x1: -6, y1: 26, x2: 0, y2: 20, delay: 0.1 },

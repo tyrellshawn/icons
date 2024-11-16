@@ -1,6 +1,6 @@
 'use client';
 
-import { cubicBezier, motion, useAnimation } from 'framer-motion';
+import { cubicBezier, motion, useAnimation } from 'motion/react';
 
 const customEasing = cubicBezier(0.25, 0.1, 0.25, 1);
 

@@ -1,7 +1,7 @@
 'use client';
 
-import type { Variants, Transition } from 'framer-motion';
-import { motion, useAnimation } from 'framer-motion';
+import type { Variants, Transition } from 'motion/react';
+import { motion, useAnimation } from 'motion/react';
 
 const gVariants: Variants = {
   normal: { rotate: 0 }, // if you want to start from a different angle, change this value or remove it entirely

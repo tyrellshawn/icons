@@ -29,10 +29,10 @@ export default async function Home() {
         <p className="text-muted-foreground sm:text-sm text-xs mt-4">
           built with{' '}
           <Link
-            href={LINK.FRAMER_MOTION}
+            href={LINK.MOTION}
             className="inline-flex transition-colors duration-200 hover:border-foreground/30 items-center gap-1 rounded border bg-muted px-2 py-[2px] font-mono text-xs font-medium text-muted-foreground opacity-100"
           >
-            <kbd>framer-motion</kbd>
+            <kbd>motion</kbd>
           </Link>{' '}
           and{' '}
           <Link

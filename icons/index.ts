@@ -1084,7 +1084,7 @@ const ICON_LIST: IconListItem[] = [
     keywords: [
       'pulse',
       'action',
-      'motion',
+      'motion/react',
       'movement',
       'exercise',
       'fitness',

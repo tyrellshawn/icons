@@ -1,7 +1,7 @@
 'use client';
 
-import { motion, useAnimation } from 'framer-motion';
-import type { Transition, Variants } from 'framer-motion';
+import { motion, useAnimation } from 'motion/react';
+import type { Transition, Variants } from 'motion/react';
 
 const defaultTransition: Transition = {
   type: 'spring',

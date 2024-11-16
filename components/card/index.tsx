@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Check, Copy, Download, ExternalLink } from 'lucide-react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'motion/react';
 import {
   Tooltip,
   TooltipContent,
