@@ -13,6 +13,7 @@ import { BoldIcon } from '@/icons/bold';
 import { BoneIcon } from '@/icons/bone';
 import { CalendarCogIcon } from '@/icons/calendar-cog';
 import { ChartPieIcon } from '@/icons/chart-pie';
+import { ChartScatterIcon } from '@/icons/chart-scatter';
 import { CircleCheckIcon } from '@/icons/circle-check';
 import { CircleDollarSignIcon } from '@/icons/circle-dollar-sign';
 import { ClockIcon } from '@/icons/clock';
@@ -538,6 +539,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'chart-pie',
     icon: ChartPieIcon,
     keywords: ['statistics', 'analytics', 'diagram', 'presentation'],
+  },
+  {
+    name: 'chart-scatter',
+    icon: ChartScatterIcon,
+    keywords: ['chart', 'analytics', 'scatter'],
   },
   {
     name: 'gauge',
