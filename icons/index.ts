@@ -76,6 +76,7 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import { TrendingUpDownIcon } from '@/icons/trending-up-down';
 import { PlayIcon } from '@/icons/play';
 import { PauseIcon } from '@/icons/pause';
 import { ChevronsUpDownIcon } from '@/icons/chevrons-up-down';
@@ -681,6 +682,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'trending-up',
     icon: TrendingUpIcon,
     keywords: ['up', 'trend', 'graph', 'upward', 'increase', 'statistics'],
+  },
+  {
+    name: 'trending-up-down',
+    icon: TrendingUpDownIcon,
+    keywords: ['up', 'trend', 'graph', 'upward', 'increase', 'statistics', 'down', 'trend', 'graph', 'downward', 'decrease'],
   },
   {
     name: 'timer',
