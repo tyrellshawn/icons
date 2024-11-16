@@ -118,6 +118,8 @@ import { CpuIcon } from '@/icons/cpu';
 import { RocketIcon } from '@/icons/rocket';
 import { ActivityIcon } from '@/icons/activity';
 import { BatteryFullIcon } from '@/icons/battery-full';
+import { TerminalIcon } from '@/icons/terminal';
+import { KeyboardIcon } from '@/icons/keyboard';
 
 type IconListItem = {
   name: string;
@@ -1127,6 +1129,16 @@ const ICON_LIST: IconListItem[] = [
     name: 'battery-full',
     icon: BatteryFullIcon,
     keywords: ['battery', 'power', 'energy', 'full', 'charge'],
+  },
+  {
+    name: 'terminal',
+    icon: TerminalIcon,
+    keywords: ['terminal', 'console', 'command line', 'shell', 'prompt'],
+  },
+  {
+    name: 'keyboard',
+    icon: KeyboardIcon,
+    keywords: ['keyboard', 'input', 'text', 'type', 'input method'],
   },
 ];
 
