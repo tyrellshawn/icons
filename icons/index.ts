@@ -111,6 +111,9 @@ import { DrumIcon } from '@/icons/drum';
 import { TrainTrackIcon } from '@/icons/train-track';
 import { SparklesIcon } from '@/icons/sparkles';
 import { WebhookIcon } from '@/icons/webhook';
+import { RabbitIcon } from '@/icons/rabbit';
+import { CogIcon } from '@/icons/cog';
+import { CpuIcon } from '@/icons/cpu';
 import { RocketIcon } from '@/icons/rocket';
 import { ActivityIcon } from '@/icons/activity';
 
@@ -1009,6 +1012,60 @@ const ICON_LIST: IconListItem[] = [
       'link',
       'push api',
       'callback',
+    ],
+  },
+  {
+    name: 'rabbit',
+    icon: RabbitIcon,
+    keywords: [
+      'bunny',
+      'hare',
+      'animal',
+      'mammal',
+      'ears',
+      'fluffy',
+      'rodent',
+      'pet',
+      'pest',
+      'bunny',
+      'hare',
+      'fast',
+      'speed',
+      'hop',
+    ],
+  },
+  {
+    name: 'cog',
+    icon: CogIcon,
+    keywords: [
+      'gear',
+      'settings',
+      'preferences',
+      'controls',
+      'computing',
+      'settings',
+      'cog',
+      'edit',
+    ],
+  },
+  {
+    name: 'cpu',
+    icon: CpuIcon,
+    keywords: [
+      'processor',
+      'chip',
+      'computer',
+      'hardware',
+      'central processing unit',
+      'computing',
+      'cores',
+      'technology',
+      'circuit',
+      'memory',
+      'ram',
+      'specs',
+      'gigahertz',
+      'ghz',
     ],
   },
   {
