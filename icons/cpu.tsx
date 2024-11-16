@@ -6,6 +6,7 @@ import { motion, useAnimation } from 'framer-motion';
 const transition: Transition = {
   duration: 0.5,
   ease: 'easeInOut',
+  repeat: 1,
 };
 
 const yVariants: Variants = {
@@ -30,6 +31,7 @@ const xVariants: Variants = {
     opacity: [1, 0.8, 1],
   },
 };
+
 const CpuIcon = () => {
   const controls = useAnimation();
 
