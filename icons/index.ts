@@ -96,6 +96,7 @@ import { ChartColumnIncreasingIcon } from '@/icons/chart-column-increasing';
 import { ChartBarDecreasingIcon } from '@/icons/chart-bar-decreasing';
 import { ChartBarIncreasingIcon } from '@/icons/chart-bar-increasing';
 import { BananaIcon } from '@/icons/banana';
+import { BanIcon } from '@/icons/ban';
 import { WifiIcon } from '@/icons/wifi';
 import { ChromeIcon } from '@/icons/chrome';
 import { FigmaIcon } from '@/icons/figma';
@@ -1052,6 +1053,11 @@ const ICON_LIST: IconListItem[] = [
       'synthesiser',
       'music',
     ],
+  },
+  {
+    name: 'ban',
+    icon: BanIcon,
+    keywords: ['ban', 'stop', 'prevent', 'no'],
   },
 ];
 
