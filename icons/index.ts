@@ -117,6 +117,7 @@ import { CogIcon } from '@/icons/cog';
 import { CpuIcon } from '@/icons/cpu';
 import { RocketIcon } from '@/icons/rocket';
 import { ActivityIcon } from '@/icons/activity';
+import { BatteryFullIcon } from '@/icons/battery-full';
 
 type IconListItem = {
   name: string;
@@ -1121,6 +1122,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'ban',
     icon: BanIcon,
     keywords: ['ban', 'stop', 'prevent', 'no'],
+  },
+  {
+    name: 'battery-full',
+    icon: BatteryFullIcon,
+    keywords: ['battery', 'power', 'energy', 'full', 'charge'],
   },
 ];
 
