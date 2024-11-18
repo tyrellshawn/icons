@@ -120,6 +120,7 @@ import { ActivityIcon } from '@/icons/activity';
 import { BatteryFullIcon } from '@/icons/battery-full';
 import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
+import { LayoutPanelTopIcon } from './layout-panel-top';
 
 type IconListItem = {
   name: string;
@@ -1139,6 +1140,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'keyboard',
     icon: KeyboardIcon,
     keywords: ['keyboard', 'input', 'text', 'type', 'input method'],
+  },
+  {
+    name: 'layout-panel-top',
+    icon: LayoutPanelTopIcon,
+    keywords: ['layout', 'panel', 'top'],
   },
 ];
 
