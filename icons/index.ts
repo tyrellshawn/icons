@@ -121,6 +121,7 @@ import { BatteryFullIcon } from '@/icons/battery-full';
 import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
 import { LayoutPanelTopIcon } from './layout-panel-top';
+import { BookTextIcon } from './book-text';
 
 type IconListItem = {
   name: string;
@@ -1144,7 +1145,28 @@ const ICON_LIST: IconListItem[] = [
   {
     name: 'layout-panel-top',
     icon: LayoutPanelTopIcon,
-    keywords: ['layout', 'panel', 'top'],
+    keywords: [
+      'window',
+      'webpage',
+      'block',
+      'section',
+      'grid',
+      'template',
+      'structure',
+    ],
+  },
+  {
+    name: 'book-text',
+    icon: BookTextIcon,
+    keywords: [
+      'reading',
+      'booklet',
+      'magazine',
+      'leaflet',
+      'pamphlet',
+      'tome',
+      'library',
+    ],
   },
 ];
 
