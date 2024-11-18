@@ -5,7 +5,6 @@ import { motion, useAnimation } from 'motion/react';
 
 const svgVariants: Variants = {
   animate: {
-    x: 0,
     y: 0,
     opacity: [0, 1],
     translateY: [-10, 0],
