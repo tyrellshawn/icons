@@ -4,14 +4,14 @@ import { AnimatePresence, motion, useAnimation } from 'motion/react';
 import { useEffect, useState } from 'react';
 
 const keyboardPaths = [
-  { id: 'key1', d: "M10 8h.01" },
-  { id: 'key2', d: "M12 12h.01" },
-  { id: 'key3', d: "M14 8h.01" },
-  { id: 'key4', d: "M16 12h.01" },
-  { id: 'key5', d: "M18 8h.01" },
-  { id: 'key6', d: "M6 8h.01" },
-  { id: 'key7', d: "M7 16h10" },
-  { id: 'key8', d: "M8 12h.01" },
+  { id: 'key1', d: 'M10 8h.01' },
+  { id: 'key2', d: 'M12 12h.01' },
+  { id: 'key3', d: 'M14 8h.01' },
+  { id: 'key4', d: 'M16 12h.01' },
+  { id: 'key5', d: 'M18 8h.01' },
+  { id: 'key6', d: 'M6 8h.01' },
+  { id: 'key7', d: 'M7 16h10' },
+  { id: 'key8', d: 'M8 12h.01' },
 ];
 
 const KeyboardIcon = () => {
@@ -28,7 +28,7 @@ const KeyboardIcon = () => {
             times: [0, 0.5, 1],
             delay: i * 0.2 * Math.random(),
             repeat: Infinity,
-            repeatType: "reverse",
+            repeatType: 'reverse',
           },
         }));
       } else {
@@ -48,8 +48,8 @@ const KeyboardIcon = () => {
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="28"
+        height="28"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"

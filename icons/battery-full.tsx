@@ -8,29 +8,29 @@ const lineVariants: Variants = {
     opacity: 0,
     transition: {
       duration: 0.4,
-      ease: "easeInOut"
-    }
+      ease: 'easeInOut',
+    },
   },
   fadeIn: (i: number) => ({
     opacity: 1,
     transition: {
       duration: 0.6,
       delay: i * 0.4,
-      ease: "easeInOut"
-    }
-  })
+      ease: 'easeInOut',
+    },
+  }),
 };
 
 const BatteryFullIcon = () => {
   const controls = useAnimation();
 
   const handleHoverStart = async () => {
-    await controls.start("fadeOut");
-    controls.start("fadeIn");
+    await controls.start('fadeOut');
+    controls.start('fadeIn');
   };
 
   const handleHoverEnd = () => {
-    controls.start("initial");
+    controls.start('initial');
   };
 
   return (

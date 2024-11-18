@@ -18,7 +18,7 @@ const dotVariants: Variants = {
       duration: 0.2,
     },
   },
-  default: { scale: 1, opacity: 1 }
+  default: { scale: 1, opacity: 1 },
 };
 
 const ChartScatterIcon = () => {
@@ -52,15 +52,47 @@ const ChartScatterIcon = () => {
         initial="default"
         animate={controls}
       >
-        <motion.circle cx="7.5" cy="7.5" r=".5" variants={dotVariants} custom={0} fill="currentColor"/>
-        <motion.circle cx="18.5" cy="5.5" r=".5" variants={dotVariants} custom={1} fill="currentColor"/>
-        <motion.circle cx="11.5" cy="11.5" r=".5" variants={dotVariants} custom={2} fill="currentColor"/>
-        <motion.circle cx="7.5" cy="16.5" r=".5" variants={dotVariants} custom={3} fill="currentColor"/>
-        <motion.circle cx="17.5" cy="14.5" r=".5" variants={dotVariants} custom={4} fill="currentColor"/>
-        <path
-          d="M3 3v16a2 2 0 0 0 2 2h16"
-          strokeWidth="2"
+        <motion.circle
+          cx="7.5"
+          cy="7.5"
+          r=".5"
+          variants={dotVariants}
+          custom={0}
+          fill="currentColor"
         />
+        <motion.circle
+          cx="18.5"
+          cy="5.5"
+          r=".5"
+          variants={dotVariants}
+          custom={1}
+          fill="currentColor"
+        />
+        <motion.circle
+          cx="11.5"
+          cy="11.5"
+          r=".5"
+          variants={dotVariants}
+          custom={2}
+          fill="currentColor"
+        />
+        <motion.circle
+          cx="7.5"
+          cy="16.5"
+          r=".5"
+          variants={dotVariants}
+          custom={3}
+          fill="currentColor"
+        />
+        <motion.circle
+          cx="17.5"
+          cy="14.5"
+          r=".5"
+          variants={dotVariants}
+          custom={4}
+          fill="currentColor"
+        />
+        <path d="M3 3v16a2 2 0 0 0 2 2h16" strokeWidth="2" />
       </motion.svg>
     </div>
   );
