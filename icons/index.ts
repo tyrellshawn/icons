@@ -13,6 +13,7 @@ import { BoldIcon } from '@/icons/bold';
 import { BoneIcon } from '@/icons/bone';
 import { CalendarCogIcon } from '@/icons/calendar-cog';
 import { ChartPieIcon } from '@/icons/chart-pie';
+import { ChartScatterIcon } from '@/icons/chart-scatter';
 import { CircleCheckIcon } from '@/icons/circle-check';
 import { CircleDollarSignIcon } from '@/icons/circle-dollar-sign';
 import { ClockIcon } from '@/icons/clock';
@@ -116,6 +117,9 @@ import { CogIcon } from '@/icons/cog';
 import { CpuIcon } from '@/icons/cpu';
 import { RocketIcon } from '@/icons/rocket';
 import { ActivityIcon } from '@/icons/activity';
+import { BatteryFullIcon } from '@/icons/battery-full';
+import { TerminalIcon } from '@/icons/terminal';
+import { KeyboardIcon } from '@/icons/keyboard';
 
 type IconListItem = {
   name: string;
@@ -538,6 +542,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'chart-pie',
     icon: ChartPieIcon,
     keywords: ['statistics', 'analytics', 'diagram', 'presentation'],
+  },
+  {
+    name: 'chart-scatter',
+    icon: ChartScatterIcon,
+    keywords: ['chart', 'analytics', 'scatter'],
   },
   {
     name: 'gauge',
@@ -1115,6 +1124,21 @@ const ICON_LIST: IconListItem[] = [
     name: 'ban',
     icon: BanIcon,
     keywords: ['ban', 'stop', 'prevent', 'no'],
+  },
+  {
+    name: 'battery-full',
+    icon: BatteryFullIcon,
+    keywords: ['battery', 'power', 'energy', 'full', 'charge'],
+  },
+  {
+    name: 'terminal',
+    icon: TerminalIcon,
+    keywords: ['terminal', 'console', 'command line', 'shell', 'prompt'],
+  },
+  {
+    name: 'keyboard',
+    icon: KeyboardIcon,
+    keywords: ['keyboard', 'input', 'text', 'type', 'input method'],
   },
 ];
 
