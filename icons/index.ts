@@ -116,6 +116,7 @@ import { CogIcon } from '@/icons/cog';
 import { CpuIcon } from '@/icons/cpu';
 import { RocketIcon } from '@/icons/rocket';
 import { ActivityIcon } from '@/icons/activity';
+import { MapPinIcon } from '@/icons/map-pin';
 
 type IconListItem = {
   name: string;
@@ -1115,6 +1116,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'ban',
     icon: BanIcon,
     keywords: ['ban', 'stop', 'prevent', 'no'],
+  },
+  {
+    name: 'map-pin',
+    icon: MapPinIcon,
+    keywords: ['map', 'pin', 'marker', 'location', 'address'],
   },
 ];
 
