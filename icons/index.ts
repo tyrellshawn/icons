@@ -120,6 +120,7 @@ import { ActivityIcon } from '@/icons/activity';
 import { BatteryFullIcon } from '@/icons/battery-full';
 import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
+import { ClapIcon } from '@/icons/clap';
 
 type IconListItem = {
   name: string;
@@ -1139,6 +1140,24 @@ const ICON_LIST: IconListItem[] = [
     name: 'keyboard',
     icon: KeyboardIcon,
     keywords: ['keyboard', 'input', 'text', 'type', 'input method'],
+  },
+  {
+    name: 'clap',
+    icon: ClapIcon,
+    keywords: [
+      'clap',
+      'movie',
+      'film',
+      'video',
+      'camera',
+      'cinema',
+      'cut',
+      'action',
+      'television',
+      'tv',
+      'show',
+      'entertainment',
+    ],
   },
 ];
 
