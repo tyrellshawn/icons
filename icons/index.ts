@@ -122,7 +122,7 @@ import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
 import { LayoutPanelTopIcon } from './layout-panel-top';
 import { BookTextIcon } from './book-text';
-
+import { ShowerHeadIcon } from './shower-head';
 type IconListItem = {
   name: string;
   icon: React.ElementType;
@@ -1167,6 +1167,11 @@ const ICON_LIST: IconListItem[] = [
       'tome',
       'library',
     ],
+  },
+  {
+    name: 'shower-head',
+    icon: ShowerHeadIcon,
+    keywords: ['shower', 'bath', 'bathroom', 'amenities', 'services'],
   },
 ];
 
