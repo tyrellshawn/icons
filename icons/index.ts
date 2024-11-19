@@ -122,6 +122,7 @@ import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
 import { LayoutPanelTopIcon } from './layout-panel-top';
 import { BookTextIcon } from './book-text';
+import { TelescopeIcon } from './telescope';
 
 type IconListItem = {
   name: string;
@@ -1166,6 +1167,24 @@ const ICON_LIST: IconListItem[] = [
       'pamphlet',
       'tome',
       'library',
+    ],
+  },
+  {
+    name: 'telescope',
+    icon: TelescopeIcon,
+    keywords: [
+      'telescope',
+      'astronomy',
+      'space',
+      'discovery',
+      'exploration',
+      'explore',
+      'vision',
+      'perspective',
+      'focus',
+      'stargazing',
+      'observe',
+      'view',
     ],
   },
 ];
