@@ -54,6 +54,7 @@ const ClapIcon = () => {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
+        style={{ overflow: 'visible' }}
       >
         <motion.g animate={controls} variants={variants}>
           <motion.g animate={controls} variants={clapVariants}>
