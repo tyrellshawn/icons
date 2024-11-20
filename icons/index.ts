@@ -77,6 +77,7 @@ import { SyringeIcon } from '@/icons/syringe';
 import { CompassIcon } from '@/icons/compass';
 import { TrendingDownIcon } from '@/icons/trending-down';
 import { TrendingUpIcon } from '@/icons/trending-up';
+import { TrendingUpDownIcon } from '@/icons/trending-up-down';
 import { PlayIcon } from '@/icons/play';
 import { PauseIcon } from '@/icons/pause';
 import { ChevronsUpDownIcon } from '@/icons/chevrons-up-down';
@@ -117,10 +118,15 @@ import { CogIcon } from '@/icons/cog';
 import { CpuIcon } from '@/icons/cpu';
 import { RocketIcon } from '@/icons/rocket';
 import { ActivityIcon } from '@/icons/activity';
+import { MapPinIcon } from '@/icons/map-pin';
 import { BatteryFullIcon } from '@/icons/battery-full';
 import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
 import { ClapIcon } from '@/icons/clap';
+import { LayoutPanelTopIcon } from '@/icons/layout-panel-top';
+import { BookTextIcon } from '@/icons/book-text';
+import { ShowerHeadIcon } from '@/icons/shower-head';
+import { TelescopeIcon } from '@/icons/telescope';
 
 type IconListItem = {
   name: string;
@@ -693,6 +699,23 @@ const ICON_LIST: IconListItem[] = [
     keywords: ['up', 'trend', 'graph', 'upward', 'increase', 'statistics'],
   },
   {
+    name: 'trending-up-down',
+    icon: TrendingUpDownIcon,
+    keywords: [
+      'up',
+      'trend',
+      'graph',
+      'upward',
+      'increase',
+      'statistics',
+      'down',
+      'trend',
+      'graph',
+      'downward',
+      'decrease',
+    ],
+  },
+  {
     name: 'timer',
     icon: TimerIcon,
     keywords: ['time', 'watch', 'alarm', 'stopwatch', 'stopwatch'],
@@ -1127,6 +1150,11 @@ const ICON_LIST: IconListItem[] = [
     keywords: ['ban', 'stop', 'prevent', 'no'],
   },
   {
+    name: 'map-pin',
+    icon: MapPinIcon,
+    keywords: ['map', 'pin', 'marker', 'location', 'address'],
+  },
+  {
     name: 'battery-full',
     icon: BatteryFullIcon,
     keywords: ['battery', 'power', 'energy', 'full', 'charge'],
@@ -1157,6 +1185,55 @@ const ICON_LIST: IconListItem[] = [
       'tv',
       'show',
       'entertainment',
+      ],
+      },
+    {
+    name: 'layout-panel-top',
+    icon: LayoutPanelTopIcon,
+    keywords: [
+      'window',
+      'webpage',
+      'block',
+      'section',
+      'grid',
+      'template',
+      'structure',
+    ],
+  },
+  {
+    name: 'book-text',
+    icon: BookTextIcon,
+    keywords: [
+      'reading',
+      'booklet',
+      'magazine',
+      'leaflet',
+      'pamphlet',
+      'tome',
+      'library',
+    ],
+  },
+  {
+    name: 'shower-head',
+    icon: ShowerHeadIcon,
+    keywords: ['shower', 'bath', 'bathroom', 'amenities', 'services'],
+  },
+  {
+    name: 'telescope',
+    icon: TelescopeIcon,
+    keywords: [
+      'telescope',
+      'astronomy',
+      'space',
+      'discovery',
+      'exploration',
+      'explore',
+      'vision',
+      'perspective',
+      'focus',
+      'stargazing',
+      'observe',
+      'view',
     ],
   },
 ];
