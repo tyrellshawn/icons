@@ -13,6 +13,7 @@ import { BoldIcon } from '@/icons/bold';
 import { BoneIcon } from '@/icons/bone';
 import { CalendarCogIcon } from '@/icons/calendar-cog';
 import { ChartPieIcon } from '@/icons/chart-pie';
+import { ChartScatterIcon } from '@/icons/chart-scatter';
 import { CircleCheckIcon } from '@/icons/circle-check';
 import { CircleDollarSignIcon } from '@/icons/circle-dollar-sign';
 import { ClockIcon } from '@/icons/clock';
@@ -117,6 +118,13 @@ import { CpuIcon } from '@/icons/cpu';
 import { RocketIcon } from '@/icons/rocket';
 import { ActivityIcon } from '@/icons/activity';
 import { MapPinIcon } from '@/icons/map-pin';
+import { BatteryFullIcon } from '@/icons/battery-full';
+import { TerminalIcon } from '@/icons/terminal';
+import { KeyboardIcon } from '@/icons/keyboard';
+import { LayoutPanelTopIcon } from './layout-panel-top';
+import { BookTextIcon } from './book-text';
+import { ShowerHeadIcon } from './shower-head';
+import { TelescopeIcon } from './telescope';
 
 type IconListItem = {
   name: string;
@@ -539,6 +547,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'chart-pie',
     icon: ChartPieIcon,
     keywords: ['statistics', 'analytics', 'diagram', 'presentation'],
+  },
+  {
+    name: 'chart-scatter',
+    icon: ChartScatterIcon,
+    keywords: ['chart', 'analytics', 'scatter'],
   },
   {
     name: 'gauge',
@@ -1121,6 +1134,70 @@ const ICON_LIST: IconListItem[] = [
     name: 'map-pin',
     icon: MapPinIcon,
     keywords: ['map', 'pin', 'marker', 'location', 'address'],
+  },
+  {
+    name: 'battery-full',
+    icon: BatteryFullIcon,
+    keywords: ['battery', 'power', 'energy', 'full', 'charge'],
+  },
+  {
+    name: 'terminal',
+    icon: TerminalIcon,
+    keywords: ['terminal', 'console', 'command line', 'shell', 'prompt'],
+  },
+  {
+    name: 'keyboard',
+    icon: KeyboardIcon,
+    keywords: ['keyboard', 'input', 'text', 'type', 'input method'],
+  },
+  {
+    name: 'layout-panel-top',
+    icon: LayoutPanelTopIcon,
+    keywords: [
+      'window',
+      'webpage',
+      'block',
+      'section',
+      'grid',
+      'template',
+      'structure',
+    ],
+  },
+  {
+    name: 'book-text',
+    icon: BookTextIcon,
+    keywords: [
+      'reading',
+      'booklet',
+      'magazine',
+      'leaflet',
+      'pamphlet',
+      'tome',
+      'library',
+    ],
+  },
+  {
+    name: 'shower-head',
+    icon: ShowerHeadIcon,
+    keywords: ['shower', 'bath', 'bathroom', 'amenities', 'services'],
+  },
+  {
+    name: 'telescope',
+    icon: TelescopeIcon,
+    keywords: [
+      'telescope',
+      'astronomy',
+      'space',
+      'discovery',
+      'exploration',
+      'explore',
+      'vision',
+      'perspective',
+      'focus',
+      'stargazing',
+      'observe',
+      'view',
+    ],
   },
 ];
 
