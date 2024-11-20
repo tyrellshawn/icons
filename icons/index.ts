@@ -122,10 +122,11 @@ import { MapPinIcon } from '@/icons/map-pin';
 import { BatteryFullIcon } from '@/icons/battery-full';
 import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
-import { LayoutPanelTopIcon } from './layout-panel-top';
-import { BookTextIcon } from './book-text';
-import { ShowerHeadIcon } from './shower-head';
-import { TelescopeIcon } from './telescope';
+import { ClapIcon } from '@/icons/clap';
+import { LayoutPanelTopIcon } from '@/icons/layout-panel-top';
+import { BookTextIcon } from '@/icons/book-text';
+import { ShowerHeadIcon } from '@/icons/shower-head';
+import { TelescopeIcon } from '@/icons/telescope';
 
 type IconListItem = {
   name: string;
@@ -1169,6 +1170,24 @@ const ICON_LIST: IconListItem[] = [
     keywords: ['keyboard', 'input', 'text', 'type', 'input method'],
   },
   {
+    name: 'clap',
+    icon: ClapIcon,
+    keywords: [
+      'clap',
+      'movie',
+      'film',
+      'video',
+      'camera',
+      'cinema',
+      'cut',
+      'action',
+      'television',
+      'tv',
+      'show',
+      'entertainment',
+      ],
+      },
+    {
     name: 'layout-panel-top',
     icon: LayoutPanelTopIcon,
     keywords: [
