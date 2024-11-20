@@ -123,6 +123,8 @@ import { KeyboardIcon } from '@/icons/keyboard';
 import { LayoutPanelTopIcon } from './layout-panel-top';
 import { BookTextIcon } from './book-text';
 import { ShowerHeadIcon } from './shower-head';
+import { TelescopeIcon } from './telescope';
+
 type IconListItem = {
   name: string;
   icon: React.ElementType;
@@ -1172,6 +1174,24 @@ const ICON_LIST: IconListItem[] = [
     name: 'shower-head',
     icon: ShowerHeadIcon,
     keywords: ['shower', 'bath', 'bathroom', 'amenities', 'services'],
+  },
+  {
+    name: 'telescope',
+    icon: TelescopeIcon,
+    keywords: [
+      'telescope',
+      'astronomy',
+      'space',
+      'discovery',
+      'exploration',
+      'explore',
+      'vision',
+      'perspective',
+      'focus',
+      'stargazing',
+      'observe',
+      'view',
+    ],
   },
 ];
 
