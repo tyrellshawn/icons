@@ -5,7 +5,7 @@ import { motion, useAnimation } from 'motion/react';
 
 const svgVariants: Variants = {
   normal: {
-    y: 0
+    y: 0,
   },
   animate: {
     y: [0, -5, -3],
@@ -14,7 +14,7 @@ const svgVariants: Variants = {
       times: [0, 0.6, 1],
       type: 'spring',
       stiffness: 200,
-      damping: 10
+      damping: 10,
     },
   },
 };

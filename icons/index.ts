@@ -1185,9 +1185,9 @@ const ICON_LIST: IconListItem[] = [
       'tv',
       'show',
       'entertainment',
-      ],
-      },
-    {
+    ],
+  },
+  {
     name: 'layout-panel-top',
     icon: LayoutPanelTopIcon,
     keywords: [
