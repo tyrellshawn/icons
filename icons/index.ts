@@ -697,7 +697,19 @@ const ICON_LIST: IconListItem[] = [
   {
     name: 'trending-up-down',
     icon: TrendingUpDownIcon,
-    keywords: ['up', 'trend', 'graph', 'upward', 'increase', 'statistics', 'down', 'trend', 'graph', 'downward', 'decrease'],
+    keywords: [
+      'up',
+      'trend',
+      'graph',
+      'upward',
+      'increase',
+      'statistics',
+      'down',
+      'trend',
+      'graph',
+      'downward',
+      'decrease',
+    ],
   },
   {
     name: 'timer',

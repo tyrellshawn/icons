@@ -65,39 +65,39 @@ const TrendingUpDownIcon = () => {
       onMouseEnter={() => controls.start('animate')}
       onMouseLeave={() => controls.start('normal')}
     >
-      <motion.svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        width="28" 
-        height="28" 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        strokeWidth="2" 
-        strokeLinecap="round" 
+      <motion.svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
         strokeLinejoin="round"
         variants={svgVariants}
         initial="normal"
         animate={controls}
       >
-        <motion.path 
-          d="M14.828 14.828 21 21"
+        <motion.path
+          d="M21 21 14.828 14.828"
           variants={pathVariants}
           initial="normal"
           animate={controls}
         />
-        <motion.path 
+        <motion.path
           d="M21 16v5h-5"
           variants={arrowVariants}
           initial="normal"
           animate={controls}
         />
-        <motion.path 
+        <motion.path
           d="m21 3-9 9-4-4-6 6"
           variants={pathVariants}
           initial="normal"
           animate={controls}
         />
-        <motion.path 
+        <motion.path
           d="M21 8V3h-5"
           variants={arrowVariants}
           initial="normal"
