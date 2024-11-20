@@ -4,11 +4,17 @@ import type { Variants } from 'motion/react';
 import { motion, useAnimation } from 'motion/react';
 
 const svgVariants: Variants = {
+  normal: {
+    y: 0
+  },
   animate: {
-    y: 0,
-    translateY: [1, 0, 1, 0],
+    y: [0, -5, -3],
     transition: {
-      duration: 1,
+      duration: 0.5,
+      times: [0, 0.6, 1],
+      type: 'spring',
+      stiffness: 200,
+      damping: 10
     },
   },
 };
@@ -16,12 +22,6 @@ const svgVariants: Variants = {
 const circleVariants: Variants = {
   normal: {
     opacity: 1,
-    pathLength: 1,
-    transition: {
-      delay: 0.3,
-      duration: 0.3,
-      opacity: { duration: 0.1, delay: 0.3 },
-    },
   },
   animate: {
     opacity: [0, 1],
@@ -29,7 +29,7 @@ const circleVariants: Variants = {
     pathOffset: [0.5, 0],
     transition: {
       delay: 0.3,
-      duration: 0.3,
+      duration: 0.5,
       opacity: { duration: 0.1, delay: 0.3 },
     },
   },
