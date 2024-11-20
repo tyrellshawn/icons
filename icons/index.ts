@@ -122,6 +122,7 @@ import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
 import { LayoutPanelTopIcon } from './layout-panel-top';
 import { BookTextIcon } from './book-text';
+import { ShowerHeadIcon } from './shower-head';
 import { TelescopeIcon } from './telescope';
 
 type IconListItem = {
@@ -1168,6 +1169,11 @@ const ICON_LIST: IconListItem[] = [
       'tome',
       'library',
     ],
+  },
+  {
+    name: 'shower-head',
+    icon: ShowerHeadIcon,
+    keywords: ['shower', 'bath', 'bathroom', 'amenities', 'services'],
   },
   {
     name: 'telescope',
