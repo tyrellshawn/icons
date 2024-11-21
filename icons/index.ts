@@ -127,6 +127,7 @@ import { LayoutPanelTopIcon } from '@/icons/layout-panel-top';
 import { BookTextIcon } from '@/icons/book-text';
 import { ShowerHeadIcon } from '@/icons/shower-head';
 import { TelescopeIcon } from '@/icons/telescope';
+import { WindIcon } from '@/icons/wind';
 
 type IconListItem = {
   name: string;
@@ -1235,6 +1236,11 @@ const ICON_LIST: IconListItem[] = [
       'observe',
       'view',
     ],
+  },
+  {
+    name: 'wind',
+    icon: WindIcon,
+    keywords: ['wind', 'weather', 'air', 'blow'],
   },
 ];
 
