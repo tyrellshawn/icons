@@ -1,6 +1,6 @@
 'use client';
 
-import type { Transition, Variants } from 'motion/react';
+import type { Variants } from 'motion/react';
 import { motion, useAnimation } from 'motion/react';
 
 const variants: Variants = {
