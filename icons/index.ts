@@ -2,6 +2,7 @@ import { AlarmClockIcon } from '@/icons/alarm-clock';
 import { AlignCenterIcon } from '@/icons/align-center';
 import { AlignHorizontalIcon } from '@/icons/align-horizontal';
 import { AlignVerticalIcon } from '@/icons/align-vertical';
+import { AngryIcon } from '@/icons/angry';
 import { ArchiveIcon } from '@/icons/archive';
 import { ArrowLeftIcon } from '@/icons/arrow-left';
 import { ArrowRightIcon } from '@/icons/arrow-right';
@@ -1241,6 +1242,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'wind',
     icon: WindIcon,
     keywords: ['wind', 'weather', 'air', 'blow'],
+  },
+  {
+    name: 'angry',
+    icon: AngryIcon,
+    keywords: ['mad', 'upset', 'angry', 'furious', 'emotion', 'face'],
   },
 ];
 
