@@ -3,11 +3,6 @@
 import type { Transition, Variants } from 'motion/react';
 import { motion, useAnimation } from 'motion/react';
 
-const transition: Transition = {
-  duration: 0.3,
-  opacity: { delay: 0.15 },
-};
-
 const variants: Variants = {
   normal: {
     rotate: 0,
@@ -15,7 +10,6 @@ const variants: Variants = {
   animate: (custom: number) => ({
     rotate: custom === 1 ? [-10, 10, 0] : [10, -10, 0],
     transition: {
-      ...transition,
       delay: 0.1 * custom,
       repeat: Infinity,
       repeatType: 'reverse',
