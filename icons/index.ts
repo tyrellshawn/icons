@@ -129,6 +129,7 @@ import { BookTextIcon } from '@/icons/book-text';
 import { ShowerHeadIcon } from '@/icons/shower-head';
 import { TelescopeIcon } from '@/icons/telescope';
 import { WindIcon } from '@/icons/wind';
+import { CoffeeIcon } from './coffee';
 
 type IconListItem = {
   name: string;
@@ -1247,6 +1248,20 @@ const ICON_LIST: IconListItem[] = [
     name: 'angry',
     icon: AngryIcon,
     keywords: ['mad', 'upset', 'angry', 'furious', 'emotion', 'face'],
+  },
+  {
+    name: 'coffee',
+    icon: CoffeeIcon,
+    keywords: [
+      'coffee',
+      'drink',
+      'cup',
+      'mug',
+      'tea',
+      'cafe',
+      'hot',
+      'beverage',
+    ],
   },
 ];
 
