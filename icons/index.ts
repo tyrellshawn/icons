@@ -129,7 +129,8 @@ import { BookTextIcon } from '@/icons/book-text';
 import { ShowerHeadIcon } from '@/icons/shower-head';
 import { TelescopeIcon } from '@/icons/telescope';
 import { WindIcon } from '@/icons/wind';
-import { CoffeeIcon } from './coffee';
+import { CctvIcon } from '@/icons/cctv';
+import { CoffeeIcon } from '@/icons/coffee';
 
 type IconListItem = {
   name: string;
@@ -1248,6 +1249,20 @@ const ICON_LIST: IconListItem[] = [
     name: 'angry',
     icon: AngryIcon,
     keywords: ['mad', 'upset', 'angry', 'furious', 'emotion', 'face'],
+  },
+  {
+    name: 'cctv',
+    icon: CctvIcon,
+    keywords: [
+      'cctv',
+      'camera',
+      'surveillance',
+      'recording',
+      'film',
+      'videotape',
+      'crime',
+      'watching',
+      ],
   },
   {
     name: 'coffee',
