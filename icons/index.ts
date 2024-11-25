@@ -129,7 +129,8 @@ import { BookTextIcon } from '@/icons/book-text';
 import { ShowerHeadIcon } from '@/icons/shower-head';
 import { TelescopeIcon } from '@/icons/telescope';
 import { WindIcon } from '@/icons/wind';
-import { CctvIcon } from './cctv';
+import { CctvIcon } from '@/icons/cctv';
+import { CoffeeIcon } from '@/icons/coffee';
 
 type IconListItem = {
   name: string;
@@ -1261,6 +1262,20 @@ const ICON_LIST: IconListItem[] = [
       'videotape',
       'crime',
       'watching',
+      ],
+  },
+  {
+    name: 'coffee',
+    icon: CoffeeIcon,
+    keywords: [
+      'coffee',
+      'drink',
+      'cup',
+      'mug',
+      'tea',
+      'cafe',
+      'hot',
+      'beverage',
     ],
   },
 ];
