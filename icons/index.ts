@@ -120,6 +120,7 @@ import { CpuIcon } from '@/icons/cpu';
 import { RocketIcon } from '@/icons/rocket';
 import { ActivityIcon } from '@/icons/activity';
 import { MapPinIcon } from '@/icons/map-pin';
+import { MapPinCheckInsideIcon } from '@/icons/map-pin-check-inside';
 import { BatteryFullIcon } from '@/icons/battery-full';
 import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
@@ -1159,6 +1160,23 @@ const ICON_LIST: IconListItem[] = [
     keywords: ['map', 'pin', 'marker', 'location', 'address'],
   },
   {
+    name: 'map-pin-check-inside',
+    icon: MapPinCheckInsideIcon,
+    keywords: [
+      'map',
+      'pin',
+      'marker',
+      'location',
+      'address',
+      'waypoint',
+      'done',
+      'tick',
+      'complete',
+      'task',
+      'added',
+    ],
+  },
+  {
     name: 'battery-full',
     icon: BatteryFullIcon,
     keywords: ['battery', 'power', 'energy', 'full', 'charge'],
@@ -1262,7 +1280,7 @@ const ICON_LIST: IconListItem[] = [
       'videotape',
       'crime',
       'watching',
-      ],
+    ],
   },
   {
     name: 'coffee',
