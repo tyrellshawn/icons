@@ -121,6 +121,7 @@ import { RocketIcon } from '@/icons/rocket';
 import { ActivityIcon } from '@/icons/activity';
 import { MapPinIcon } from '@/icons/map-pin';
 import { MapPinCheckInsideIcon } from '@/icons/map-pin-check-inside';
+import { MapPinMinusInsideIcon } from '@/icons/map-pin-minus-inside';
 import { BatteryFullIcon } from '@/icons/battery-full';
 import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
@@ -1174,6 +1175,21 @@ const ICON_LIST: IconListItem[] = [
       'complete',
       'task',
       'added',
+    ],
+  },
+  {
+    name: 'map-pin-minus-inside',
+    icon: MapPinMinusInsideIcon,
+    keywords: [
+      'map',
+      'pin',
+      'marker',
+      'location',
+      'address',
+      'waypoint',
+      'delete',
+      'remove',
+      'erase',
     ],
   },
   {
