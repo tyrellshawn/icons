@@ -19,7 +19,7 @@ const svgVariants: Variants = {
   },
 };
 
-const minusVariants: Variants = {
+const verticalBarVariants: Variants = {
   normal: {
     opacity: 1,
   },
@@ -28,13 +28,28 @@ const minusVariants: Variants = {
     pathLength: [0, 1],
     transition: {
       delay: 0.3,
-      duration: 0.3,
+      duration: 0.2,
       opacity: { duration: 0.1, delay: 0.3 },
     },
   },
 };
 
-const MapPinMinusInsideIcon = () => {
+const horizontalBarVariants: Variants = {
+  normal: {
+    opacity: 1,
+  },
+  animate: {
+    opacity: [0, 1],
+    pathLength: [0, 1],
+    transition: {
+      delay: 0.6,
+      duration: 0.2,
+      opacity: { duration: 0.1, delay: 0.6 },
+    },
+  },
+};
+
+const MapPinPlusInsideIcon = () => {
   const controls = useAnimation();
 
   return (
@@ -43,7 +58,7 @@ const MapPinMinusInsideIcon = () => {
       onMouseEnter={() => controls.start('animate')}
       onMouseLeave={() => controls.start('normal')}
     >
-      <motion.svg 
+      <motion.svg
         xmlns="http://www.w3.org/2000/svg" 
         width="28" 
         height="28" 
@@ -59,8 +74,14 @@ const MapPinMinusInsideIcon = () => {
       >
         <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
         <motion.path 
+          d="M12 7v6"
+          variants={horizontalBarVariants}
+          initial="normal"
+          animate={controls}
+        />
+        <motion.path 
           d="M9 10h6"
-          variants={minusVariants}
+          variants={verticalBarVariants}
           initial="normal"
           animate={controls}
         />
@@ -69,4 +90,4 @@ const MapPinMinusInsideIcon = () => {
   );
 };
 
-export { MapPinMinusInsideIcon };
+export { MapPinPlusInsideIcon };
