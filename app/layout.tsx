@@ -7,6 +7,7 @@ import { Header } from '@/components/header';
 import ogImage from './og.png';
 import { Analytics } from '@/components/analytics';
 import { NuqsAdapter } from 'nuqs/adapters/next/app';
+import { SnowfallComponent } from '@/components/snowfall';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -96,7 +97,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <NuqsAdapter>{children}</NuqsAdapter>
+          <NuqsAdapter>
+            {children}
+            <SnowfallComponent />
+          </NuqsAdapter>
           <Analytics />
         </ThemeProvider>
       </body>
