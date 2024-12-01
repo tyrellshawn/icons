@@ -125,6 +125,7 @@ import { MapPinMinusInsideIcon } from '@/icons/map-pin-minus-inside';
 import { MapPinPlusInsideIcon } from '@/icons/map-pin-plus-inside';
 import { MapPinOffIcon } from '@/icons/map-pin-off';
 import { MapPinCheckIcon } from '@/icons/map-pin-check';
+import { MapPinHouseIcon } from '@/icons/map-pin-house';
 import { BatteryFullIcon } from '@/icons/battery-full';
 import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
@@ -1241,6 +1242,22 @@ const ICON_LIST: IconListItem[] = [
       'complete',
       'task',
       'added',
+    ],
+  },
+  {
+    name: 'map-pin-house',
+    icon: MapPinHouseIcon,
+    keywords: [
+      'map',
+      'pin',
+      'marker',
+      'location',
+      'address',
+      'waypoint',
+      'home',
+      'living',
+      'place',
+      'landmark',
     ],
   },
   {
