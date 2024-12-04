@@ -124,6 +124,11 @@ import { MapPinCheckInsideIcon } from '@/icons/map-pin-check-inside';
 import { MapPinMinusInsideIcon } from '@/icons/map-pin-minus-inside';
 import { MapPinPlusInsideIcon } from '@/icons/map-pin-plus-inside';
 import { MapPinOffIcon } from '@/icons/map-pin-off';
+import { MapPinCheckIcon } from '@/icons/map-pin-check';
+import { MapPinHouseIcon } from '@/icons/map-pin-house';
+import { MapPinMinusIcon } from '@/icons/map-pin-minus';
+import { MapPinPlusIcon } from '@/icons/map-pin-plus';
+import { MapPinXInsideIcon } from '@/icons/map-pin-x-inside'
 import { BatteryFullIcon } from '@/icons/battery-full';
 import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
@@ -1223,6 +1228,84 @@ const ICON_LIST: IconListItem[] = [
       'remove',
       'non available',
       'invalid'
+    ],
+  },
+  {
+    name: 'map-pin-check',
+    icon: MapPinCheckIcon,
+    keywords: [
+      'map',
+      'pin',
+      'marker',
+      'location',
+      'address',
+      'waypoint',
+      'done',
+      'tick',
+      'complete',
+      'task',
+      'added',
+    ],
+  },
+  {
+    name: 'map-pin-house',
+    icon: MapPinHouseIcon,
+    keywords: [
+      'map',
+      'pin',
+      'marker',
+      'location',
+      'address',
+      'waypoint',
+      'home',
+      'living',
+      'place',
+      'landmark',
+    ],
+  },
+  {
+    name: 'map-pin-minus',
+    icon: MapPinMinusIcon,
+    keywords: [
+      'map',
+      'pin',
+      'marker',
+      'location',
+      'address',
+      'waypoint',
+      'delete',
+      'remove',
+      'erase',
+    ],
+  },
+  {
+    name: 'map-pin-plus',
+    icon: MapPinPlusIcon,
+    keywords: [
+      'map',
+      'pin',
+      'marker',
+      'location',
+      'address',
+      'waypoint',
+      'add',
+      'create',
+      'new',
+    ],
+  },
+  {
+    name: 'map-pin-x-inside',
+    icon: MapPinXInsideIcon,
+    keywords: [
+      'map',
+      'pin',
+      'marker',
+      'location',
+      'address',
+      'waypoint',
+      'delete',
+      'remove',
+      'erase',
     ],
   },
   {
