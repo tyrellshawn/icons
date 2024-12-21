@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { LINK } from '@/constants';
 import { getIcons } from '@/actions/get-icons';
 import { IconsList } from '@/components/list';
+import { CliBlock } from '@/components/cli-block';
 
 export default async function Home() {
   const icons = await getIcons();
@@ -42,6 +43,7 @@ export default async function Home() {
             <kbd>lucide</kbd>
           </Link>
         </p>
+        <CliBlock icons={icons} />
         <Suspense>
           <IconsList icons={icons} />
         </Suspense>

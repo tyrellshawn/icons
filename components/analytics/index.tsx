@@ -5,6 +5,7 @@ enum ANALYTIC_EVENT {
   ICON_COPY = 'icon-copy',
   ICON_DOWNLOAD = 'icon-download',
   ICON_LINK = 'icon-link',
+  ICON_COPY_TERMINAL = 'icon-copy-terminal',
 }
 
 const Analytics = () => {

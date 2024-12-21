@@ -135,3 +135,12 @@ body {
     @apply bg-background text-foreground font-mono;
   }
 }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

@@ -1,7 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Check, Copy, Download, ExternalLink } from 'lucide-react';
+import {
+  Check,
+  Copy,
+  Download,
+  // ExternalLink,
+  Terminal,
+} from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import {
   Tooltip,
@@ -9,7 +15,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '../ui/tooltip';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { useOpenPanel } from '@openpanel/nextjs';
 import { ANALYTIC_EVENT } from '../analytics';
 import type { Icon } from '@/actions/get-icons';
@@ -41,6 +47,7 @@ const Actions = ({ content, name }: Icon) => {
   const op = useOpenPanel();
 
   const [copied, setCopied] = useState(false);
+  const [copiedTerminal, setCopiedTerminal] = useState(false);
 
   const handleCopy = async () => {
     op.track(ANALYTIC_EVENT.ICON_COPY, { icon: `${name}.tsx` });
@@ -62,9 +69,49 @@ const Actions = ({ content, name }: Icon) => {
     URL.revokeObjectURL(url);
   };
 
+  const handleCopyTerminal = () => {
+    op.track(ANALYTIC_EVENT.ICON_COPY_TERMINAL, { icon: `${name}.tsx` });
+    navigator.clipboard.writeText(
+      `npx shadcn add "https://icons.pqoqubbw.dev/c/${name}.json"`
+    );
+    setCopiedTerminal(true);
+    setTimeout(() => setCopiedTerminal(false), 2000);
+  };
+
   return (
     <div className="flex items-center justify-center gap-2">
       <TooltipProvider delayDuration={TOOLTIP_DELAY_DURATION}>
+        <Tooltip>
+          <TooltipTrigger>
+            <AnimatePresence mode="wait" initial={false}>
+              {copiedTerminal ? (
+                <motion.div
+                  key="check"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Check className={ACTION_CLASS_NAMES} />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="copy"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Terminal
+                    className={ACTION_CLASS_NAMES}
+                    onClick={handleCopyTerminal}
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </TooltipTrigger>
+          <TooltipContent sideOffset={SIDE_OFFSET} side={TOOLTIP_SIDE}>
+            <p>{copiedTerminal ? 'copied' : 'copy shadcn/cli command'}</p>
+          </TooltipContent>
+        </Tooltip>
         <Tooltip>
           <TooltipTrigger>
             <AnimatePresence mode="wait" initial={false}>
@@ -101,7 +148,7 @@ const Actions = ({ content, name }: Icon) => {
             <p>download .tsx file</p>
           </TooltipContent>
         </Tooltip>
-        <Tooltip>
+        {/* <Tooltip>
           <TooltipTrigger asChild>
             <Link
               href={`https://github.com/pqoqubbw/icons/blob/main/icons/${name}.tsx`}
@@ -116,7 +163,7 @@ const Actions = ({ content, name }: Icon) => {
           <TooltipContent sideOffset={SIDE_OFFSET} side={TOOLTIP_SIDE}>
             <p>view on github</p>
           </TooltipContent>
-        </Tooltip>
+        </Tooltip> */}
       </TooltipProvider>
     </div>
   );
