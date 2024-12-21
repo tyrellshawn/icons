@@ -13,7 +13,7 @@ for (const component of components) {
   const content = fs.readFileSync(component.path, 'utf8');
   const schema = {
     name: component.name,
-    type: 'registry:ui',
+    type: 'registry:icons',
     registryDependencies: component.registryDependencies || [],
     dependencies: component.dependencies || [],
     devDependencies: component.devDependencies || [],
@@ -26,7 +26,7 @@ for (const component of components) {
       {
         path: `${component.name}.tsx`,
         content,
-        type: 'registry:ui',
+        type: 'registry:icons',
       },
     ],
   } satisfies Schema;

@@ -1,4 +1,4 @@
-export type RegistryType = 'registry:ui';
+export type RegistryType = 'registry:icons';
 
 export interface RegistryFile {
   path: string;
