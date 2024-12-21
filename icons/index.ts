@@ -129,7 +129,7 @@ import { MapPinCheckIcon } from '@/icons/map-pin-check';
 import { MapPinHouseIcon } from '@/icons/map-pin-house';
 import { MapPinMinusIcon } from '@/icons/map-pin-minus';
 import { MapPinPlusIcon } from '@/icons/map-pin-plus';
-import { MapPinXInsideIcon } from '@/icons/map-pin-x-inside'
+import { MapPinXInsideIcon } from '@/icons/map-pin-x-inside';
 import { BatteryFullIcon } from '@/icons/battery-full';
 import { TerminalIcon } from '@/icons/terminal';
 import { KeyboardIcon } from '@/icons/keyboard';
@@ -141,6 +141,7 @@ import { TelescopeIcon } from '@/icons/telescope';
 import { WindIcon } from '@/icons/wind';
 import { CctvIcon } from '@/icons/cctv';
 import { CoffeeIcon } from '@/icons/coffee';
+import { ArrowDownZAIcon } from './arrow-down-z-a';
 
 type IconListItem = {
   name: string;
@@ -1233,7 +1234,7 @@ const ICON_LIST: IconListItem[] = [
       'off',
       'remove',
       'non available',
-      'invalid'
+      'invalid',
     ],
   },
   {
@@ -1432,6 +1433,21 @@ const ICON_LIST: IconListItem[] = [
       'cafe',
       'hot',
       'beverage',
+    ],
+  },
+  {
+    name: 'arrow-down-z-a',
+    icon: ArrowDownZAIcon,
+    keywords: [
+      'filter',
+      'sort',
+      'ascending',
+      'descending',
+      'increasing',
+      'decreasing',
+      'rising',
+      'falling',
+      'alphabetical',
     ],
   },
 ];
