@@ -1,6 +1,7 @@
 'use client';
 import { cn } from '@/lib/utils';
-import { motion, AnimatePresence, Transition, Variants } from 'motion/react';
+import type { Transition, Variants } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 import { useState, useEffect, Children } from 'react';
 
 type TextLoopProps = {
@@ -44,12 +45,12 @@ export function TextLoop({
 
   return (
     <div className={cn('relative inline-block whitespace-nowrap', className)}>
-      <AnimatePresence mode='popLayout' initial={false}>
+      <AnimatePresence mode="popLayout" initial={false}>
         <motion.div
           key={currentIndex}
-          initial='initial'
-          animate='animate'
-          exit='exit'
+          initial="initial"
+          animate="animate"
+          exit="exit"
           transition={transition}
           variants={variants || motionVariants}
         >
