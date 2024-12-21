@@ -12,9 +12,10 @@ const CliBlock = ({ icons }: { icons: Icon[] }) => {
   const currentIconName = useRef('');
 
   const copyToClipboard = async () => {
+    const text = currentIconName.current || icons[0].name;
     try {
       await navigator.clipboard.writeText(
-        `npx shadcn add "https://icons.pqoqubbw.dev/c/${currentIconName.current}.json"`
+        `npx shadcn add "https://icons.pqoqubbw.dev/c/${text}.json"`
       );
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
