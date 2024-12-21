@@ -38,7 +38,7 @@ const CliBlock = ({ icons }: { icons: Icon[] }) => {
             onIndexChange={(index) => {
               currentIconName.current = icons[index].name;
             }}
-            interval={3}
+            interval={2}
             transition={{ duration: 0.25, opacity: { duration: 0.2 } }}
             variants={{
               initial: { y: -15, opacity: 0 },
