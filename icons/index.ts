@@ -148,6 +148,7 @@ import { LinkedinIcon } from '@/icons/linkedin';
 import { YoutubeIcon } from '@/icons/youtube';
 import { InstagramIcon } from '@/icons/instagram';
 import { TwitchIcon } from '@/icons/twitch';
+import { DribbbleIcon } from '@/icons/dribbble';
 
 type IconListItem = {
   name: string;
@@ -180,6 +181,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'twitch',
     icon: TwitchIcon,
     keywords: ['social', 'network', 'twitch'],
+  },
+  {
+    name: 'dribbble',
+    icon: DribbbleIcon,
+    keywords: ['social', 'network', 'dribbble'],
   },
   {
     name: 'search',
