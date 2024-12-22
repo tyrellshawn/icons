@@ -142,6 +142,8 @@ import { WindIcon } from '@/icons/wind';
 import { CctvIcon } from '@/icons/cctv';
 import { CoffeeIcon } from '@/icons/coffee';
 import { ArrowDownZAIcon } from '@/icons/arrow-down-z-a';
+import { ArrowDownAZIcon } from '@/icons/arrow-down-a-z';
+import { ArrowDown01con } from '@/icons/arrow-down-0-1';
 import { ArrowDown10con } from '@/icons/arrow-down-1-0';
 
 type IconListItem = {
@@ -1437,6 +1439,21 @@ const ICON_LIST: IconListItem[] = [
     ],
   },
   {
+    name: 'arrow-down-a-z',
+    icon: ArrowDownAZIcon,
+    keywords: [
+      'filter',
+      'sort',
+      'ascending',
+      'descending',
+      'increasing',
+      'decreasing',
+      'rising',
+      'falling',
+      'alphabetical',
+    ],
+  },
+  {
     name: 'arrow-down-z-a',
     icon: ArrowDownZAIcon,
     keywords: [
@@ -1449,6 +1466,21 @@ const ICON_LIST: IconListItem[] = [
       'rising',
       'falling',
       'alphabetical',
+    ],
+  },
+  {
+    name: 'arrow-down-0-1',
+    icon: ArrowDown01con,
+    keywords: [
+      'filter',
+      'sort',
+      'ascending',
+      'descending',
+      'increasing',
+      'decreasing',
+      'rising',
+      'falling',
+      'numerical',
     ],
   },
   {
