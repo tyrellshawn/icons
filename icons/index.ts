@@ -146,6 +146,7 @@ import { ArrowDown10con } from '@/icons/arrow-down-1-0';
 import { FacebookIcon } from '@/icons/facebook';
 import { LinkedinIcon } from '@/icons/linkedin';
 import { YoutubeIcon } from '@/icons/youtube';
+import { InstagramIcon } from '@/icons/instagram';
 
 type IconListItem = {
   name: string;
@@ -168,6 +169,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'youtube',
     icon: YoutubeIcon,
     keywords: ['social', 'network', 'youtube'],
+  },
+  {
+    name: 'instagram',
+    icon: InstagramIcon,
+    keywords: ['social', 'network', 'instagram'],
   },
   {
     name: 'search',
