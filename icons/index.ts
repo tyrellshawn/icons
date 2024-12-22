@@ -147,6 +147,7 @@ import { FacebookIcon } from '@/icons/facebook';
 import { LinkedinIcon } from '@/icons/linkedin';
 import { YoutubeIcon } from '@/icons/youtube';
 import { InstagramIcon } from '@/icons/instagram';
+import { TwitchIcon } from '@/icons/twitch';
 
 type IconListItem = {
   name: string;
@@ -174,6 +175,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'instagram',
     icon: InstagramIcon,
     keywords: ['social', 'network', 'instagram'],
+  },
+  {
+    name: 'twitch',
+    icon: TwitchIcon,
+    keywords: ['social', 'network', 'twitch'],
   },
   {
     name: 'search',
