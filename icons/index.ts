@@ -144,6 +144,7 @@ import { CoffeeIcon } from '@/icons/coffee';
 import { ArrowDownZAIcon } from '@/icons/arrow-down-z-a';
 import { ArrowDown10con } from '@/icons/arrow-down-1-0';
 import { FacebookIcon } from '@/icons/facebook';
+import { LinkedinIcon } from '@/icons/linkedin';
 
 type IconListItem = {
   name: string;
@@ -156,6 +157,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'facebook',
     icon: FacebookIcon,
     keywords: ['social', 'network', 'facebook'],
+  },
+  {
+    name: 'linkedin',
+    icon: LinkedinIcon,
+    keywords: ['social', 'network', 'linkedin'],
   },
   {
     name: 'search',
