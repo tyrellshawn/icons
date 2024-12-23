@@ -934,4 +934,10 @@ export const components: ComponentDefinition[] = [
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
+  {
+    'name': 'facebook',
+    'path': path.join(__dirname, '../icons/facebook.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  }
 ];
