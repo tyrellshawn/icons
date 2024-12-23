@@ -3,8 +3,6 @@
 import type { Variants } from 'motion/react';
 import { motion, useAnimation } from 'motion/react';
 
-import { cn } from '@/lib/utils';
-
 const pathVariants: Variants = {
   normal: {
     opacity: 1,
@@ -42,7 +40,7 @@ const XIcon = () => {
           d="M18 6 6 18"
         />
         <motion.path
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.2 }}
           variants={pathVariants}
           animate={controls}
           d="m6 6 12 12"
