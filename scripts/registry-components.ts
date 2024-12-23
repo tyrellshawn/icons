@@ -881,6 +881,12 @@ export const components: ComponentDefinition[] = [
     'dependencies': ['motion'],
   },
   {
+    'name': 'x',
+    'path': path.join(__dirname, '../icons/x.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
     'name': 'workflow',
     'path': path.join(__dirname, '../icons/workflow.tsx'),
     'registryDependencies': [],

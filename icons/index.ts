@@ -149,6 +149,7 @@ import { YoutubeIcon } from '@/icons/youtube';
 import { InstagramIcon } from '@/icons/instagram';
 import { TwitchIcon } from '@/icons/twitch';
 import { DribbbleIcon } from '@/icons/dribbble';
+import { XIcon } from './x';
 
 type IconListItem = {
   name: string;
@@ -1501,6 +1502,11 @@ const ICON_LIST: IconListItem[] = [
       'falling',
       'numerical',
     ],
+  },
+  {
+    name: 'x',
+    icon: XIcon,
+    keywords: ['x', 'close', 'delete', 'remove', 'cancel', 'exit', 'stop'],
   },
 ];
 

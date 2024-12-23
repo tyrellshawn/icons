@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "prettier --write . && eslint --fix .",
-    "build:registry": "tsx scripts/registry-build.ts"
+    "gen-cli": "tsx scripts/registry-build.ts"
   },
   "dependencies": {
     "@openpanel/nextjs": "^1.0.5",
