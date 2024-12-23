@@ -3,51 +3,51 @@
 import { motion, useAnimation } from 'motion/react';
 import type { Variants } from 'motion/react';
 
-export const TwitchIcon = () => {
-  const pathVariants: Variants = {
-    normal: {
-      opacity: 1,
-      pathLength: 1,
-      pathOffset: 0,
-      transition: {
-        duration: 0.4,
-        opacity: { duration: 0.1 },
-      },
+const pathVariants: Variants = {
+  normal: {
+    opacity: 1,
+    pathLength: 1,
+    pathOffset: 0,
+    transition: {
+      duration: 0.4,
+      opacity: { duration: 0.1 },
     },
-    animate: {
-      opacity: [0, 1],
-      pathLength: [0, 1],
-      pathOffset: [1, 0],
-      transition: {
-        duration: 0.6,
-        ease: 'linear',
-        opacity: { duration: 0.1 },
-      },
+  },
+  animate: {
+    opacity: [0, 1],
+    pathLength: [0, 1],
+    pathOffset: [1, 0],
+    transition: {
+      duration: 0.6,
+      ease: 'linear',
+      opacity: { duration: 0.1 },
     },
-  };
+  },
+};
 
-  const lineVariants: Variants = {
-    normal: {
-      opacity: 1,
-      pathLength: 1,
-      pathOffset: 0,
-      transition: {
-        duration: 0.4,
-        opacity: { duration: 0.1 },
-      },
+const lineVariants: Variants = {
+  normal: {
+    opacity: 1,
+    pathLength: 1,
+    pathOffset: 0,
+    transition: {
+      duration: 0.4,
+      opacity: { duration: 0.1 },
     },
-    animate: {
-      opacity: [0, 1],
-      pathLength: [0, 1],
-      pathOffset: [1, 0],
-      transition: {
-        duration: 0.6,
-        ease: 'linear',
-        opacity: { duration: 0.1 },
-      },
+  },
+  animate: {
+    opacity: [0, 1],
+    pathLength: [0, 1],
+    pathOffset: [1, 0],
+    transition: {
+      duration: 0.6,
+      ease: 'linear',
+      opacity: { duration: 0.1 },
     },
-  };
+  },
+};
 
+const TwitchIcon = () => {
   const pathControls = useAnimation();
   const line1Controls = useAnimation();
   const line2Controls = useAnimation();
@@ -72,8 +72,8 @@ export const TwitchIcon = () => {
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="28"
+        height="28"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -103,3 +103,5 @@ export const TwitchIcon = () => {
     </div>
   );
 };
+
+export { TwitchIcon };

@@ -892,4 +892,34 @@ export const components: ComponentDefinition[] = [
     'registryDependencies': [],
     'dependencies': ['motion'],
   },
+  {
+    'name': 'youtube',
+    'path': path.join(__dirname, '../icons/youtube.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'dribbble',
+    'path': path.join(__dirname, '../icons/dribbble.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'instagram',
+    'path': path.join(__dirname, '../icons/instagram.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'linkedin',
+    'path': path.join(__dirname, '../icons/linkedin.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
+  {
+    'name': 'twitch',
+    'path': path.join(__dirname, '../icons/twitch.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
+  },
 ];
