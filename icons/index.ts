@@ -143,6 +143,7 @@ import { CctvIcon } from '@/icons/cctv';
 import { CoffeeIcon } from '@/icons/coffee';
 import { ArrowDownZAIcon } from '@/icons/arrow-down-z-a';
 import { ArrowDown10con } from '@/icons/arrow-down-1-0';
+import { XIcon } from './x';
 
 type IconListItem = {
   name: string;
@@ -1465,6 +1466,11 @@ const ICON_LIST: IconListItem[] = [
       'falling',
       'numerical',
     ],
+  },
+  {
+    name: 'x',
+    icon: XIcon,
+    keywords: ['x', 'close', 'delete', 'remove', 'cancel', 'exit', 'stop'],
   },
 ];
 
