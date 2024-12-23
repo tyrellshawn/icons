@@ -939,5 +939,11 @@ export const components: ComponentDefinition[] = [
     'path': path.join(__dirname, '../icons/facebook.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
+  },
+  {
+    'name': 'moon',
+    'path': path.join(__dirname, '../icons/moon.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
   }
 ];
