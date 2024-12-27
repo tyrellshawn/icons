@@ -154,6 +154,7 @@ import { DribbbleIcon } from '@/icons/dribbble';
 import { XIcon } from '@/icons/x';
 import { MoonIcon } from '@/icons/moon';
 import { VibrateIcon } from '@/icons/vibrate';
+import { SmartphoneChargingIcon } from '@/icons/smartphone-charging';
 
 type IconListItem = {
   name: string;
@@ -162,6 +163,11 @@ type IconListItem = {
 };
 
 const ICON_LIST: IconListItem[] = [
+  {
+    name: 'smartphone-charging',
+    icon: SmartphoneChargingIcon,
+    keywords: ['phone', 'cellphone', 'device', 'power', 'screen'],
+  },
   {
     name: 'vibrate',
     icon: VibrateIcon,

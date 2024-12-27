@@ -951,5 +951,11 @@ export const components: ComponentDefinition[] = [
     'path': path.join(__dirname, '../icons/vibrate.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
+  },
+  {
+    'name': 'smartphone-charging',
+    'path': path.join(__dirname, '../icons/smartphone-charging.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
   }
 ];
