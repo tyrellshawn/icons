@@ -945,5 +945,11 @@ export const components: ComponentDefinition[] = [
     'path': path.join(__dirname, '../icons/moon.tsx'),
     'registryDependencies': [],
     'dependencies': ['motion'],
+  },
+  {
+    'name': 'vibrate',
+    'path': path.join(__dirname, '../icons/vibrate.tsx'),
+    'registryDependencies': [],
+    'dependencies': ['motion'],
   }
 ];

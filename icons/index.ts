@@ -151,8 +151,9 @@ import { YoutubeIcon } from '@/icons/youtube';
 import { InstagramIcon } from '@/icons/instagram';
 import { TwitchIcon } from '@/icons/twitch';
 import { DribbbleIcon } from '@/icons/dribbble';
-import { XIcon } from './x';
-import { MoonIcon } from './moon';
+import { XIcon } from '@/icons/x';
+import { MoonIcon } from '@/icons/moon';
+import { VibrateIcon } from '@/icons/vibrate';
 
 type IconListItem = {
   name: string;
@@ -161,6 +162,17 @@ type IconListItem = {
 };
 
 const ICON_LIST: IconListItem[] = [
+  {
+    name: 'vibrate',
+    icon: VibrateIcon,
+    keywords: [
+      'smartphone',
+      'notification',
+      'rumble',
+      'haptic feedback',
+      'screen',
+    ],
+  },
   {
     name: 'moon',
     icon: MoonIcon,
