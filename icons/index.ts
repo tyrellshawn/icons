@@ -143,7 +143,7 @@ import { CctvIcon } from '@/icons/cctv';
 import { CoffeeIcon } from '@/icons/coffee';
 import { ArrowDownZAIcon } from '@/icons/arrow-down-z-a';
 import { ArrowDown10con } from '@/icons/arrow-down-1-0';
-
+import {ClipboardCheckIcon} from '@/icons/clipboard-check';
 type IconListItem = {
   name: string;
   icon: React.ElementType;
@@ -319,6 +319,11 @@ const ICON_LIST: IconListItem[] = [
       'ellipsis',
       'etc',
     ],
+  },
+  {
+   name: "clipboard-check",
+    icon: ClipboardCheckIcon,
+    keywords: ["clipboard", "check", "clipboard-check", "clipboard-checkmark"],
   },
   {
     name: 'home',
