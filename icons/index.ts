@@ -155,6 +155,7 @@ import { XIcon } from '@/icons/x';
 import { MoonIcon } from '@/icons/moon';
 import { VibrateIcon } from '@/icons/vibrate';
 import { SmartphoneChargingIcon } from '@/icons/smartphone-charging';
+import { CastIcon } from '@/icons/cast';
 
 type IconListItem = {
   name: string;
@@ -1563,6 +1564,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'x',
     icon: XIcon,
     keywords: ['x', 'close', 'delete', 'remove', 'cancel', 'exit', 'stop'],
+  },
+  {
+    name: 'cast',
+    icon: CastIcon,
+    keywords: ['cast', 'screen', 'chromecast', 'airplay'],
   },
 ];
 
