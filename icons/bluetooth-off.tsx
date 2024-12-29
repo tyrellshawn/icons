@@ -12,6 +12,14 @@ const pathVariants: Variants = {
   },
 };
 
+const offlineVariants: Variants = {
+  normal: { pathLength: 1, opacity: 1 },
+  animate: {
+    pathLength: [0, 1],
+    opacity: [0, 1],
+  },
+};
+
 const BluetoothOffIcon = () => {
   const controls = useAnimation();
 
@@ -41,7 +49,7 @@ const BluetoothOffIcon = () => {
           d="m17 17-5 5V12l-5 5"
         />
         <motion.path
-          variants={pathVariants}
+          variants={offlineVariants}
           animate={controls}
           transition={{
             duration: 0.2,
