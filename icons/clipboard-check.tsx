@@ -4,16 +4,17 @@ import type { Variants } from 'motion/react';
 
 const checkVariants: Variants = {
   normal: {
-    rotate: 0,
-    originX: '4px',
-    originY: '20px',
+    pathLength: 0,
     opacity: 1,
+    transition: {
+      duration: 0.3,
+    },
   },
   animate: {
-    rotate: [-15, 15, 0],
+    pathLength: 1,
+    opacity: 1,
     transition: {
-      duration: 0.6,
-      times: [0, 0.5, 1],
+      duration: 0.4,
       ease: 'easeInOut',
     },
   },
@@ -47,6 +48,7 @@ const ClipboardCheckIcon = () => {
           initial="normal"
           variants={checkVariants}
           d="m9 14 2 2 4-4"
+          style={{ transformOrigin: 'center' }}
         />
       </svg>
     </div>
