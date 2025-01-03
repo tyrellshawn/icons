@@ -142,8 +142,22 @@ import { WindIcon } from '@/icons/wind';
 import { CctvIcon } from '@/icons/cctv';
 import { CoffeeIcon } from '@/icons/coffee';
 import { ArrowDownZAIcon } from '@/icons/arrow-down-z-a';
+import { ArrowDownAZIcon } from '@/icons/arrow-down-a-z';
+import { ArrowDown01con } from '@/icons/arrow-down-0-1';
 import { ArrowDown10con } from '@/icons/arrow-down-1-0';
 import {ClipboardCheckIcon} from '@/icons/clipboard-check';
+import { FacebookIcon } from '@/icons/facebook';
+import { LinkedinIcon } from '@/icons/linkedin';
+import { YoutubeIcon } from '@/icons/youtube';
+import { InstagramIcon } from '@/icons/instagram';
+import { TwitchIcon } from '@/icons/twitch';
+import { DribbbleIcon } from '@/icons/dribbble';
+import { XIcon } from '@/icons/x';
+import { MoonIcon } from '@/icons/moon';
+import { VibrateIcon } from '@/icons/vibrate';
+import { SmartphoneChargingIcon } from '@/icons/smartphone-charging';
+import { CastIcon } from '@/icons/cast';
+
 type IconListItem = {
   name: string;
   icon: React.ElementType;
@@ -151,6 +165,57 @@ type IconListItem = {
 };
 
 const ICON_LIST: IconListItem[] = [
+  {
+    name: 'smartphone-charging',
+    icon: SmartphoneChargingIcon,
+    keywords: ['phone', 'cellphone', 'device', 'power', 'screen'],
+  },
+  {
+    name: 'vibrate',
+    icon: VibrateIcon,
+    keywords: [
+      'smartphone',
+      'notification',
+      'rumble',
+      'haptic feedback',
+      'screen',
+    ],
+  },
+  {
+    name: 'moon',
+    icon: MoonIcon,
+    keywords: ['night', 'dark', 'moon'],
+  },
+  {
+    name: 'facebook',
+    icon: FacebookIcon,
+    keywords: ['social', 'network', 'facebook'],
+  },
+  {
+    name: 'linkedin',
+    icon: LinkedinIcon,
+    keywords: ['social', 'network', 'linkedin'],
+  },
+  {
+    name: 'youtube',
+    icon: YoutubeIcon,
+    keywords: ['social', 'network', 'youtube'],
+  },
+  {
+    name: 'instagram',
+    icon: InstagramIcon,
+    keywords: ['social', 'network', 'instagram'],
+  },
+  {
+    name: 'twitch',
+    icon: TwitchIcon,
+    keywords: ['social', 'network', 'twitch'],
+  },
+  {
+    name: 'dribbble',
+    icon: DribbbleIcon,
+    keywords: ['social', 'network', 'dribbble'],
+  },
   {
     name: 'search',
     icon: SearchIcon,
@@ -1442,6 +1507,21 @@ const ICON_LIST: IconListItem[] = [
     ],
   },
   {
+    name: 'arrow-down-a-z',
+    icon: ArrowDownAZIcon,
+    keywords: [
+      'filter',
+      'sort',
+      'ascending',
+      'descending',
+      'increasing',
+      'decreasing',
+      'rising',
+      'falling',
+      'alphabetical',
+    ],
+  },
+  {
     name: 'arrow-down-z-a',
     icon: ArrowDownZAIcon,
     keywords: [
@@ -1454,6 +1534,21 @@ const ICON_LIST: IconListItem[] = [
       'rising',
       'falling',
       'alphabetical',
+    ],
+  },
+  {
+    name: 'arrow-down-0-1',
+    icon: ArrowDown01con,
+    keywords: [
+      'filter',
+      'sort',
+      'ascending',
+      'descending',
+      'increasing',
+      'decreasing',
+      'rising',
+      'falling',
+      'numerical',
     ],
   },
   {
@@ -1470,6 +1565,16 @@ const ICON_LIST: IconListItem[] = [
       'falling',
       'numerical',
     ],
+  },
+  {
+    name: 'x',
+    icon: XIcon,
+    keywords: ['x', 'close', 'delete', 'remove', 'cancel', 'exit', 'stop'],
+  },
+  {
+    name: 'cast',
+    icon: CastIcon,
+    keywords: ['cast', 'screen', 'chromecast', 'airplay'],
   },
 ];
 
