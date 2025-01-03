@@ -1,4 +1,5 @@
 'use client';
+
 import { motion, useAnimation } from 'motion/react';
 import type { Variants } from 'motion/react';
 
@@ -31,8 +32,8 @@ const ClipboardCheckIcon = () => {
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="28"
+        height="28"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
