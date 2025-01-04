@@ -157,6 +157,7 @@ import { MoonIcon } from '@/icons/moon';
 import { VibrateIcon } from '@/icons/vibrate';
 import { SmartphoneChargingIcon } from '@/icons/smartphone-charging';
 import { CastIcon } from '@/icons/cast';
+import { UploadIcon } from '@/icons/upload';
 
 type IconListItem = {
   name: string;
@@ -1575,6 +1576,11 @@ const ICON_LIST: IconListItem[] = [
     name: 'cast',
     icon: CastIcon,
     keywords: ['cast', 'screen', 'chromecast', 'airplay'],
+  },
+  {
+    name: 'upload',
+    icon: UploadIcon,
+    keywords: ['upload', 'send', 'share'],
   },
 ];
 
