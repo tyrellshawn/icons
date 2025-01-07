@@ -3,9 +3,17 @@ import path from 'path';
 
 const getIconForV0 = async (name: string) => {
   try {
-    const filePath = path.join(process.cwd(), 'public', 'c', `${name}.json`);
-    const fileContent = await fs.readFile(filePath, 'utf-8');
-    const iconData = JSON.parse(fileContent);
+    const iconData =
+      process.env.NODE_ENV === 'development'
+        ? JSON.parse(
+            await fs.readFile(
+              path.join(process.cwd(), 'public', 'c', `${name}.json`),
+              'utf-8'
+            )
+          )
+        : await (
+            await fetch(`https://icons.pqoqubbw.dev/c/${name}.json`)
+          ).json();
 
     const componentName = name
       .split('-')
