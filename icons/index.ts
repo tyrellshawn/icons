@@ -144,7 +144,7 @@ import { CoffeeIcon } from '@/icons/coffee';
 import { ArrowDownZAIcon } from '@/icons/arrow-down-z-a';
 import { ArrowDownAZIcon } from '@/icons/arrow-down-a-z';
 import { ArrowDown01con } from '@/icons/arrow-down-0-1';
-import { ArrowDown10con } from '@/icons/arrow-down-1-0';
+import { ArrowDown10Icon } from '@/icons/arrow-down-1-0';
 import { ClipboardCheckIcon } from '@/icons/clipboard-check';
 import { FacebookIcon } from '@/icons/facebook';
 import { LinkedinIcon } from '@/icons/linkedin';
@@ -1553,7 +1553,7 @@ const ICON_LIST: IconListItem[] = [
   },
   {
     name: 'arrow-down-1-0',
-    icon: ArrowDown10con,
+    icon: ArrowDown10Icon,
     keywords: [
       'filter',
       'sort',
