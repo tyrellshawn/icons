@@ -40,7 +40,7 @@ const getIconForV0 = async (name: string) => {
             'export default function Page() {\n' +
             '  return (\n' +
             '    <div className="flex min-h-svh items-center justify-center">\n' +
-            `      <${iconName} className="size-24" />\n` +
+            `      <${iconName} />\n` +
             '    </div>\n' +
             '  )\n' +
             '}\n',
@@ -57,8 +57,8 @@ const getIconForV0 = async (name: string) => {
             `  variable: '--font-sans',\n` +
             '})\n\n' +
             'export const metadata: Metadata = {\n' +
-            `  title: '${iconName} Icon',\n` +
-            `  description: 'Animated ${iconName} icon component',\n` +
+            `  title: '${name} Icon',\n` +
+            `  description: 'Animated ${name} icon component from pqoqubbw/icons',\n` +
             '}\n\n' +
             'export default function RootLayout({\n' +
             '  children,\n' +
