@@ -2,10 +2,6 @@
 
 import { type Variants, motion, useAnimation } from 'motion/react';
 
-const frameVariants: Variants = {
-  visible: { opacity: 1 },
-  hidden: { opacity: 1 },
-};
 
 const lineVariants: Variants = {
   visible: { pathLength: 1, opacity: 1 },
@@ -63,7 +59,7 @@ const ChartColumnDecreasingIcon = () => {
           custom={2}
           d="M18 17v-3"
         />
-        <motion.path variants={frameVariants} d="M3 3v16a2 2 0 0 0 2 2h16" />
+        <path d="M3 3v16a2 2 0 0 0 2 2h16" />
         <motion.path
           variants={lineVariants}
           initial="visible"
