@@ -2,7 +2,6 @@
 
 import { type Variants, motion, useAnimation } from 'motion/react';
 
-
 const lineVariants: Variants = {
   visible: { pathLength: 1, opacity: 1 },
   hidden: { pathLength: 0, opacity: 0 },
